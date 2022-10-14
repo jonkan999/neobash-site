@@ -1,0 +1,301 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+@media (max-width: 94em) {
+  .heading-primary {
+    font-size: 5rem;
+  }
+}
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .section-event-categories .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-brand-box {
+    grid-row: 1/2;
+  }
+
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    margin: 0 auto;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1;
+  }
+
+  /*   .hero-brand-box--closed {
+    display: none; 
+  } */
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+  .heading-secondary {
+    font-size: 2.8rem;
+  }
+  .event-categories-description {
+    font-size: 1.8rem;
+    padding: 0 3.6rem;
+  }
+
+  .category-card img {
+    width: 20rem;
+    height: 35rem;
+  }
+  .section-event-categories .grid--3-cols {
+    column-gap: 0;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(to top, rgba(247, 228, 252, 1), #e4cde3);
+  }
+
+  .cta-img-box {
+    grid-row: 1/2;
+    background-image: linear-gradient(
+        to top,
+        rgba(247, 228, 252, 0.452),
+        rgba(238, 190, 250, 0.253)
+      ),
+      url(../img/contact-form-img-2.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 25rem;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-form .inquiry-field {
+    grid-column: 1 / 2;
+  }
+
+  .cta-form button {
+    grid-column: 1 / 2;
+  }
+
+  .cta-text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 3.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 430px ( new Phones) */
+/**************************/
+@media (max-width: 27em) {
+  .grid {
+    row-gap: 3.6rem;
+  }
+
+  .hero {
+    padding: 0 4rem;
+    gap: 3.6rem;
+  }
+
+  .brand-name {
+    font-size: 8.7rem;
+
+    letter-spacing: 1.25rem;
+    line-height: 1.13;
+    transform: translate(25%, 24%);
+  }
+  .brand-background {
+    width: 30rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+    padding: 1.2rem 2.6rem 1.2rem 2.6rem;
+  }
+
+  .heading-primary {
+    font-size: 2.8rem;
+  }
+  .heading-secondary {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .event-categories-description {
+    font-size: 1.45rem;
+    padding: 0 2.8rem;
+    width: 97%;
+    margin-bottom: 4.6rem;
+  }
+
+  .category-card img {
+    width: 17rem;
+    height: 30rem;
+  }
+
+  .category-card-text {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .category-card:hover .category-card-text,
+  .category-card:active .category-card-text {
+    border-bottom: solid 0.25rem #eee;
+    margin-bottom: -0.25rem;
+    text-shadow: 0 0.2rem 0.3rem #eebefa;
+  }
+
+  .cta .heading-secondary {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+  }
+
+  .cta-form label {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+  }
+  .cta-form input,
+  .cta-form select,
+  .cta-form textarea {
+    font-size: 1.4rem;
+  }
+
+  .btn--form {
+    font-size: 1.8rem;
+  }
+  .button-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
