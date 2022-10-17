@@ -153,14 +153,14 @@
   }
 
   .footer-logo {
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 1rem auto;
     height: 15rem;
   }
   .social-links {
     margin: 0 auto 2rem auto;
   }
   .copyright {
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
   }
 }
 
