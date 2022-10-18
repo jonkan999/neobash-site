@@ -226,6 +226,11 @@
     line-height: 1.5;
     margin-bottom: 3.6rem;
   }
+
+  .call-us-text {
+    font-size: 2.5rem;
+    transform: translate(30%,-460%) rotate(-10deg);
+  }
 }
 
 /**************************/
@@ -313,5 +318,9 @@
   .button-icon {
     width: 2rem;
     height: 2rem;
+  }
+  .call-us-text {
+    font-size: 2.5rem;
+    transform: translate(30%,-440%) rotate(-10deg);
   }
 }
