@@ -12,7 +12,7 @@
   padding: 0 4.8rem;
 }
 
-.header-logo{
+.header-logo {
   display: block;
   height: 11rem;
   padding: 1.2rem 0 1.2rem 0;
@@ -224,6 +224,11 @@
   padding: 9.6rem 0;
 }
 
+.section-how-it-works .grid {
+  column-gap: 5rem;
+  row-gap: 0;
+}
+
 .section-how-it-works .heading-secondary {
   padding: 0 15rem;
   line-height: 1.2;
@@ -234,19 +239,9 @@
   display: block;
   border-right: solid 0.2rem #eebefa;
   height: 13rem;
-  width:0.2rem;
-  margin: 3rem auto;
-  
-}
-
-.how-it-works-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.how-it-works-column.left-images {
-  align-items: end;
-  gap: 3rem;
+  width: 0.2rem;
+  margin: 5rem auto 0 auto;
+  grid-column: 2/3;
 }
 
 .how-it-works-left-images {
@@ -254,31 +249,23 @@
   height: 35rem;
   background-size: cover;
   background-position: center;
-  filter: brightness(250%) hue-rotate(-220deg);
+  justify-self: end;
+  grid-column: 1/2;
 }
 
 .how-it-works-left-images.images-1 {
-  background-image: url(../img/geisha-thinking.jpg);
-  box-shadow: 3.3rem 0.3rem 5rem 0.1rem white inset, -0.1rem -0.3rem 5rem 0.1rem white inset; 
-}
-
-.how-it-works-left-images.images-2 {
-  background-image: url(../img/geisha-writing.jpg);
-  box-shadow: 0.1rem 0.3rem 5rem 0.1rem white inset, -2.3rem -0.3rem 5rem 0.1rem white inset; 
+  background-image: url(../img/geisha-thinking.png);
+  box-shadow: 5rem 2rem 1.5rem 0.1rem white inset,
+    -1rem -2rem 1rem 0.1rem white inset;
 }
 
 .how-it-works-left-images.images-3 {
-  background-image: url(../img/geisha-sending.jpg);
-  box-shadow: 3.3rem 0.3rem 5rem 0.1rem white inset, -0.1rem -0.3rem 5rem 0.1rem white inset; 
-}
-
-.how-it-works-left-images.images-4 {
-  background-image: url(../img/geisha-waiting.jpg);
-  box-shadow: 0.1rem 0.3rem 5rem 0.1rem white inset, -2.3rem -0.3rem 5rem 0.1rem white inset; 
-}
-
-.center-column {
-  margin-top: 10rem;
+  /* prefiltered huerotation 150dg, auto-lvel, inksketch outline 0 coloring 62*/
+  background-image: url(../img/geisha-sending.png);
+  filter: none;
+  box-shadow: 3rem 3rem 2rem 0.1rem white inset,
+    -3rem -2rem 2rem 0.1rem white inset;
+  grid-row: 3/4;
 }
 
 .how-it-works-description-header {
@@ -295,51 +282,37 @@
   color: #555;
   text-align: center;
   line-height: 1.6;
+  margin-top: 5rem;
   margin-bottom: 1.8rem;
+  grid-column: 2/3;
 }
 
-.how-it-works-column.center-column strong {
+.section-how-it-works strong {
   color: #9953a9;
 }
 
-.how-it-works-column.center-column a {
-  margin-top: 4rem;
-}
-
-.how-it-works-column.right-images {
-  align-items: start;
+.section-how-it-works a {
+  margin-top: 7.5rem;
 }
 
 .how-it-works-right-images {
   width: 60%;
-  height: 25rem;
+  height: 35rem;
   background-size: cover;
   background-position: center;
-  /* filter: brightness(250%) hue-rotate(-220deg); */
-}
-
-.vertical-whitespace-large {
-  height: 45rem;
-}
-
-.vertical-whitespace-small {
-  height: 13rem;
-}
-
-.how-it-works-right-images.images-1 {
-  background-image: url(../img/robot-reading-phone.PNG);
-  background-position: right;
-  box-shadow: 4rem 2rem 2rem 0.1rem white inset, -2rem -4rem 2rem 0.1rem white inset; 
+  grid-column: 3/-1;
 }
 
 .how-it-works-right-images.images-2 {
-  background-image: url(../img/robot-receiving.PNG);
-  box-shadow: 2rem 2rem 2rem 0.1rem white inset, -2rem -2rem 2rem 0.1rem white inset; 
+  background-image: url(../img/geisha-writing-mirrored.png);
+  box-shadow: 3rem 3rem 2rem 0.1rem white inset,
+    -3rem -2rem 2rem 0.1rem white inset;
 }
-
-.how-it-works-right-images.images-3 {
-  background-image: url(../img/robot-typing-computer.PNG);
-  box-shadow: 2rem 2rem 2rem 0.1rem white inset, -2rem -2rem 2rem 0.1rem white inset; 
+.how-it-works-right-images.images-4 {
+  background-image: url(../img/geisha-waiting-mirrored-filter.png);
+  box-shadow: 3rem 3rem 2rem 0.1rem white inset,
+    -3rem -2rem 2rem 0.1rem white inset;
+  grid-row: 2/3;
 }
 
 /***************************** */
@@ -447,20 +420,20 @@
 
 .call-us-text {
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   font-family: "Caveat";
   font-size: 4rem;
   font-weight: 600;
-  color:#333;
+  color: #333;
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  transform: translate(60%,-220%) rotate(-10deg);
+  transform: translate(60%, -220%) rotate(-10deg);
 }
 
-.call-us-number{
-  color:#333;
+.call-us-number {
+  color: #333;
   text-decoration: none;
 }
 
