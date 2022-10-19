@@ -21,7 +21,9 @@
 
   .section-event-categories .grid--3-cols {
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
   }
+
 }
 
 /**************************/
