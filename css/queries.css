@@ -262,11 +262,6 @@
 
   .cta-img-box {
     grid-row: 1/2;
-    background-image: linear-gradient(
-      to top,
-      rgba(247, 228, 252, 0.452),
-      rgba(238, 190, 250, 0.253)
-    );
     background-size: cover;
     background-position: bottom;
     height: 25rem;
