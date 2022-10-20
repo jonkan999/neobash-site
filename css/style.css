@@ -254,14 +254,14 @@
 }
 
 .how-it-works-left-images.images-1 {
-  background-image: url(../img/geisha-thinking.png);
+  background-image: url(../img/geisha-thinking.avif);
   box-shadow: 5rem 2rem 1.5rem 0.1rem white inset,
     -1rem -2rem 1rem 0.1rem white inset;
 }
 
 .how-it-works-left-images.images-3 {
   /* prefiltered huerotation 150dg, auto-lvel, inksketch outline 0 coloring 62*/
-  background-image: url(../img/geisha-sending.png);
+  background-image: url(../img/geisha-sending.avif);
   filter: none;
   box-shadow: 3rem 3rem 2rem 0.1rem white inset,
     -3rem -2rem 2rem 0.1rem white inset;
@@ -304,12 +304,12 @@
 }
 
 .how-it-works-right-images.images-2 {
-  background-image: url(../img/geisha-writing-mirrored.png);
+  background-image: url(../img/geisha-writing-mirrored.avif);
   box-shadow: 3rem 3rem 2rem 0.1rem white inset,
     -3rem -2rem 2rem 0.1rem white inset;
 }
 .how-it-works-right-images.images-4 {
-  background-image: url(../img/geisha-waiting-mirrored-filter.png);
+  background-image: url(../img/geisha-waiting-mirrored-filter.avif);
   box-shadow: 3rem 3rem 2rem 0.1rem white inset,
     -3rem -2rem 2rem 0.1rem white inset;
   grid-row: 2/3;
@@ -357,7 +357,7 @@
       rgba(247, 228, 252, 0.452),
       rgba(238, 190, 250, 0.253)
     ),
-    url(../img/contact-form-img-2.png);
+    url(../img/contact-form-img-2.avif);
 
   background-size: cover;
   background-position: bottom;
