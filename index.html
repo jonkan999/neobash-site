@@ -308,18 +308,14 @@
                 and guide you through the planning process.
               </p>
 
-              <form
-                name="cta-form"
-                method="POST"
-                class="cta-form"
-                data-netlify="true"
-              >
+              <form class="cta-form" name="contact-form" netlify>
                 <div>
                   <label for="full-name">Full name</label>
                   <input
                     id="full-name"
                     type="text"
                     placeholder="John Smith"
+                    name="full-name"
                     required
                   />
                 </div>
@@ -329,6 +325,7 @@
                     id="email"
                     type="email"
                     placeholder="me@example.com"
+                    name="email"
                     required
                   />
                 </div>
@@ -337,6 +334,7 @@
                   <textarea
                     id="inquiry"
                     type="inquiry"
+                    name="inquiry"
                     placeholder="I just want to hear more about your awesome services!"
                   ></textarea>
                   <span class="call-us-text"
