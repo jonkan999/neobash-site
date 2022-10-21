@@ -75,7 +75,11 @@ body {
 }
 
 .margin-top-huge {
-  margin-top: 40rem;
+  margin-top: 40rem !important;
+}
+
+.margin-top-large {
+  margin-top: 24rem !important;
 }
 
 .margin-bottom-md {
