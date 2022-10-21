@@ -505,7 +505,7 @@
     margin: 0 auto 4rem auto;
     text-align: center;
     width: 35rem;
-    margin-bottom: 10rem;
+    margin-bottom: 18rem;
   }
 
   .submission-success-description {
@@ -532,7 +532,8 @@
 
   .geisha-gif-overlay-text {
     font-size: 1.6rem;
-    left: 0;
+    top: 60%;
+    left: 5%;
     text-shadow: 0 0 0.8rem #eebefa;
   }
 
