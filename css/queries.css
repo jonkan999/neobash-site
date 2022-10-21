@@ -226,6 +226,33 @@
   .copyright {
     margin: 0 auto 2rem auto;
   }
+
+  /* Submission success */
+  .section-submission-success .grid--2-cols {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    row-gap: 4rem;
+  }
+
+  .submission-success-text-box {
+    margin: 0 auto 9.6rem auto;
+    text-align: center;
+  }
+
+  .btn--post-submission:link,
+  .btn--post-submission:active {
+    margin: 0 auto;
+  }
+
+  .submission-success-image-box {
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .geisha-gif-overlay-text {
+    font-size: 2.4rem;
+  }
 }
 
 /**************************/
@@ -288,6 +315,36 @@
   .call-us-text {
     font-size: 2.5rem;
     transform: translate(30%, -460%) rotate(-10deg);
+  }
+
+  .section-submission-success .grid--2-cols {
+    row-gap: 0rem;
+  }
+
+  .submission-success-image-box {
+    height: 35rem;
+    padding: 0;
+  }
+
+  .margin-top-large {
+    margin-top: 15rem !important;
+  }
+
+  .geisha-gif {
+    height: 80%;
+    filter: hue-rotate(60deg) invert(0.2);
+    border-left: solid 3rem #000;
+    border-radius: 0.5rem;
+  }
+
+  .geisha-gif-video {
+    height: 100%;
+  }
+
+  .geisha-gif-overlay-text {
+    font-size: 2rem;
+    left: 3%;
+    text-shadow: 0 0 0.8rem #eebefa;
   }
 }
 
@@ -442,5 +499,45 @@
   .call-us-text {
     font-size: 2.5rem;
     transform: translate(30%, -460%) rotate(-10deg);
+  }
+
+  .submission-success-text-box {
+    margin: 0 auto 4rem auto;
+    text-align: center;
+    width: 35rem;
+    margin-bottom: 10rem;
+  }
+
+  .submission-success-description {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+  }
+
+  .submission-success-image-box {
+    height: 25rem;
+    padding: 0;
+  }
+
+  .geisha-gif {
+    height: 80%;
+    filter: hue-rotate(60deg) invert(0.2);
+    border-left: solid 3rem #000;
+    border-radius: 0.5rem;
+  }
+
+  .geisha-gif-video {
+    height: 100%;
+  }
+
+  .geisha-gif-overlay-text {
+    font-size: 1.6rem;
+    left: 0;
+    text-shadow: 0 0 0.8rem #eebefa;
+  }
+
+  .section-footer {
+    padding: 10rem 0;
+    border-top: 1px solid #eee;
   }
 }
