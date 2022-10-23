@@ -489,6 +489,10 @@
     row-gap: 2rem;
   }
 
+  .section-blog .heading-secondary {
+    font-size: 2.6rem;
+  }
+
   .blog-article {
     padding: 2rem 1.5rem;
     margin-bottom: 2rem;
