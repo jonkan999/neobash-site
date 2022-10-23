@@ -484,8 +484,51 @@
     margin-top: 4rem;
   }
 
+  .section-blog .grid--2-cols {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .blog-article {
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .blog-article-body {
+    height: 15rem;
+  }
+
+  .blog-article-header {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    /* padding: 0 1.6rem; */
+    line-height: 1.4;
+  }
+
+  .read-more-button {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 50%;
+  }
+
+  .read-more-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+
   .cta-text-box {
     padding: 5rem 2rem 2rem 3rem;
+  }
+
+  .blog-article-media-box {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  .blog-article-gif {
   }
 
   .cta .heading-secondary {

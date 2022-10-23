@@ -316,6 +316,118 @@
 }
 
 /***************************** */
+/* Blog SECTION */
+/***************************** */
+
+.section-blog {
+  padding: 9.6rem 0;
+}
+
+.section-blog .heading-secondary {
+  padding: 0 2rem;
+}
+
+.section-blog .grid--2-cols {
+  grid-template-columns: 2fr 1fr;
+  row-gap: 0;
+}
+
+.blog-article {
+  position: relative;
+  padding: 4rem 2rem;
+  box-shadow: 0 0.1rem 3rem 0 rgba(153, 83, 169, 0.301);
+  border-radius: 5px;
+  margin-bottom: 4.8rem;
+}
+
+.blog-article strong {
+  color: #9953a9;
+}
+
+.blog-article-body {
+  height: 30rem;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.blog-article-header {
+  color: #333;
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  /* padding: 0 1.6rem; */
+  line-height: 1.4;
+}
+
+.blog-article-paragraph {
+  font-size: 1.6rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.read-more-button {
+  position: absolute;
+  top: 32rem;
+  left: 33%;
+  transform: translateX(-50%);
+  width: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.read-more-button:hover,
+.read-more-button:active {
+  color: #9953a9;
+  cursor: pointer;
+}
+
+.read-more-icon {
+  height: 3rem;
+  width: 3rem;
+  color: #555;
+}
+
+.blog-article-media-box {
+  height: 30rem;
+  width: 23rem;
+  /* padding: 3rem 0; */
+  filter: hue-rotate(-60deg) invert(0.1);
+  grid-column: 2/3;
+  grid-row: 1/3;
+  justify-self: start;
+}
+
+.blog-article-gif {
+  height: 30rem;
+  width: 23rem;
+
+  position: relative; /* or absolute or fixed */
+  overflow: hidden;
+}
+.blog-article-video {
+  height: 110%;
+  width: 110%;
+  position: absolute;
+  left: 50%; /* % of surrounding element */
+  top: 50%;
+  transform: translate(-50%, -50%); /* % of current element */
+}
+.blog-article-video-src {
+}
+.cat-gif-overlay-text {
+  position: absolute;
+  color: #fdf7fe;
+  font-size: 3rem;
+  top: 85%;
+  left: 3%;
+  text-shadow: 0 0 1rem #eebefa;
+  /* transform: translate(80%, 80%); */
+  /* z-index: 1; */
+}
+
+/***************************** */
 /* CTA SECTION */
 /***************************** */
 
@@ -570,13 +682,6 @@
   height: 100%;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-}
-
-.geisha-gif-video-src {
-}
-
-.icon-logo-text.icon {
-  display: none;
 }
 
 .geisha-gif-overlay-text {
