@@ -446,6 +446,35 @@
   /* z-index: 1; */
 }
 
+.to-blog-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.to-blog-link:link,
+.to-blog-link:visited {
+  font-size: 1.6rem;
+  color: #555;
+  text-decoration: none;
+}
+
+.to-blog-link:active,
+.to-blog-link:hover {
+  color: #9953a9;
+}
+
+.to-blog-link:active path,
+.to-blog-link:hover path {
+  stroke: #9953a9;
+}
+
+.to-blog-arrow {
+  position: absolute;
+  width: 14rem;
+  top: -50%;
+  transform: translate(-30%, 0);
+}
+
 /***************************** */
 /* CTA SECTION */
 /***************************** */
