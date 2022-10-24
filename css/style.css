@@ -414,6 +414,10 @@
   justify-self: start;
 }
 
+.blog-article:last-of-type .blog-article-media-box {
+  filter: hue-rotate(50deg) invert(0.1);
+}
+
 .blog-article-gif {
   height: 30rem;
   width: 23rem;
