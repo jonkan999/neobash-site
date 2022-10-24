@@ -26,13 +26,11 @@ for (let i = 0; i < btnReadMoreEl.length; i++) {
 
     if (btnReadMoreEl[i].classList[1] != "read-more-button--expanded") {
       //When whrunk back we scroll back to the top of the article
-      console.log("test");
       position =
         articleBodyEl.parentElement.parentElement.getBoundingClientRect();
       const header_position = document
         .querySelector(".header")
         .getBoundingClientRect();
-      console.log(header_position.height * 2);
 
       window.scrollTo({
         top: position.top + window.scrollY - header_position.height * 1.2,
@@ -63,6 +61,11 @@ allLinks.forEach(function (link) {
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Scroll to other links
+    if (href !== "#" && !href.startsWith("#")) {
+      window.location.href = href;
     }
 
     // Close mobile naviagtion
