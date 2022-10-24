@@ -25,11 +25,17 @@ for (let i = 0; i < btnReadMoreEl.length; i++) {
     btnReadMoreEl[i].classList.toggle("read-more-button--expanded");
 
     if (btnReadMoreEl[i].classList[1] != "read-more-button--expanded") {
+      //When whrunk back we scroll back to the top of the article
       console.log("test");
-      position = articleBodyEl.getBoundingClientRect();
-      console.log(position);
+      position =
+        articleBodyEl.parentElement.parentElement.getBoundingClientRect();
+      const header_position = document
+        .querySelector(".header")
+        .getBoundingClientRect();
+      console.log(header_position.height * 2);
+
       window.scrollTo({
-        top: position.top + window.scrollY - 160,
+        top: position.top + window.scrollY - header_position.height * 1.2,
         behavior: "smooth",
       });
     }

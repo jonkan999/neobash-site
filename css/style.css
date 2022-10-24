@@ -351,7 +351,7 @@
   mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 
-.blog-article-body--expanded {
+.blog-article-body.blog-article-body--expanded {
   height: auto;
   -webkit-mask-image: none;
   mask-image: none;
