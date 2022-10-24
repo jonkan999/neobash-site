@@ -11,6 +11,32 @@ const currentYear = new Date().getFullYear();
 /* yearEl.textContent = currentYear; */
 
 ///////////////////////////////////////////////////////////
+// Open blog articles
+
+const btnReadMoreEl = document.querySelectorAll(".read-more-button");
+
+for (let i = 0; i < btnReadMoreEl.length; i++) {
+  //Loops through blog articles expansion buttons and adds eventlistener for click
+  const articleBodyEl = btnReadMoreEl[i].previousElementSibling;
+
+  btnReadMoreEl[i].addEventListener("click", function () {
+    //On click, add axpanded class to article body in the previous element sibling to the button being clicked
+    articleBodyEl.classList.toggle("blog-article-body--expanded");
+    btnReadMoreEl[i].classList.toggle("read-more-button--expanded");
+
+    if (btnReadMoreEl[i].classList[1] != "read-more-button--expanded") {
+      console.log("test");
+      position = articleBodyEl.getBoundingClientRect();
+      console.log(position);
+      window.scrollTo({
+        top: position.top + window.scrollY - 160,
+        behavior: "smooth",
+      });
+    }
+  });
+}
+
+///////////////////////////////////////////////////////////
 // Smooth scrolling animation
 
 const allLinks = document.querySelectorAll("a:link");

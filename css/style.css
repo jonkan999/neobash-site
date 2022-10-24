@@ -351,6 +351,12 @@
   mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 
+.blog-article-body--expanded {
+  height: auto;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
 .blog-article-header {
   color: #333;
   font-weight: 500;
@@ -369,12 +375,21 @@
 
 .read-more-button {
   position: absolute;
-  top: 32rem;
+  top: 80%;
   left: 33%;
   transform: translateX(-50%);
   width: 50%;
   border: none;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.read-more-button--expanded {
+  top: 90%;
+  left: 50%;
+}
+
+.read-more-button--expanded .read-more-icon {
+  transform: rotate(180deg);
 }
 
 .read-more-button:hover,
