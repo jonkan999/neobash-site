@@ -958,10 +958,11 @@
   padding: 4.8rem 9.6rem;
 }
 
-.vendor-grid {
+.product-grid {
   position: relative;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
 }
 
 .blur-filter {
