@@ -1,4 +1,4 @@
-http://www.neobash.se/index.html
-http://www.neobash.se/category-page.html
-http://www.neobash.se/blog.html
-http://www.neobash.se/submission-success.html
+https://www.neobash.se/index.html
+https://www.neobash.se/category-page.html
+https://www.neobash.se/blog.html
+https://www.neobash.se/submission-success.html
