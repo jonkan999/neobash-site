@@ -944,7 +944,7 @@
 
 .full-page-shadow {
   display: none;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: 1;
@@ -963,10 +963,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
-}
-
-.blur-filter {
-  filter: grayscale(70%) blur(0.05rem);
+  row-gap: 4.8rem;
 }
 
 .product-card {
