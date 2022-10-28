@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- created with sitemap-gen https://sitemap-gen.com/ -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://neobash.se/</loc>
+		<lastmod>2022-10-28T14:24:06.5074767+02:00</lastmod>
+	</url>
+	<url>
+		<loc>https://neobash.se/category-page.html</loc>
+		<lastmod>2022-10-28T14:24:06.5074767+02:00</lastmod>
+	</url>
+	<url>
+		<loc>https://neobash.se/blog.html</loc>
+		<lastmod>2022-10-28T14:24:06.5074767+02:00</lastmod>
+	</url>
+	<url>
+		<loc>https://neobash.se/index.html</loc>
+		<lastmod>2022-10-28T14:24:06.5074767+02:00</lastmod>
+	</url>
+	<url>
+		<loc>https://neobash.se/venues.html</loc>
+		<lastmod>2022-10-28T14:24:06.5074767+02:00</lastmod>
+	</url>
+	<url>
+		<loc>https://neobash.se/bash-basket</loc>
+		<lastmod>2022-10-28T14:24:06.5074767+02:00</lastmod>
+	</url>
+</urlset>
