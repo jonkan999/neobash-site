@@ -666,4 +666,7 @@
   .product-card-large {
     width: 90vw;
   }
+  .add-button {
+    border-radius: 1rem;
+  }
 }
