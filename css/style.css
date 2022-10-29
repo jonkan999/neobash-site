@@ -150,6 +150,17 @@
   transform: translate(23%, 18%);
 }
 
+/* .brand-name {
+  position: absolute;
+  font-size: 12rem;
+  font-family: "Poppins";
+  color: #000;
+  font-weight: 800;
+  letter-spacing: 0.8rem;
+  line-height: 1.;
+  transform: translate(23%, 28%);
+} */
+
 .brand-background {
   width: 45rem;
 }
@@ -182,13 +193,13 @@
 
 .category-card img {
   object-fit: cover;
-  filter: brightness(90%);
+  filter: sepia(0.3) saturate(0.5) brightness(1.1);
   width: 35rem;
   height: 55rem;
   box-shadow: 0 0.1rem 3rem 0 rgba(0, 0, 0, 0.3);
 }
 .category-card--darker img {
-  filter: brightness(70%) grayscale(30%);
+  /*  filter: hue-rotate(150deg); */
 }
 
 .category-card-text {
