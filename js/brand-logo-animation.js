@@ -231,7 +231,7 @@ function spline(points = [], tension = 1, close = false, cb) {
   return path;
 }
 
-function createPoints(offset) {
+function createPoints(offsetX, offsetY) {
   const points = [];
   // how many points do we need
   const numPoints = 15;
@@ -245,8 +245,8 @@ function createPoints(offset) {
     const theta = i * angleStep;
 
     /* const randOffset = Math.random(); */
-    const x = 100 + Math.cos(theta) * rad /* + 20 * randOffset */ - offset;
-    const y = 100 + Math.sin(theta) * rad /* - 20 * randOffset */ + offset;
+    const x = 100 + Math.cos(theta) * rad /* + 20 * randOffset */ - offsetX;
+    const y = 100 + Math.sin(theta) * rad /* - 20 * randOffset */ + offsetY;
 
     // store the point
     points.push({
@@ -283,13 +283,15 @@ const path1 = document.querySelector(".path1");
 const path2 = document.querySelector(".path2");
 const path3 = document.querySelector(".path3");
 const path4 = document.querySelector(".path4");
+const path5 = document.querySelector(".path5");
 // used to set our custom property values
 const root = document.documentElement;
 
-const points1 = createPoints(-7);
-const points2 = createPoints(0);
-const points3 = createPoints(7);
-const points4 = createPoints(2);
+const points1 = createPoints(-7, -5);
+const points2 = createPoints(-4, 0);
+const points3 = createPoints(2, 4);
+const points4 = createPoints(3, 5);
+const points5 = createPoints(7, 7);
 
 const simplex = new SimplexNoise();
 
@@ -310,6 +312,7 @@ let timeStep = 1;
   path2.setAttribute("d", spline(points2, 0.2, true));
   path3.setAttribute("d", spline(points3, 0.2, true));
   path4.setAttribute("d", spline(points4, 0.4, true));
+  path5.setAttribute("d", spline(points5, 0.4, true));
 
   requestAnimationFrame(animate);
   // for every point...
@@ -318,6 +321,7 @@ let timeStep = 1;
     const point2 = points2[i];
     const point3 = points3[i];
     const point4 = points4[i];
+    const point5 = points5[i];
 
     // return a pseudo random value between -1 / 1 based on this point's current x, y positions in "time"
     const nX1 = noise(point1.noiseOffsetX, point1.noiseOffsetX);
@@ -336,6 +340,9 @@ let timeStep = 1;
     const x4 = map(nX1, -1, 1, point4.originX - 20, point4.originX + 20);
     const y4 = map(nY1, -1, 1, point4.originY - 20, point4.originY + 20);
 
+    const x5 = map(nX1, -1, 1, point5.originX - 20, point5.originX + 20);
+    const y5 = map(nY1, -1, 1, point5.originY - 20, point5.originY + 20);
+
     // update the point's current coordinates
     point1.x = x1;
     point1.y = y1;
@@ -349,6 +356,9 @@ let timeStep = 1;
     point4.x = x4;
     point4.y = y4;
 
+    point5.x = x5;
+    point5.y = y5;
+
     // progress the point's x, y values through "time"
     point1.noiseOffsetX += noiseStep;
     point1.noiseOffsetY += noiseStep;
@@ -361,6 +371,9 @@ let timeStep = 1;
 
     point4.noiseOffsetX += noiseStep;
     point4.noiseOffsetY += noiseStep;
+
+    point5.noiseOffsetX += noiseStep;
+    point5.noiseOffsetY += noiseStep;
   }
 
   /* Stop for 0.2 seconds every 100 steps */
