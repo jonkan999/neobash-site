@@ -314,6 +314,11 @@
     column-gap: 0;
   }
 
+  .to-blog-arrow {
+    top: 60%;
+    transform: translate(-50%, 0);
+  }
+
   .cta {
     grid-template-columns: 1fr;
     background-image: linear-gradient(to top, rgba(247, 228, 252, 1), #e4cde3);
@@ -339,7 +344,7 @@
   }
 
   .cta-text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.5;
     margin-bottom: 3.6rem;
   }
@@ -444,7 +449,7 @@
   }
 
   .category-card-text {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
   }
 
