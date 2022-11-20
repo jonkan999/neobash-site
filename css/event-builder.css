@@ -405,3 +405,9 @@
 .budget-video {
   filter: sepia(0.3) saturate(0.5) brightness(1) hue-rotate(-80deg);
 }
+
+.next-question-budget {
+  position: absolute;
+  top: 90%;
+  left: 80%;
+}

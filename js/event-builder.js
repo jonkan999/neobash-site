@@ -44,7 +44,11 @@ document.addEventListener("click", async function (event) {
         questionContainer.parentNode.removeChild(questionContainer);
         document.querySelector(".section-hero").parentElement.innerHTML +=
           nextQuestionHTML;
-        window.scrollTo(0, 0);
+        window.scroll({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
         break;
       case "guests-question":
         src = "event-builder/type-of-event-question.html";
@@ -53,7 +57,11 @@ document.addEventListener("click", async function (event) {
         questionContainer.parentNode.removeChild(questionContainer);
         document.querySelector(".section-hero").parentElement.innerHTML +=
           nextQuestionHTML;
-        window.scrollTo(0, 0);
+        window.scroll({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
         break;
       case "type-of-event-question":
         src = "event-builder/inspiration-question.html";
@@ -62,7 +70,11 @@ document.addEventListener("click", async function (event) {
         questionContainer.parentNode.removeChild(questionContainer);
         document.querySelector(".section-hero").parentElement.innerHTML +=
           nextQuestionHTML;
-        window.scrollTo(0, 0);
+        window.scroll({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
         break;
       case "inspiration-question":
         src = "event-builder/budget-question.html";
@@ -71,7 +83,11 @@ document.addEventListener("click", async function (event) {
         questionContainer.parentNode.removeChild(questionContainer);
         document.querySelector(".section-hero").parentElement.innerHTML +=
           nextQuestionHTML;
-        window.scrollTo(0, 0);
+        window.scroll({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
 
         /* slowdown playtime of budget video */
         document.querySelector(".budget-video").playbackRate = 0.7;
