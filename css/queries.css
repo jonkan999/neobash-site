@@ -776,7 +776,10 @@
     margin-bottom: 1.5rem;
   }
   .question-type-of-event-container .text-box {
-    padding: 4rem 4rem 0rem 4rem;
+    padding: 2rem 4rem 0rem 4rem;
+  }
+  .question-type-of-event-container .question-header {
+    margin-bottom: 1.2rem;
   }
   .type-of-event-boxes {
     flex-wrap: wrap;
@@ -800,5 +803,9 @@
   }
   .inspiration-image-box {
     height: 15rem;
+  }
+
+  .next-question {
+    top: 85%;
   }
 }
