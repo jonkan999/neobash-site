@@ -102,6 +102,18 @@ body {
   padding: 0 3.2rem;
 }
 
+.full-page-shadow {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.active-shadow {
+  display: block;
+}
+
 .grid {
   display: grid;
   column-gap: 6.4rem;
@@ -190,10 +202,19 @@ body {
 
 .btn--cta:link,
 .btn--cta:visited {
-  background-color: #eebefa;
+  /* background-color: #eebefa; */
 }
 
 .btn--cta:active {
+  /* background-color: #d6abe1; */
+}
+
+.event-builder:link,
+.event-builder:visited {
+  background-color: #eebefa;
+}
+
+.event-builder:active {
   background-color: #d6abe1;
 }
 
@@ -216,4 +237,48 @@ body {
 
 .btn--form:active {
   background-color: #d6abe1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 16rem;
+  box-shadow: 0px 0.8rem 1.6rem 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.dropdown-content span {
+  color: black;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content span:hover {
+  background-color: rgba(221, 221, 221, 0.863);
+  cursor: pointer;
+}
+
+/* Show the dropdown menu on hover */
+.active {
+  display: block;
+}
+
+.is-hidden {
+  display: none;
+}
+
+strong {
+  color: #9953a9;
 }

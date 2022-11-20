@@ -83,7 +83,11 @@ const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
 
-    if (ent.isIntersecting === false) {
+    if (
+      ent.isIntersecting === false &&
+      document.querySelector(".full-page-shadow").classList[1] !=
+        "active-shadow"
+    ) {
       document.body.classList.add("sticky");
     }
 

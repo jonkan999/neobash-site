@@ -44,6 +44,11 @@
     /* 9px / 16px  */
     font-size: 56.25%;
   }
+
+  .questionnaire-container {
+    left: 5%;
+    width: 90vw;
+  }
 }
 
 /**************************/
@@ -285,6 +290,56 @@
   .section-product-grid {
     padding: 2.6rem 2.6rem;
   }
+
+  .questionnaire-container {
+    top: 5%;
+    height: 90vh;
+  }
+
+  .text-box {
+    padding: 10rem 4rem 4rem 4rem;
+  }
+
+  .question-header {
+    margin-bottom: 4rem;
+  }
+
+  .question-question {
+    margin-bottom: 2rem;
+  }
+
+  .type-of-event-boxes {
+    margin: 0 2rem 2rem 2rem;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .type-of-event-box {
+    position: relative;
+    width: 18rem;
+    height: 25rem;
+    border: 0.1rem solid #555;
+    border-radius: 0.5rem;
+    background-color: #fef9fe;
+    overflow: hidden;
+  }
+
+  .type-of-event-image-box {
+    height: 70%;
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .type-of-event-description {
+    gap: 1rem;
+    margin: 0 5%;
+  }
+
+  .active-ribbon {
+    top: 6%;
+    left: 55%;
+    height: 6%;
+  }
 }
 
 /**************************/
@@ -395,6 +450,39 @@
 
   .product-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .date-video {
+    object-position: 20% 0%;
+  }
+  .question-guests-container {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .question-guests-image {
+    height: 60%;
+    width: 100%;
+    object-position: center top;
+  }
+
+  .question-guests-container .text-box {
+    padding: 4rem 4rem 4rem 4rem;
+  }
+  .next-question-guests {
+    position: absolute;
+    top: 90%;
+    left: 80%;
+  }
+
+  .inspiration-image-boxes {
+    margin: 4rem 0rem 4rem 0rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .budget-video {
+    object-position: 50% 70%;
   }
 }
 
@@ -673,5 +761,37 @@
   }
   .add-button {
     border-radius: 1rem;
+  }
+  .date-video {
+    object-position: 35% 0%;
+  }
+  .question-header {
+    margin-bottom: 3rem;
+  }
+  .question-question {
+    margin-bottom: 1.5rem;
+  }
+  .question-type-of-event-container .text-box {
+    padding: 6rem 4rem 4rem 4rem;
+  }
+  .type-of-event-boxes {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .break {
+    display: block;
+    flex-basis: 100%;
+    height: 0;
+  }
+  .inspiration-image-boxes {
+    flex-wrap: wrap;
+    margin: auto auto;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .inspiration-image-box {
+    height: 18rem;
   }
 }

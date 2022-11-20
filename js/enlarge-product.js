@@ -5,13 +5,10 @@
   "product-cards/venue-skyddsrummet-clicked.html"
 ); */
 
-const enlargeEl = document.querySelector(".section-product-grid");
-
 document.addEventListener("click", async function (event) {
   const clickedElement = event.target.closest(".product-card");
   const shadowEl = document.querySelector(".full-page-shadow");
 
-  console.log(clickedElement);
   if (event.target.classList[0] === "vendor-link") {
     return;
   }

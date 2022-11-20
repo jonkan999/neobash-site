@@ -95,7 +95,7 @@
   padding-top: 0;
   padding-bottom: 0;
   background-color: rgba(255, 255, 255, 0.97);
-  z-index: 999;
+  z-index: 1;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
@@ -615,6 +615,23 @@
   box-shadow: 0 0 0 0.8rem #c2aec8;
 }
 
+/* bonus dog */
+.cute-dog-container {
+  margin-bottom: 9rem;
+}
+.cute-dog {
+  display: flex;
+  height: 80rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  object-position: 50% 50%;
+}
+.tous-test {
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  filter: sepia(0.3) saturate(0.5);
+}
+
 /***************************** */
 /* FOOTER SECTION */
 /***************************** */
@@ -801,46 +818,6 @@
   margin-bottom: -0.4rem;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 16rem;
-  box-shadow: 0px 0.8rem 1.6rem 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 1rem;
-  overflow: hidden;
-}
-
-.dropdown-content span {
-  color: black;
-  padding: 1.2rem 1.6rem;
-  text-decoration: none;
-  font-size: 1.5rem;
-  display: block;
-  border-bottom: 1px solid #eee;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content span:hover {
-  background-color: rgba(221, 221, 221, 0.863);
-  cursor: pointer;
-}
-
-/* Show the dropdown menu on hover */
-.active {
-  display: block;
-}
-
-.is-hidden {
-  display: none;
-}
-
 .where-button {
 }
 .when-button {
@@ -952,18 +929,6 @@
 /***************************** */
 /* CATEGORY PAGES PRODUCT GRID SECTION */
 /***************************** */
-
-.full-page-shadow {
-  display: none;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.active-shadow {
-  display: block;
-}
 
 .section-product-grid {
   padding: 4.8rem 9.6rem;

@@ -15,6 +15,9 @@
 
       gtag("config", "G-3K0BFNG8B7");
     </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,9 +55,12 @@
     <script defer src="js/mobile-nav.js"></script>
     <script defer src="js/script.js"></script>
     <script type="module" defer src="js/brand-logo-animation.js"></script>
+    <script defer src="js/event-builder.js"></script>
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/event-builder.css" />
+
     <link rel="stylesheet" href="css/queries.css" />
 
     <title>
@@ -71,7 +77,9 @@
       content="Organizing event in Stockholm, Bröllop på budget, Billig bröllopsdekor tips, Party planning in Stockholm"
     />
   </head>
+
   <body>
+    <div class="full-page-shadow"></div>
     <header class="header">
       <a href="#" class="header-logo" aria-label="Neobash brand logo">
         <img class="logo" src="img/logo.png" alt="Neobash logo" />
@@ -105,8 +113,8 @@
               we make it happen.
             </h1>
             <div class="hero-buttons">
-              <a href="#" class="btn">demo</a>
               <a href="#cta" class="btn btn--cta">contact us</a>
+              <a href="#" class="btn event-builder">event builder</a>
             </div>
           </div>
           <div class="hero-brand-box">
@@ -485,14 +493,20 @@
         </div>
       </section>
     </main>
-    <video
-      class="tous-test"
-      src="videos/test-edited.mp4"
-      loop
-      autoplay
-      muted
-      playsinline
-    ></video>
+    <div class="container cute-dog-container">
+      <h2 class="heading-secondary heading--centered">Just our cute dog</h2>
+
+      <div class="cute-dog">
+        <video
+          class="tous-test"
+          src="videos/test-edited.mp4"
+          loop
+          autoplay
+          muted
+          playsinline
+        ></video>
+      </div>
+    </div>
 
     <footer class="section-footer">
       <div class="container grid grid--footer">

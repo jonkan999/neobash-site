@@ -1,0 +1,402 @@
+/*GENERAL QUESTIONNAIRE CLASSES*/
+
+.questionnaire-container {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  width: 60vw;
+  height: 71vh;
+  background-color: #fdf7fe;
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 20%);
+  z-index: 1;
+}
+
+.text-box {
+  position: relative;
+  padding: 5rem 10rem;
+}
+
+.questionnaire-dropdown-butttons {
+  margin: 0 0 3rem 0;
+}
+
+.questionnaire-dropdown-butttons select {
+  font-size: 1.6rem;
+  font-weight: 500;
+  /* appearance: none; */
+
+  border: none;
+  background-color: transparent;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  margin: 0 1rem;
+}
+
+.questionnaire-dropdown-butttons select:active,
+.questionnaire-dropdown-butttons select:hover {
+  border-bottom: solid 0.2rem #302632;
+  margin-bottom: -0.2rem;
+  cursor: pointer;
+}
+
+.questionnaire-dropdown-butttons select {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.questionnaire-dropdown-butttons *:focus {
+  outline: none;
+  /*   outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem #c2aec8;
+}
+
+.question-video-box {
+}
+
+.question-video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.close-btn {
+  position: absolute;
+  font-size: 3rem;
+  top: 0;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  color: #302632;
+  background-color: rgba(48, 38, 50, 0.2);
+  border-radius: 100rem;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.close-btn:hover,
+.close-btn:active {
+  color: #fcf2fe;
+  background-color: rgba(48, 38, 50, 0.7);
+  cursor: pointer;
+}
+
+.next-question {
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  border: none;
+  background-color: transparent;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  margin: 0 1rem;
+}
+
+.next-question:active,
+.next-question:hover {
+  border-bottom: solid 0.2rem #302632;
+  margin-bottom: -0.2rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.question-icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  transform: translate(0, 12%);
+}
+
+.image-filter {
+  filter: sepia(0.3) saturate(0.5) brightness(1.1);
+}
+
+/*DATE QUESTION CLASSES*/
+
+.question-date-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+}
+
+.text-box-date {
+  color: #302632;
+}
+
+.date-video {
+  filter: invert(0.1) hue-rotate(45deg);
+}
+
+.next-question-date {
+  position: absolute;
+  top: 90%;
+  left: 80%;
+}
+
+/*GUESTS QUESTION CLASSES*/
+
+.question-guests-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.slide-up {
+  animation-duration: 1s;
+  animation-name: slideup;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 20%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+.question-header {
+  margin-bottom: 5rem;
+  line-height: 1.2;
+}
+
+.question-question {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.image-box {
+  height: 100%;
+  width: 50%;
+}
+.question-guests-image {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+}
+
+.fade-in {
+  animation: fadeIn ease 1.5s;
+  -webkit-animation: fadeIn ease 1.5s;
+  -moz-animation: fadeIn ease 1.5s;
+  -o-animation: fadeIn ease 1.5s;
+  -ms-animation: fadeIn ease 1.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.next-question-guests {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+}
+
+/*TYPE OF EVENT QUESTION CLASSES*/
+
+.type-of-event-boxes {
+  margin: 0 5rem 5rem 5rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.type-of-event-box {
+  position: relative;
+  width: 23rem;
+  height: 30rem;
+  border: 0.1rem solid #555;
+  border-radius: 0.5rem;
+  background-color: #fef9fe;
+  overflow: hidden;
+}
+
+.break {
+  display: none;
+}
+
+.type-of-event-box:hover {
+  background-color: #e4dee5;
+  cursor: pointer;
+}
+
+.type-of-event-box:active .type-of-event-checkbox {
+  transition: 0.2s;
+  background-color: #47394b;
+  color: #fef9fe;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.type-of-event-box.active {
+}
+
+.type-of-event-image-box {
+  height: 70%;
+  width: 80%;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.type-of-event-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.summer-kickoff-event img {
+  object-position: left bottom;
+}
+
+.birthday-event img {
+  object-position: bottom center;
+  filter: brightness(0.9) hue-rotate(80deg) sepia(0.35);
+  transform: rotateY(180deg);
+  width: 115%;
+}
+
+.type-of-event-description {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 10%;
+}
+
+.type-of-event-checkbox {
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid #333;
+  border-radius: 0.3rem;
+  color: #302632;
+  background-color: #fef9fe;
+}
+
+.type-of-event-box.active .type-of-event-checkbox {
+  color: #fef9fe;
+  background-color: #302632;
+}
+
+.type-of-event-description-text {
+  font-size: 1.6rem;
+  color: #302632;
+  line-height: 1.2;
+}
+
+.active-ribbon {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  height: 8%;
+  width: 100%;
+  background-color: #47394b;
+  transform: rotate(30deg);
+}
+
+.type-of-event-box.active .active-ribbon {
+  display: block;
+  animation: blinkIn ease 1s;
+  -webkit-animation: blinkIn ease 1s;
+  -moz-animation: blinkIn ease 1s;
+  -o-animation: blinkIn ease 1s;
+  -ms-animation: blinkIn ease 1s;
+}
+
+@keyframes blinkIn {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.next-question-type-of-event {
+  position: absolute;
+  top: 90%;
+  left: 80%;
+}
+
+/*INSPIRATION QUESTION CLASSES*/
+
+.inspiration-image-boxes {
+  margin: 4rem 5rem 5rem 5rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.inspiration-image-box {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+}
+
+.inspiration-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+
+.inspiration-image:hover {
+  transform: scale(1.06);
+}
+
+.blink-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.inspiration-image-box.active .blink-box {
+  display: block;
+  box-shadow: 0 0 1rem 0.8rem #c2aec8;
+  animation: blinkIn ease 1.2s;
+  -webkit-animation: blinkIn ease 1.2s;
+  -moz-animation: blinkIn ease 1.2s;
+  -o-animation: blinkIn ease 1.2s;
+  -ms-animation: blinkIn ease 1.2s;
+  z-index: -1;
+}
+
+/* BUDGET QUESTION */
+
+.budget-video {
+  filter: sepia(0.3) saturate(0.5) brightness(1) hue-rotate(-80deg);
+}
