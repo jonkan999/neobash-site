@@ -776,18 +776,21 @@
     margin-bottom: 1.5rem;
   }
   .question-type-of-event-container .text-box {
-    padding: 6rem 4rem 4rem 4rem;
+    padding: 4rem 4rem 0rem 4rem;
   }
   .type-of-event-boxes {
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
   }
   .break {
     display: block;
     flex-basis: 100%;
     height: 0;
+  }
+  .question-inspiration-container .text-box {
+    padding: 4rem 4rem 0rem 4rem;
   }
   .inspiration-image-boxes {
     flex-wrap: wrap;
@@ -796,6 +799,6 @@
     gap: 2rem;
   }
   .inspiration-image-box {
-    height: 18rem;
+    height: 15rem;
   }
 }

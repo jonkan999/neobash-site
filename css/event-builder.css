@@ -51,6 +51,10 @@
   box-shadow: 0 0 0 0.8rem #c2aec8;
 }
 
+.questionnaire-dropdown {
+  color: #302632;
+}
+
 .question-video-box {
 }
 
@@ -85,6 +89,7 @@
 .next-question {
   font-size: 1.6rem;
   font-weight: 500;
+  color: #302632;
 
   border: none;
   background-color: transparent;
