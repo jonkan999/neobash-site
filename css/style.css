@@ -621,7 +621,7 @@
 }
 .cute-dog {
   display: flex;
-  height: 80rem;
+  height: 70rem;
   border-radius: 0.5rem;
   overflow: hidden;
   object-position: 50% 50%;
