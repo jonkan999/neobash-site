@@ -804,8 +804,10 @@
   .inspiration-image-box {
     height: 15rem;
   }
-
   .next-question {
     top: 85%;
+  }
+  .next-question {
+    top: 70%;
   }
 }
