@@ -1,0 +1,74 @@
+.header-box {
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 7%,
+    black 93%,
+    transparent 100%
+  );
+}
+
+.scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  -moz-animation: scroller 15s linear infinite;
+  -webkit-animation: scroller 15s linear infinite;
+  animation: scroller 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes scroller {
+  from {
+    -moz-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-110%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes scroller {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-110%);
+  }
+}
+
+@keyframes scroller {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-110%);
+    -webkit-transform: translateX(-110%);
+    transform: translateX(-110%);
+  }
+}
+
+.product-grid {
+  margin: 0 5%;
+  column-gap: 3.8rem;
+}
+
+.category-header {
+  grid-column: 1/-1;
+  justify-self: flex-start;
+}
+
+.category-header-header {
+  margin: 0 0 -2rem 0;
+}
+
+.decor-discoballs-img {
+  filter: none;
+}

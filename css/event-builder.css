@@ -411,3 +411,33 @@
   top: 90%;
   left: 80%;
 }
+
+/*Progress bar*/
+
+.progress-bar {
+  height: 3rem;
+  width: 30rem;
+  background-color: #fcf2fe;
+  border: #302632 0.3rem solid;
+  border-radius: 0.15rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.progress-bar-inside {
+  height: 2.4rem;
+  width: 0%;
+  background-color: #eebefa;
+}
+
+.fade-in-slow {
+  animation: fadeInSlow 2s;
+}
+
+@keyframes fadeInSlow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

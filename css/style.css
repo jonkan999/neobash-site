@@ -1038,3 +1038,26 @@
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
+
+/* UNDER CONSTRUTION */
+.under-construction-banner {
+  position: absolute;
+  width: 100%;
+  height: 4rem;
+  background-color: orange;
+
+  top: 5rem;
+  left: 20%;
+  transform: rotate(30deg);
+}
+
+.under-construction-banner h2 {
+  color: #47394b;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0.5rem 0 0 20%;
+}
+.construction-icon {
+  height: 2rem;
+  width: 2rem;
+}

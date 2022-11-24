@@ -810,4 +810,10 @@
   .next-question-budget {
     top: 70%;
   }
+  .under-construction-banner h2 {
+    color: #47394b;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0.5rem 0 0 13%;
+  }
 }

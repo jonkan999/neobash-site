@@ -93,6 +93,82 @@ document.addEventListener("click", async function (event) {
         document.querySelector(".budget-video").playbackRate = 0.7;
 
         break;
+      case "budget-question":
+        src = "event-builder/loading-question.html";
+        resp = await fetch(src);
+        nextQuestionHTML = await resp.text();
+        questionContainer.parentNode.removeChild(questionContainer);
+        document.querySelector(".section-hero").parentElement.innerHTML +=
+          nextQuestionHTML;
+        window.scroll({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+
+        var elem = document.querySelector(".progress-bar-inside");
+        var message1 = document.querySelector(".progress-bar-message1");
+        var message2 = document.querySelector(".progress-bar-message2");
+        var message3 = document.querySelector(".progress-bar-message3");
+        var message4 = document.querySelector(".progress-bar-message4");
+        var message5 = document.querySelector(".progress-bar-message5");
+        var message6 = document.querySelector(".progress-bar-message6");
+        var width = 0;
+        var id = setInterval(frame, 100);
+        function frame() {
+          if (width === 120) {
+            clearInterval(id);
+            window.location.href = "bash-basket.html";
+          } else if (
+            width === 0 &&
+            !message1.classList.contains("fade-in-slow")
+          ) {
+            message1.innerHTML = "Running around in circles ..";
+            message1.classList.toggle("fade-in-slow");
+          } else if (
+            width === 20 &&
+            !message2.classList.contains("fade-in-slow")
+          ) {
+            message2.innerHTML = "Packing your mirror balls ..";
+            message2.classList.toggle("fade-in-slow");
+          } else if (
+            width === 40 &&
+            !message3.classList.contains("fade-in-slow")
+          ) {
+            message3.innerHTML = "Making playlists ..";
+            message3.classList.toggle("fade-in-slow");
+          } else if (
+            width === 60 &&
+            !message4.classList.contains("fade-in-slow")
+          ) {
+            message4.innerHTML = "Popping the popcorn ..";
+            message4.classList.toggle("fade-in-slow");
+          } else if (
+            width === 80 &&
+            !message5.classList.contains("fade-in-slow")
+          ) {
+            message5.innerHTML =
+              "Taking a <strong>DEEP</strong> breath aaand ..";
+            message5.classList.toggle("fade-in-slow");
+          } else if (
+            width === 100 &&
+            !message6.classList.contains("fade-in-slow")
+          ) {
+            message6.innerHTML = "Success! Lets go get your event!";
+          } else if (width === 120) {
+            message6.innerHTML = "Success! Lets go get your event!";
+          } else {
+            if (width <= 102) {
+              elem.style.width = width + "%";
+            }
+
+            /*             var num = (width * 1) / 10;
+            num = num.toFixed(0); */
+          }
+          width++;
+        }
+
+        break;
     }
   }
 
