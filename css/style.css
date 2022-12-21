@@ -858,6 +858,29 @@
 }
 .guests-button {
 }
+.right-nav-box {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	gap: 4rem;
+}
+.language-dropdown-selector {
+	font-size: 2.6rem;
+	border: none;
+	background-color: transparent;
+	gap: 1.6rem;
+	color: #555;
+	padding: 1.6rem 0;
+	margin: 0 1.6rem;
+}
+
+.language-dropdown-selector:active,
+.language-dropdown-selector:hover {
+	color: #47394b;
+	border-bottom: solid 0.3rem #47394b;
+	margin-bottom: -0.3rem;
+}
+
 .header-button-icon {
 }
 

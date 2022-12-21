@@ -162,6 +162,15 @@
 	.product-grid {
 		grid-template-columns: repeat(2, 1fr);
 	}
+	.right-nav-box {
+		gap: 1rem;
+	}
+	.language-dropdown-selector {
+		font-size: 1.6rem;
+		gap: 0.3rem;
+		padding: 0.3rem 0;
+		margin: 0 0.5rem;
+	}
 }
 
 /**************************/

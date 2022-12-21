@@ -139,7 +139,7 @@ const language = {
 		howContact: "kontakta oss",
 		contactHeader: "Hör av dig och planera ditt event med oss!",
 		contactParagraph:
-			"Fyll i vårt formulär och en av våra fantastiska eventhandläggare\
+			"Fyll i vårt formulär och någon av våra fantastiska eventhandläggare\
       kommer återkomma till dig och berättar mer om vad vi kan erbjuda,\
       samt guidar dig genom planeringsprocessen.",
 		contactNameInput: `

@@ -50,7 +50,9 @@
 		></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script defer src="js/category-dropdowns.js"></script>
+		<script type="module" defer src="js/make-category-articles.js"></script>
 		<script defer src="js/enlarge-product.js"></script>
+		<script defer src="js/change-language-categories.js"></script>
 
 		<link rel="stylesheet" href="css/general.css" />
 		<link rel="stylesheet" href="css/style.css" />
@@ -106,11 +108,22 @@
 							></ion-icon>
 						</button>
 					</div>
-
-					<a href="bash-basket" class="bash-basket">
-						<ion-icon class="basket-icon" name="basket-outline"></ion-icon
-						><span>Bash Basket</span></a
-					>
+					<div class="right-nav-box">
+						<div class="">
+							<select
+								class="language-dropdown-selector"
+								id="selectLanguage"
+								onchange="changeLanguage()"
+							>
+								<option value="EN">EN &#127482;&#127480;</option>
+								<option value="SE">SE &#127480;&#127466;</option>
+							</select>
+						</div>
+						<a href="bash-basket" class="bash-basket">
+							<ion-icon class="basket-icon" name="basket-outline"></ion-icon
+							><span>Bash Basket</span></a
+						>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -1221,8 +1234,8 @@
 		</section>
 
 		<section class="section-product-grid">
-			<div class="product-grid">
-				<article class="product-card" name="venue-skyddsrummet">
+			<div class="product-grid" id="productGrid">
+				<!-- <article class="product-card" name="venue-skyddsrummet">
 					<img
 						src="img/product-skyddsrummet.jpg"
 						alt="Image of Skyddsrummet"
@@ -1261,173 +1274,7 @@
 							>fr. <strong>30 000 kr SEK</strong> dygn</span
 						>
 					</div>
-				</article>
-				<article class="product-card">
-					<img
-						src="img/product-fafangan.jpg"
-						alt="Image of Fåfängan"
-						class="product-img"
-					/>
-					<div class="product-description">
-						<div class="name-and-rating">
-							<span class="product-name"
-								><strong>Fåfängan, Södermalm</strong></span
-							>
-							<div class="product-rating">
-								<img
-									class="rating-icon"
-									src="svg-icons/star-outline.svg"
-									alt="star icon for rating"
-								/>
-								<span>New</span>
-							</div>
-						</div>
-						<div class="product-description-line">
-							<ion-icon class="product-icon" name="people-outline"></ion-icon>
-							<span> 700 mingling</span>
-						</div>
-						<div class="product-description-line">
-							<ion-icon
-								class="product-icon"
-								name="restaurant-outline"
-							></ion-icon>
-							<span> 180 seated</span>
-						</div>
-						<div class="product-description-line">
-							<ion-icon
-								class="product-icon"
-								name="telescope-outline"
-							></ion-icon>
-							<span> Fantastic view</span>
-						</div>
-						<span class="product-price"
-							>fr. <strong>40 000 kr SEK</strong> dygn</span
-						>
-					</div>
-				</article>
-				<article class="product-card">
-					<img
-						src="img/product-tolv.jpg"
-						alt="Image of Tolv Stockholm"
-						class="product-img"
-					/>
-					<div class="product-description">
-						<div class="name-and-rating">
-							<span class="product-name"
-								><strong>Tolv Stockholm, Globenområdet</strong></span
-							>
-							<div class="product-rating">
-								<img
-									class="rating-icon"
-									src="svg-icons/star-outline.svg"
-									alt="star icon for rating"
-								/>
-								<span>New</span>
-							</div>
-						</div>
-						<div class="product-description-line">
-							<ion-icon class="product-icon" name="people-outline"></ion-icon>
-							<span> 3 000 mingling</span>
-						</div>
-						<div class="product-description-line">
-							<ion-icon
-								class="product-icon"
-								name="restaurant-outline"
-							></ion-icon>
-							<span> 500 seated</span>
-						</div>
-						<div class="product-description-line">
-							<ion-icon class="product-icon" name="happy-outline"></ion-icon>
-							<span> Unlimited fun and games</span>
-						</div>
-						<span class="product-price"
-							>fr. <strong>250 000 kr SEK</strong> dygn</span
-						>
-					</div>
-				</article>
-				<article class="product-card">
-					<img
-						src="img/product-byblos.jpg"
-						alt="Image of Byblos Restaurang"
-						class="product-img"
-					/>
-					<div class="product-description">
-						<div class="name-and-rating">
-							<span class="product-name"
-								><strong>Byblos, Vasastan</strong></span
-							>
-							<div class="product-rating">
-								<img
-									class="rating-icon"
-									src="svg-icons/star-outline.svg"
-									alt="star icon for rating"
-								/>
-								<span>New</span>
-							</div>
-						</div>
-						<div class="product-description-line">
-							<ion-icon class="product-icon" name="people-outline"></ion-icon>
-							<span> 150 mingling</span>
-						</div>
-						<div class="product-description-line">
-							<ion-icon
-								class="product-icon"
-								name="restaurant-outline"
-							></ion-icon>
-							<span> 20-80 seated</span>
-						</div>
-						<div class="product-description-line">
-							<ion-icon class="product-icon" name="moon-outline"></ion-icon>
-							<span> Authentic arabian night</span>
-						</div>
-						<span class="product-price"
-							>fr. <strong>15 000 kr SEK</strong> dygn</span
-						>
-					</div>
-				</article>
-				<article class="product-card">
-					<img
-						src="img/product-lumafabriken.jpg"
-						alt="Image of Lumafabriken Restaurang"
-						class="product-img"
-					/>
-					<div class="product-description">
-						<div class="name-and-rating">
-							<span class="product-name"
-								><strong>Lumafabriken, Hammarby</strong></span
-							>
-							<div class="product-rating">
-								<img
-									class="rating-icon"
-									src="svg-icons/star-outline.svg"
-									alt="star icon for rating"
-								/>
-								<span>New</span>
-							</div>
-						</div>
-						<div class="product-description-line">
-							<ion-icon class="product-icon" name="people-outline"></ion-icon>
-							<span> 200 mingling</span>
-						</div>
-						<div class="product-description-line">
-							<ion-icon
-								class="product-icon"
-								name="restaurant-outline"
-							></ion-icon>
-							<span> 60-120 seated</span>
-						</div>
-						<div class="product-description-line">
-							<ion-icon
-								class="product-icon"
-								name="telescope-outline"
-							></ion-icon>
-							<span> Rooftop</span>
-						</div>
-						<span class="product-price"
-							>fr. <strong>25 000 kr SEK</strong> dygn</span
-						>
-					</div>
-				</article>
+				</article> -->
 			</div>
 		</section>
 		<div class="under-construction-banner">
