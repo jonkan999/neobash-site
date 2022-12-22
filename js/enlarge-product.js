@@ -6,13 +6,24 @@
 ); */
 import cards from "../category-cards/category-card.js";
 import { generateProductHTMLLarge } from "./generateProductHTMLLarge.js";
+import { changeCategory } from "./changeCategory.js";
 
 document.addEventListener("click", async function (event) {
 	const clickedElement = event.target.closest(".product-card");
+	const clickedCategory = event.target.closest(".category-list-element");
 	const shadowEl = document.querySelector(".full-page-shadow");
+
+	//Do nothing if we click vendor link inside enlarged product
 	if (event.target.classList[0] === "vendor-link") {
 		return;
 	}
+
+	//Do nothing if we click vendor link inside enlarged product
+	if (clickedCategory) {
+		changeCategory(clickedCategory);
+	}
+
+	//Enlarge or remove large product
 	// If user clicks inside the element, enlarge and shadow
 	if (clickedElement && shadowEl.classList[1] != "active-shadow") {
 		console.log("fall1");
