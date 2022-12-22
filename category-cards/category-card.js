@@ -1,5 +1,6 @@
 export default {
 	venueSkyddsrummet: {
+		id: "venueSkyddsrummet",
 		name: "Skyddsrummet, Södermalm",
 		articleName: "venue-skyddsrummet",
 		category: "venues",
@@ -67,6 +68,7 @@ export default {
 	},
 
 	venueFafangan: {
+		id: "venueFafangan",
 		name: "Fåfängan, Södermalm",
 		articleName: "venue-fåfängan",
 		category: "venues",
@@ -141,6 +143,7 @@ export default {
 	},
 
 	venueTolv: {
+		id: "venueTolv",
 		name: "Tolv Stockholm, Globenområdet",
 		articleName: "venue-tolv",
 		category: "venues",
@@ -215,6 +218,7 @@ export default {
 	},
 
 	venueByblos: {
+		id: "venueByblos",
 		name: "Byblos, Vasastan",
 		articleName: "venue-byblos",
 		category: "venues",
@@ -289,6 +293,7 @@ export default {
 	},
 
 	venueLumafabriken: {
+		id: "venueLumafabriken",
 		name: "Lumafabriken, Hammarby",
 		articleName: "venue-umafabriken",
 		category: "venues",

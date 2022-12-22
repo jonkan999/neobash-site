@@ -1,4 +1,4 @@
-export function appendProductGrid(article, language) {
+export function generateProductHTML(article, language) {
 	/* takes article object and language as an input and generates product html*/
 	let usp1Tag = article.visibleENTags.usp1;
 	let usp2Tag = article.visibleENTags.usp2;
@@ -11,7 +11,7 @@ export function appendProductGrid(article, language) {
 		priceTag = article.visibleSETags.fromPrice;
 	}
 	const newHTML = `
-  <article class="product-card" name="${article.articleName}">
+  <article class="product-card" name="${article.articleName}" id="${article.id}">
   ${article.image}
   <div class="product-description">
     <div class="name-and-rating">

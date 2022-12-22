@@ -1,6 +1,6 @@
 import cards from "../category-cards/category-card.js";
-import { appendProductGrid } from "./appendProductGrid.js";
-console.log(cards[Object.keys(cards)[0]]);
+import { generateProductHTML } from "./generateProductHTML.js";
+/* console.log(cards[Object.keys(cards)[0]]); */
 
 /* loops through all articles in category-card.js json and generates the product grid */
 for (let key in cards) {
@@ -14,13 +14,13 @@ for (let key in cards) {
 			// Set the content of the webpage
 			// depending on the hash value
 			if (window.location.hash == "#se") {
-				productGrid.innerHTML += appendProductGrid(article, "se");
+				productGrid.innerHTML += generateProductHTML(article, "se");
 			} else {
-				productGrid.innerHTML += appendProductGrid(article, "en");
+				productGrid.innerHTML += generateProductHTML(article, "en");
 			}
 		} else {
 			/* If it doesnt have a hash or the hash is not se then we set EN */
-			productGrid.innerHTML += appendProductGrid(article, "en");
+			productGrid.innerHTML += generateProductHTML(article, "en");
 		}
 	}
 }
