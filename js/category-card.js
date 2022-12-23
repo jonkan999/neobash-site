@@ -563,4 +563,67 @@ export default {
 			catRank: "1",
 		},
 	},
+
+	drinksLovnas: {
+		id: "drinksLovnas",
+		name: "Lövnäs Bryggeri, Mörkö",
+		articleName: "drinks-lovnas",
+		category: "drinks",
+		image: `
+		<img
+			src="img/product-lovnas.jpg"
+			alt="Image of Skyddsrummet"
+			class="product-img drinks-lovnas-img"
+		/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon name="beer-outline"></ion-icon>
+			<span> Locally sourced micro brewery</span>`,
+			usp2: `
+			<ion-icon name="color-palette-outline"></ion-icon>
+			<span> Dizzying amount of flavors available</span>`,
+			usp3: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Available for offsite guided tastings</span>`,
+			fromPrice: "fr. <strong>2 000 kr SEK</strong> a person",
+			description: `Skyddsrummet, with a central location on walking distance from
+			Mariatorget, is ideal for basically any party. It's divided in to two
+			main sections. The brick room, with seating for 150 guests, and the
+			larger mountain room that is also fully equipped with light and sound.
+			The cool industrial atmosphere make Skyddsrummet ideal for product
+			release mingles, vernisages and just about any other party with an
+			eclectic audience.`,
+		},
+		visibleSETags: {
+			usp1: `
+			<ion-icon name="beer-outline"></ion-icon>
+			<span> Lokalproducerande mikrobryggeri</span>`,
+			usp2: `
+			<ion-icon name="color-palette-outline"></ion-icon>
+			<span> Massvis av smaker</span>`,
+			usp3: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Möjlighet att boka guidad ölprovning till din fest</span>`,
+			fromPrice: "fr. <strong>2 000 kr SEK</strong> per person",
+			description: `Skyddsrummet, with a central location on walking distance from
+			Mariatorget, is ideal for basically any party. It's divided in to two
+			main sections. The brick room, with seating for 150 guests, and the
+			larger mountain room that is also fully equipped with light and sound.
+			The cool industrial atmosphere make Skyddsrummet ideal for product
+			release mingles, vernisages and just about any other party with an
+			eclectic audience.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://lovnasbryggeri.se/",
+			vibe1: "micro-brewery",
+			vibe2: "local",
+			vibe3: "sustainable",
+			vibe4: "party",
+			vibe5: "indoor",
+			maxPeople: "n/a",
+			maxSeated: "n/a",
+			price: "medium",
+			catRank: "1",
+		},
+	},
 };
