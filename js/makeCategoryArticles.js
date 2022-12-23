@@ -14,6 +14,8 @@ export function makeCategoryArticles() {
 		const currentCat = document.getElementsByClassName(
 			"category-list-element active"
 		)[0];
+		console.log(article.category);
+		console.log(currentCat.innerText.toLowerCase());
 		if (article.category === currentCat.innerText.toLowerCase()) {
 			if (window.location.hash) {
 				// Set the content of the webpage
