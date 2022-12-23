@@ -4,40 +4,30 @@ import { generateProductHTML } from "/js/generateProductHTML.js";
 
 /* loops through all articles in category-card.js json and generates the product grid */
 export function makeCategoryArticles() {
-	console.log("her2");
 	productGrid.innerHTML = "";
-	console.log(cards);
 	for (let key in cards) {
 		let article = cards[key];
 		/* only append with selected category */
-		console.log(generateProductHTML(article, "en"));
 		const currentCat = document.getElementsByClassName(
 			"category-list-element active"
 		)[0];
-		console.log(window.location.hash);
-		console.log(article.category);
-		console.log(currentCat.innerText.toLowerCase());
 
 		if (article.category.trim() === currentCat.innerText.toLowerCase().trim()) {
+			/*trim() needed to account for safari reading in a line break here https://stackoverflow.com/questions/61219317/javascript-if-evaluating-differently-in-firefox-and-safari*/
 			if (window.location.hash) {
 				// Set the content of the webpage
 				// depending on the hash value
-				console.log(document.getElementById("selectLanguage").value);
 				if (document.getElementById("selectLanguage").value === "SE") {
 					productGrid.innerHTML += generateProductHTML(article, "se");
-					console.log("skriver se");
 				} else {
 					productGrid.innerHTML += generateProductHTML(article, "en");
-					console.log("skriver en");
 				}
 			} else {
 				/* If it doesnt have a hash or the hash is not se then we set EN */
 				productGrid.innerHTML += generateProductHTML(article, "en");
-				console.log("skriver en");
 			}
 		}
 	}
-	console.log(productGrid.innerHTML);
 }
 //Runs once every page load
 makeCategoryArticles();

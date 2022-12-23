@@ -26,7 +26,6 @@ document.addEventListener("click", async function (event) {
 	//Enlarge or remove large product
 	// If user clicks inside the element, enlarge and shadow
 	if (clickedElement && shadowEl.classList[1] != "active-shadow") {
-		console.log("fall1");
 		shadowEl.classList.toggle("active-shadow");
 		/* const src =
       "product-cards/" + clickedElement.getAttribute("name") + "-clicked.html";

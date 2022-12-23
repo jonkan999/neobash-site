@@ -1,10 +1,8 @@
 const eventBuilderElement = document.querySelector(".event-builder");
 eventBuilderElement.addEventListener("click", async function () {
-	console.log("here");
 	const src = "event-builder/date-question.html";
 	const resp = await fetch(src);
 	const nextQuestionHTML = await resp.text();
-	console.log(document.querySelector(".section-hero"));
 	document.querySelector(".section-hero").parentElement.innerHTML +=
 		nextQuestionHTML;
 	const shadowEl = document.querySelector(".full-page-shadow");
