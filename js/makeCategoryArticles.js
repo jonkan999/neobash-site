@@ -1,5 +1,5 @@
-import cards from "../category-cards/category-card.js";
-import { generateProductHTML } from "../js/generateProductHTML.js";
+import cards from "/category-cards/category-card.js";
+import { generateProductHTML } from "/js/generateProductHTML.js";
 /* console.log(cards[Object.keys(cards)[0]]); */
 
 /* loops through all articles in category-card.js json and generates the product grid */

@@ -1,4 +1,4 @@
-import { makeCategoryArticles } from "../js/makeCategoryArticles.js";
+import { makeCategoryArticles } from "/js/makeCategoryArticles.js";
 
 export function changeCategory(clickedCategory) {
 	//If clicked already active, we dont want to do anythin
