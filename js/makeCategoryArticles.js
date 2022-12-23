@@ -24,12 +24,15 @@ export function makeCategoryArticles() {
 				console.log(document.getElementById("selectLanguage").value);
 				if (document.getElementById("selectLanguage").value === "SE") {
 					productGrid.innerHTML += generateProductHTML(article, "se");
+					console.log("skriver se");
 				} else {
 					productGrid.innerHTML += generateProductHTML(article, "en");
+					console.log("skriver en");
 				}
 			} else {
 				/* If it doesnt have a hash or the hash is not se then we set EN */
 				productGrid.innerHTML += generateProductHTML(article, "en");
+				console.log("skriver en");
 			}
 		}
 	}
