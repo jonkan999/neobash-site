@@ -1,4 +1,4 @@
-import cards from "/category-cards/category-card.js";
+import cards from "./category-card.js";
 import { generateProductHTML } from "/js/generateProductHTML.js";
 /* console.log(cards[Object.keys(cards)[0]]); */
 
@@ -6,6 +6,7 @@ import { generateProductHTML } from "/js/generateProductHTML.js";
 export function makeCategoryArticles() {
 	console.log("her2");
 	productGrid.innerHTML = "";
+	console.log(cards);
 	for (let key in cards) {
 		let article = cards[key];
 		/* only append with selected category */
