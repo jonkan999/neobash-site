@@ -18,7 +18,7 @@ export function makeCategoryArticles() {
 		console.log(article.category);
 		console.log(currentCat.innerText.toLowerCase());
 
-		if (article.category === currentCat.innerText.toLowerCase()) {
+		if (article.category.trim() === currentCat.innerText.toLowerCase().trim()) {
 			if (window.location.hash) {
 				// Set the content of the webpage
 				// depending on the hash value
