@@ -4,6 +4,7 @@ import { generateProductHTML } from "/js/generateProductHTML.js";
 
 /* loops through all articles in category-card.js json and generates the product grid */
 export function makeCategoryArticles() {
+	console.log("her2");
 	productGrid.innerHTML = "";
 	for (let key in cards) {
 		let article = cards[key];

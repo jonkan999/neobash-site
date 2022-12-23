@@ -21,6 +21,7 @@ const language = {
 	en: {},
 	se: {},
 };
+console.log("her1");
 
 // Check if a hash value exists in the URL
 if (window.location.hash) {
