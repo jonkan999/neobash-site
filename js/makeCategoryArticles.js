@@ -1,4 +1,4 @@
-import cards from "./category-card.js";
+import cards from "/js/category-card.js";
 import { generateProductHTML } from "/js/generateProductHTML.js";
 /* console.log(cards[Object.keys(cards)[0]]); */
 
@@ -15,7 +15,8 @@ export function makeCategoryArticles() {
 			"category-list-element active"
 		)[0];
 		console.log(window.location.hash);
-		console.log(article.category === currentCat.innerText.toLowerCase());
+		console.log(article.category);
+		console.log(currentCat.innerText.toLowerCase());
 
 		if (article.category === currentCat.innerText.toLowerCase()) {
 			if (window.location.hash) {
