@@ -10,12 +10,13 @@ export function makeCategoryArticles() {
 	for (let key in cards) {
 		let article = cards[key];
 		/* only append with selected category */
-		console.log(article);
+		console.log(generateProductHTML(article, "en"));
 		const currentCat = document.getElementsByClassName(
 			"category-list-element active"
 		)[0];
-		console.log(article.category);
+		console.log(window.location.hash);
 		console.log(currentCat.innerText.toLowerCase());
+
 		if (article.category === currentCat.innerText.toLowerCase()) {
 			if (window.location.hash) {
 				// Set the content of the webpage
