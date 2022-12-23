@@ -5,8 +5,8 @@
   "product-cards/venue-skyddsrummet-clicked.html"
 ); */
 import cards from "../category-cards/category-card.js";
-import { generateProductHTMLLarge } from "./generateProductHTMLLarge.js";
-import { changeCategory } from "./changeCategory.js";
+import { generateProductHTMLLarge } from "../js/generateProductHTMLLarge.js";
+import { changeCategory } from "../js/changeCategory.js";
 
 document.addEventListener("click", async function (event) {
 	const clickedElement = event.target.closest(".product-card");
