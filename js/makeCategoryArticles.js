@@ -10,6 +10,7 @@ export function makeCategoryArticles() {
 	for (let key in cards) {
 		let article = cards[key];
 		/* only append with selected category */
+		console.log(article);
 		const currentCat = document.getElementsByClassName(
 			"category-list-element active"
 		)[0];
