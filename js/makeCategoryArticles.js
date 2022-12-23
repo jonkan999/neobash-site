@@ -15,7 +15,7 @@ export function makeCategoryArticles() {
 			"category-list-element active"
 		)[0];
 		console.log(window.location.hash);
-		console.log(currentCat.innerText.toLowerCase());
+		console.log(article.category === currentCat.innerText.toLowerCase());
 
 		if (article.category === currentCat.innerText.toLowerCase()) {
 			if (window.location.hash) {
