@@ -33,6 +33,7 @@ export function makeCategoryArticles() {
 			}
 		}
 	}
+	console.log(productGrid.innerHTML);
 }
 //Runs once every page load
 makeCategoryArticles();
