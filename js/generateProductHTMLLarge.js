@@ -16,7 +16,7 @@ export function generateProductHTMLLarge(article, language) {
 		let add = "Lägg till";
 	}
 	const newHTML = `
-  <article class="product-card product-card-large">
+  <article class="product-card product-card-large" id="${article.id}">
   ${article.image}
   <div class="product-description">
     <div class="name-and-rating">
@@ -59,5 +59,6 @@ export function generateProductHTMLLarge(article, language) {
 
 
   `;
+	//adding event listener to add btn
 	return newHTML;
 }

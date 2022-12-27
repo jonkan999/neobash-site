@@ -7,11 +7,17 @@
 import cards from "./category-card.js";
 import { generateProductHTMLLarge } from "/js/generateProductHTMLLarge.js";
 import { changeCategory } from "/js/changeCategory.js";
+import { addToBasket } from "/js/addToBasket.js";
 
 document.addEventListener("click", async function (event) {
 	const clickedElement = event.target.closest(".product-card");
 	const clickedCategory = event.target.closest(".category-list-element");
 	const shadowEl = document.querySelector(".full-page-shadow");
+	const addBtn = document.querySelector(".add-button");
+
+	if (addBtn) {
+		addToBasket();
+	}
 
 	//Do nothing if we click vendor link inside enlarged product
 	if (event.target.classList[0] === "vendor-link") {

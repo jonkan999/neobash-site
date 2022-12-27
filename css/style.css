@@ -859,6 +859,7 @@
 .guests-button {
 }
 .right-nav-box {
+	position: relative;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
@@ -909,6 +910,25 @@
 	height: 5rem;
 	width: 5rem;
 	color: #555;
+}
+
+.item-counter {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	aspect-ratio: 1 / 1;
+	width: 12%;
+	font-size: 1.6rem;
+	font-weight: 500;
+	top: 0;
+	right: 0;
+	border-radius: 100%;
+}
+
+.item-counter-active {
+	color: #fdf2e9;
+	background-color: #302632;
 }
 
 .lower-header {
