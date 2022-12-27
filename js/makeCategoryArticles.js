@@ -11,20 +11,23 @@ export function makeCategoryArticles() {
 		const currentCat = document.getElementsByClassName(
 			"category-list-element active"
 		)[0];
-
-		if (article.category.trim() === currentCat.innerText.toLowerCase().trim()) {
-			/*trim() needed to account for safari reading in a line break here https://stackoverflow.com/questions/61219317/javascript-if-evaluating-differently-in-firefox-and-safari*/
-			if (window.location.hash) {
-				// Set the content of the webpage
-				// depending on the hash value
-				if (document.getElementById("selectLanguage").value === "SE") {
-					productGrid.innerHTML += generateProductHTML(article, "se");
+		if (currentCat) {
+			if (
+				article.category.trim() === currentCat.innerText.toLowerCase().trim()
+			) {
+				/*trim() needed to account for safari reading in a line break here https://stackoverflow.com/questions/61219317/javascript-if-evaluating-differently-in-firefox-and-safari*/
+				if (window.location.hash) {
+					// Set the content of the webpage
+					// depending on the hash value
+					if (document.getElementById("selectLanguage").value === "SE") {
+						productGrid.innerHTML += generateProductHTML(article, "se");
+					} else {
+						productGrid.innerHTML += generateProductHTML(article, "en");
+					}
 				} else {
+					/* If it doesnt have a hash or the hash is not se then we set EN */
 					productGrid.innerHTML += generateProductHTML(article, "en");
 				}
-			} else {
-				/* If it doesnt have a hash or the hash is not se then we set EN */
-				productGrid.innerHTML += generateProductHTML(article, "en");
 			}
 		}
 	}

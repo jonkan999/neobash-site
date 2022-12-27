@@ -16,15 +16,17 @@ document.addEventListener("click", async function (event) {
 	const addBtn = document.querySelector(".add-button");
 
 	if (addBtn) {
-		addToBasket();
+		if (event.target.closest(".add-button")) {
+			addToBasket();
+		}
 	}
 
 	//Do nothing if we click vendor link inside enlarged product
 	if (event.target.classList[0] === "vendor-link") {
 		return;
 	}
-
-	//Do nothing if we click vendor link inside enlarged product
+	console.log("generate");
+	//Generate new category
 	if (clickedCategory) {
 		changeCategory(clickedCategory);
 	}
