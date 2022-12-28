@@ -1069,10 +1069,10 @@
 }
 .close-btn {
 	position: absolute;
-	font-size: 3rem;
+	font-size: 4rem;
 	top: 0;
 	right: 0;
-	transform: translate(135%, -135%);
+	transform: translate(117%, -117%);
 	color: #302632;
 	background-color: rgba(48, 38, 50, 0.2);
 	border-radius: 100rem;
