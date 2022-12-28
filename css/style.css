@@ -962,11 +962,40 @@
 }
 
 .lower-header {
+	position: relative;
 	height: 12rem;
 	/* background-color: #fdf7fe; */
 	padding: 0 10% 0 5%;
 	border-bottom: 2px solid #eee;
 }
+
+.lower-header-button-icon {
+	font-size: 2.6rem;
+	width: 3rem;
+	aspect-ratio: 1 / 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	gap: 1.6rem;
+	color: #555;
+	background-color: rgba(51, 51, 51, 0.05);
+	border-radius: 100%;
+	padding: 1.6rem 0;
+	margin: 0 1.6rem;
+	transform: translate(0, -50%);
+}
+.lower-header-left {
+	position: absolute;
+	top: 50%;
+	left: 2%;
+}
+.lower-header-right {
+	position: absolute;
+	top: 50%;
+	right: 2%;
+}
+
 .categories-list {
 	display: flex;
 	flex: 2;
