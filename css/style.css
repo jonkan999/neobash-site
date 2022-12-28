@@ -887,6 +887,7 @@
 
 .bash-basket:link,
 .bash-basket:visited {
+	position: relative;
 	font-size: 1.6rem;
 	display: flex;
 	flex-direction: column;
@@ -907,9 +908,9 @@
 }
 
 .basket-icon {
-	height: 5rem;
-	width: 5rem;
-	color: #555;
+	height: 8rem;
+	width: 8rem;
+	/* color: #555; */
 }
 
 .item-counter {
@@ -918,17 +919,19 @@
 	align-items: center;
 	justify-content: center;
 	aspect-ratio: 1 / 1;
-	width: 12%;
+	width: 30%;
 	font-size: 1.6rem;
 	font-weight: 500;
-	top: 0;
-	right: 0;
-	border-radius: 100%;
+	top: 100%;
+	right: 50%;
+	border-radius: 0.4rem;
+	transform: translate(50%, -210%);
+	color: rgba(0, 0, 0, 0);
 }
 
 .item-counter-active {
 	color: #fdf2e9;
-	background-color: #302632;
+	background-color: #5c3000;
 }
 
 .lower-header {
