@@ -988,7 +988,7 @@
 .lower-header-left {
 	position: absolute;
 	top: 50%;
-	left: -1%;
+	left: 0%;
 }
 .lower-header-right {
 	position: absolute;

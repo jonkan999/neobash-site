@@ -303,6 +303,12 @@
 	.section-product-grid {
 		padding: 2.6rem 2.6rem;
 	}
+	.lower-header-left {
+		left: -2%;
+	}
+	.lower-header-right {
+		right: 0;
+	}
 
 	.questionnaire-container {
 		top: 5%;
