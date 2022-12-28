@@ -17,6 +17,9 @@ export function generateProductHTMLLarge(article, language) {
 	}
 	const newHTML = `
   <article class="product-card product-card-large" id="${article.id}">
+  <div class="close-btn-anchor">
+    <ion-icon class="close-btn" name="close-outline"></ion-icon>
+  </div>
   ${article.image}
   <div class="product-description">
     <div class="name-and-rating">
