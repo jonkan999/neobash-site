@@ -932,6 +932,33 @@
 .item-counter-active {
 	color: #fdf2e9;
 	background-color: #5c3000;
+	animation: blinkIn ease 1s;
+	-webkit-animation: blinkIn ease 1s;
+	-moz-animation: blinkIn ease 1s;
+	-o-animation: blinkIn ease 1s;
+	-ms-animation: blinkIn ease 1s;
+}
+
+@keyframes blinkIn {
+	0% {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 0;
+	}
+	60% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .lower-header {
@@ -1027,9 +1054,8 @@
 }
 
 .product-card-large {
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -30%);
+	position: fixed;
+	top: 3%;
 	padding: 2.8rem 2.8rem;
 	border-radius: 1rem;
 	width: 50rem;

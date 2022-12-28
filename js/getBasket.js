@@ -3,7 +3,7 @@ import cards from "/js/category-card.js";
 import { generateProductHTML } from "/js/generateProductHTML.js";
 
 const basketArray = JSON.parse(sessionStorage.getItem("bash-basket"));
-updateItemCounter(basketArray);
+updateItemCounter();
 
 //getting all categories
 let categories = new Array();

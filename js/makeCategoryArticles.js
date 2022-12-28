@@ -1,5 +1,6 @@
 import cards from "/js/category-card.js";
 import { generateProductHTML } from "/js/generateProductHTML.js";
+import { updateItemCounter } from "/js/updateItemCounter.js";
 /* console.log(cards[Object.keys(cards)[0]]); */
 
 /* loops through all articles in category-card.js json and generates the product grid */
@@ -34,3 +35,4 @@ export function makeCategoryArticles() {
 }
 //Runs once every page load
 makeCategoryArticles();
+updateItemCounter();

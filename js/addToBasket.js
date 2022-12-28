@@ -32,5 +32,5 @@ export function addToBasket() {
 	console.log(basketJSON);
 
 	//update item number in html
-	updateItemCounter(basketArray);
+	updateItemCounter();
 }
