@@ -3,7 +3,7 @@ export default {
 		id: "venueSkyddsrummet",
 		name: "Skyddsrummet, Södermalm",
 		articleName: "venue-skyddsrummet",
-		category: "venues",
+		category: "venues,wedding",
 		image: `<img
 				src="img/product-skyddsrummet.jpg"
 				alt="Image of Skyddsrummet"
@@ -71,7 +71,7 @@ export default {
 		id: "venueFafangan",
 		name: "Fåfängan, Södermalm",
 		articleName: "venue-fåfängan",
-		category: "venues",
+		category: "venues,wedding",
 		image: `
 		<img
 			src="img/product-fafangan.jpg"

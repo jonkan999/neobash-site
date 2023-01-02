@@ -1189,12 +1189,17 @@
 	font-size: 1.6rem;
 	color: #47394b;
 	align-self: end;
-	padding: 1.2rem;
+	padding: 1.8rem;
 	text-transform: uppercase;
 	border: none;
 	transition: background-color 0.3s;
 	border-top-left-radius: 1rem;
 	border-top-right-radius: 1rem;
+}
+
+.add-button:active {
+	/* transform: translateY(5px); */
+	box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* UNDER CONSTRUTION */

@@ -12,9 +12,18 @@ export function makeCategoryArticles() {
 		const currentCat = document.getElementsByClassName(
 			"category-list-element active"
 		)[0];
+		console.log(
+			article.category
+				.trim()
+				.split(",")
+				.includes(currentCat.innerText.toLowerCase().trim())
+		);
 		if (currentCat) {
 			if (
-				article.category.trim() === currentCat.innerText.toLowerCase().trim()
+				article.category
+					.trim()
+					.split(",")
+					.includes(currentCat.innerText.toLowerCase().trim())
 			) {
 				/*trim() needed to account for safari reading in a line break here https://stackoverflow.com/questions/61219317/javascript-if-evaluating-differently-in-firefox-and-safari*/
 				if (window.location.hash) {
