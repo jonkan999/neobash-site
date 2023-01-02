@@ -1,6 +1,15 @@
 import { makeCategoryArticles } from "/js/makeCategoryArticles.js";
 
 export function changeCategory(clickedCategory) {
+	console.log("running changeCategory");
+	if (!document.URL.includes("category-page")) {
+		//Dont do anything if we are not in category page
+		return;
+	}
+	if (!clickedCategory) {
+		makeCategoryArticles();
+		return;
+	}
 	//If clicked already active, we dont want to do anythin
 	if (clickedCategory.classList.contains("active")) {
 		return;
@@ -20,3 +29,5 @@ export function changeCategory(clickedCategory) {
 	}
 	makeCategoryArticles();
 }
+
+changeCategory();

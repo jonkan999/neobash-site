@@ -840,4 +840,7 @@
 		text-align: center;
 		margin: 0.5rem 0 0 13%;
 	}
+	.category-header-header {
+		margin: 0 0 -6rem 0;
+	}
 }

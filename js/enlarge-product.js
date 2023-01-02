@@ -8,7 +8,9 @@ import cards from "./category-card.js";
 import { generateProductHTMLLarge } from "/js/generateProductHTMLLarge.js";
 import { changeCategory } from "/js/changeCategory.js";
 import { addToBasket } from "/js/addToBasket.js";
+import { removeFromBasket } from "/js/removeFromBasket.js";
 import { scrollLowerHeader } from "/js/scrollLowerHeader.js";
+import { getBasket } from "/js/getBasket.js";
 
 document.addEventListener("click", async function (event) {
 	const clickedElement = event.target.closest(".product-card");
@@ -24,7 +26,10 @@ document.addEventListener("click", async function (event) {
 	}
 
 	if (addBtn) {
-		if (event.target.closest(".add-button")) {
+		if (event.target.closest(".remove-button")) {
+			removeFromBasket();
+			getBasket();
+		} else if (event.target.closest(".add-button")) {
 			addToBasket();
 		}
 	}
@@ -33,7 +38,6 @@ document.addEventListener("click", async function (event) {
 	if (event.target.classList[0] === "vendor-link") {
 		return;
 	}
-	console.log("generate");
 	//Generate new category
 	if (clickedCategory) {
 		changeCategory(clickedCategory);
@@ -71,15 +75,21 @@ document.addEventListener("click", async function (event) {
 	} else if (clickedElement && shadowEl.classList[1] === "active-shadow") {
 		// If user clicks inside the element, and it is enlarged, minimize and remove shadow
 		shadowEl.classList.toggle("active-shadow");
+		//and if enlarged card exists, remove it
 		const cardLarge = document.querySelector(".product-card-large");
-		cardLarge.parentNode.removeChild(cardLarge);
+		if (cardLarge) {
+			cardLarge.parentNode.removeChild(cardLarge);
+		}
 	} else if (
 		clickedElement === null &&
 		shadowEl.classList[1] === "active-shadow"
 	) {
 		// If user clicks outside, and it is enlarge, minimize and remove shadow
 		shadowEl.classList.toggle("active-shadow");
+		//and if enlarged card exists, remove it
 		const cardLarge = document.querySelector(".product-card-large");
-		cardLarge.parentNode.removeChild(cardLarge);
+		if (cardLarge) {
+			cardLarge.parentNode.removeChild(cardLarge);
+		}
 	}
 });

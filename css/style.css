@@ -931,7 +931,7 @@
 
 .item-counter-active {
 	color: #fdf2e9;
-	background-color: #5c3000;
+	background-color: #333;
 	animation: blinkIn ease 1s;
 	-webkit-animation: blinkIn ease 1s;
 	-moz-animation: blinkIn ease 1s;

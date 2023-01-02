@@ -6,18 +6,14 @@ import { updateItemCounter } from "/js/updateItemCounter.js";
 /* loops through all articles in category-card.js json and generates the product grid */
 export function makeCategoryArticles() {
 	productGrid.innerHTML = "";
+	console.log("running makeCategoryArticles");
 	for (let key in cards) {
 		let article = cards[key];
 		/* only append with selected category */
 		const currentCat = document.getElementsByClassName(
 			"category-list-element active"
 		)[0];
-		console.log(
-			article.category
-				.trim()
-				.split(",")
-				.includes(currentCat.innerText.toLowerCase().trim())
-		);
+
 		if (currentCat) {
 			if (
 				article.category

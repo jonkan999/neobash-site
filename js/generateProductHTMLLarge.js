@@ -15,6 +15,11 @@ export function generateProductHTMLLarge(article, language) {
 		goTo = "Besök deras hemsida";
 		let add = "Lägg till";
 	}
+	let remove = "";
+	if (document.URL.includes("bash-basket")) {
+		remove = "remove-button";
+		add = "remove";
+	}
 	const newHTML = `
   <article class="product-card product-card-large" id="${article.id}">
   <div class="close-btn-anchor">
@@ -55,7 +60,7 @@ export function generateProductHTMLLarge(article, language) {
         <span>${goTo}</span>
         <ion-icon name="chevron-forward-outline"></ion-icon>
       </a>
-      <button class="btn add-button">${add}</button>
+      <button class="btn add-button ${remove}">${add}</button>
     </div>
   </div>
 </article>
