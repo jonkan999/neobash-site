@@ -18,6 +18,7 @@ document.addEventListener("click", async function (event) {
 	const shadowEl = document.querySelector(".full-page-shadow");
 	const addBtn = document.querySelector(".add-button");
 	const scrollBtn = document.querySelector(".lower-header-button-icon");
+	const clearBasketBtn = document.querySelector(".close-btn-container");
 
 	if (scrollBtn) {
 		if (event.target.closest(".lower-header-button-icon")) {
@@ -31,6 +32,17 @@ document.addEventListener("click", async function (event) {
 			getBasket();
 		} else if (event.target.closest(".add-button")) {
 			addToBasket();
+		}
+	}
+	console.log(itemCounter);
+	if (clearBasketBtn) {
+		if (event.target.closest(".close-btn-container")) {
+			//if clear basket is clicked wipe out bash basket and reset item counter and clear basket button
+			setTimeout(function () {
+				sessionStorage.removeItem("bash-basket");
+				itemCounter.classList.remove("item-counter-active");
+				clearBasketButton.innerHTML = "";
+			}, 200);
 		}
 	}
 

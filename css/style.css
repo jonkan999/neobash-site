@@ -922,7 +922,7 @@
 	width: 30%;
 	font-size: 1.6rem;
 	font-weight: 500;
-	top: 100%;
+	top: 98%;
 	right: 50%;
 	border-radius: 0.4rem;
 	transform: translate(50%, -210%);
@@ -959,6 +959,34 @@
 	100% {
 		opacity: 1;
 	}
+}
+
+.close-btn-container {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	font-size: 1.6rem;
+	top: -12.8rem;
+	right: 2.1rem;
+	width: 13rem;
+	transition: 0.3s;
+	z-index: 1;
+}
+
+.clear-basket-icon {
+	font-size: 2rem;
+	border-radius: 200rem;
+	color: #302632;
+	background-color: rgba(48, 38, 50, 0.2);
+	transition: all 0.1s;
+}
+
+.close-btn-container:hover .clear-basket-icon,
+.close-btn-container:active .clear-basket-icon {
+	color: #fcf2fe;
+	background-color: rgba(48, 38, 50, 0.7);
 }
 
 .lower-header {
@@ -1224,3 +1252,4 @@
 	height: 2rem;
 	width: 2rem;
 }
+
