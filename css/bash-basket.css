@@ -82,7 +82,32 @@
 	justify-content: center;
 
 	background-color: #fff;
-	box-shadow: 0 0.1rem 3rem 0 rgba(0, 0, 0, 0.3);
+	/* box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.2); */
+	box-shadow: 0 0.1rem 3rem 0 rgba(153, 83, 169, 0.301);
+	border-radius: 5px;
+}
 
-	border-radius: 2rem;
+.checkout-btn:link,
+.checkout-btn:visited {
+	display: inline-block;
+	background-color: #f7dffd;
+	color: #333;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.8rem;
+	padding: 1.6rem 3.2rem 1.6rem 3.2rem;
+	transition: background-color 0.3s;
+
+	/* box-shadow: 0 5px 1px -1px #000; */
+}
+
+.checkout-btn:hover,
+.checkout-btn:active {
+	border-bottom: solid 0.5rem #333;
+	margin-bottom: -0.5rem;
+}
+
+.checkout-btn:active {
+	background-color: #dec9e4;
 }

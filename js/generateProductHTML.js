@@ -1,4 +1,5 @@
 export function generateProductHTML(article, language) {
+	console.log("running generateProductHTML");
 	/* takes article object and language as an input and generates product html*/
 	let usp1Tag = article.visibleENTags.usp1;
 	let usp2Tag = article.visibleENTags.usp2;

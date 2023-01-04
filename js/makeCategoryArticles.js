@@ -39,5 +39,8 @@ export function makeCategoryArticles() {
 	}
 }
 //Runs once every page load
-makeCategoryArticles();
+if (document.URL.includes("category-page")) {
+	//Only generate product grid if in category-page
+	makeCategoryArticles();
+}
 updateItemCounter();

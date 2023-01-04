@@ -973,6 +973,7 @@
 	width: 13rem;
 	transition: 0.3s;
 	z-index: 1;
+	cursor: pointer;
 }
 
 .clear-basket-icon {
@@ -1252,4 +1253,3 @@
 	height: 2rem;
 	width: 2rem;
 }
-

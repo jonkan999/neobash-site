@@ -52,11 +52,13 @@
 
 		<script defer src="js/bashBasketSVG.js"></script>
 		<script type="module" defer src="js/enlarge-product.js"></script>
-		<script type="module" defer src="js/getBasket.js"></script>
+		<script type="module" defer src="js/getSummary.js"></script>
+		<script defer src="js/openSummary.js"></script>
 
 		<link rel="stylesheet" href="css/general.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/bash-basket.css" />
+		<link rel="stylesheet" href="css/checkout.css" />
 		<link rel="stylesheet" href="css/queries.css" />
 
 		<title>
@@ -122,11 +124,72 @@
 			</div>
 		</header>
 
-		<section class="section-product-grid">
-			<div class="product-grid" id="productGrid">
-				<!-- 	<div class="category-header">
-					<h2 class="heading-secondary category-header-header">Venues</h2>
-				</div>
+		<section class="section-request-summary">
+			<div class="container">
+				<h2 class="heading-secondary">Request summary</h2>
+
+				<article class="request-summary">
+					<div
+						class="request-summary-body grid grid--2-cols request-summary-grid"
+						id="summaryBody"
+					>
+						<div class="">
+							<div class="request-summary-text">
+								<h3 class="request-summary-header">Mackverket</h3>
+
+								<p class="request-summary-paragraph">
+									Food that is amazing and tasty. Estimated startng price at 200
+									pp
+								</p>
+							</div>
+							<div class="request-summary-media-box">
+								<img
+									src="img/product-mackverket.jpg"
+									alt="Image of Skyddsrummet"
+									class="product-img"
+								/>
+							</div>
+							<div class="request-summary-text">
+								<h3 class="request-summary-header">Mackverket</h3>
+
+								<p class="request-summary-paragraph">
+									Food that is amazing and tasty. Estimated startng price at 200
+									pp
+								</p>
+							</div>
+							<div class="request-summary-media-box">
+								<img
+									src="img/product-skyddsrummet.jpg"
+									alt="Image of Skyddsrummet"
+									class="product-img"
+								/>
+							</div>
+							<div class="request-summary-text">
+								<h3 class="request-summary-header">Mackverket</h3>
+
+								<p class="request-summary-paragraph">
+									Food that is amazing and tasty. Estimated startng price at 200
+									pp
+								</p>
+							</div>
+							<div class="request-summary-media-box">
+								<img
+									src="img/product-skyddsrummet.jpg"
+									alt="Image of Skyddsrummet"
+									class="product-img"
+								/>
+							</div>
+						</div>
+					</div>
+					<button class="read-more-button">
+						<ion-icon
+							class="read-more-icon"
+							name="chevron-down-outline"
+						></ion-icon>
+					</button>
+				</article>
+			</div>
+			<!-- 	
 				<article class="product-card" name="venue-skyddsrummet">
 					<img
 						src="img/product-skyddsrummet.jpg"
@@ -286,12 +349,8 @@
 						>
 					</div>
 				</article> -->
-			</div>
 		</section>
 
-		<div class="check-out-footer">
-			<a href="/checkout.html" class="checkout-btn">proceed to checkout</a>
-		</div>
 		<div class="under-construction-banner">
 			<h2 class="heading-secondary">
 				UNDER CONSTRUCTION

@@ -29,5 +29,7 @@ export function changeCategory(clickedCategory) {
 	}
 	makeCategoryArticles();
 }
-
-changeCategory();
+if (document.URL.includes("category-page")) {
+	//Only generate product grid if in category-page
+	changeCategory();
+}
