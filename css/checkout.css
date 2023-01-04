@@ -25,7 +25,7 @@
 }
 
 .request-summary-body {
-	height: 50rem;
+	height: 42rem;
 	overflow: hidden;
 	-webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 	mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
@@ -66,7 +66,7 @@
 	height: 20rem;
 	width: 17rem;
 	/* padding: 3rem 0; */
-	filter: hue-rotate(-60deg) invert(0.1);
+
 	grid-column: 2/3;
 	align-self: center;
 	justify-self: center;

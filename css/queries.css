@@ -359,7 +359,9 @@
 		left: 55%;
 		height: 6%;
 	}
-
+	.check-out-footer {
+		padding: 2rem 3rem;
+	}
 	.checkout-btn:link,
 	.checkout-btn:visited {
 		font-size: 1.5rem;
@@ -484,7 +486,7 @@
 		gap: 0.5rem;
 		font-size: 1.3rem;
 		top: -10rem;
-		right: -2.2rem;
+		right: -1.9rem;
 	}
 	.clear-basket-icon {
 		font-size: 1.7rem;
@@ -531,7 +533,7 @@
 		height: 60rem;
 	}
 
-	.request-summary-grid {
+	.grid.request-summary-grid {
 		column-gap: 1.2rem;
 		row-gap: 0rem;
 	}
