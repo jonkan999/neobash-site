@@ -532,8 +532,12 @@
 	}
 
 	.request-summary-grid {
-		column-gap: 3rem;
+		column-gap: 0rem;
 		row-gap: 0rem;
+	}
+	.request-summary-header {
+		font-size: 2rem;
+		margin-bottom: 1rem;
 	}
 }
 
@@ -866,5 +870,9 @@
 	}
 	.category-header-header {
 		margin: 0 0 -6rem 0;
+	}
+
+	.heading-secondary-request {
+		font-size: 2.8rem;
 	}
 }
