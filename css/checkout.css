@@ -4,6 +4,10 @@
 	padding: 6rem 0 9.6rem;
 }
 
+.request-container {
+	padding: 0 1.3rem;
+}
+
 .section-request-summary .heading-secondary {
 	padding: 0 5rem;
 }

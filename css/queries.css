@@ -532,12 +532,17 @@
 	}
 
 	.request-summary-grid {
-		column-gap: 0rem;
+		column-gap: 1.2rem;
 		row-gap: 0rem;
 	}
 	.request-summary-header {
 		font-size: 2rem;
 		margin-bottom: 1rem;
+	}
+
+	.request-summary-media-box {
+		height: 18rem;
+		width: 15rem;
 	}
 }
 
