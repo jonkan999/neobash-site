@@ -478,7 +478,7 @@ categoryList.innerHTML = `
       stroke-linecap="round"
     />
   </svg>
-  <span>Venues</span>
+  <span>Venue</span>
 </a>
 </li>
 <li class="category-list-element">
