@@ -3,7 +3,7 @@ export default {
 		id: "venueSkyddsrummet",
 		name: "Skyddsrummet, Södermalm",
 		articleName: "venue-skyddsrummet",
-		category: "venues,wedding",
+		category: "venue,wedding",
 		image: `<img
 				src="img/product-skyddsrummet.jpg"
 				alt="Image of Skyddsrummet"
@@ -71,7 +71,7 @@ export default {
 		id: "venueFafangan",
 		name: "Fåfängan, Södermalm",
 		articleName: "venue-fåfängan",
-		category: "venues,wedding",
+		category: "venue,wedding",
 		image: `
 		<img
 			src="img/product-fafangan.jpg"
@@ -146,7 +146,7 @@ export default {
 		id: "venueTolv",
 		name: "Tolv Stockholm, Globenområdet",
 		articleName: "venue-tolv",
-		category: "venues",
+		category: "venue",
 		image: `
 		<img
 			src="img/product-tolv.jpg"
@@ -221,7 +221,7 @@ export default {
 		id: "venueByblos",
 		name: "Byblos, Vasastan",
 		articleName: "venue-byblos",
-		category: "venues",
+		category: "venue",
 		image: `
 		<img
 			src="img/product-byblos.jpg"
@@ -296,7 +296,7 @@ export default {
 		id: "venueLumafabriken",
 		name: "Lumafabriken, Hammarby",
 		articleName: "venue-umafabriken",
-		category: "venues",
+		category: "venue",
 		image: `
 		<img
 			src="img/product-lumafabriken.jpg"
