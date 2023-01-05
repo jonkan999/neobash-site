@@ -9,8 +9,11 @@ export function getSummary() {
 
 	//getting all items
 	//Generating HTML
+	//Generating submission string
 	let newHTML = ``;
+	let submissionString = `Requested: `;
 	for (let item in basketArray) {
+		console.log(item);
 		//Main category alway first, if MAIN category does not already exists in array, add it
 		const newCat = cards[basketArray[item]].category.split(",")[0];
 		newHTML += `
@@ -32,9 +35,13 @@ export function getSummary() {
     ${cards[basketArray[item]].image}
     </div>
     `;
+
+		//Just stacking product ids for backend
+		submissionString += `${item > 0 ? ", " : ""}${cards[basketArray[item]].id}`;
 	}
 
 	summaryBody.innerHTML = newHTML;
+	checkoutDetails.value = submissionString;
 }
 //Runs once every page load
 if (document.URL.includes("checkout")) {
