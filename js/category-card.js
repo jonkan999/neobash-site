@@ -91,7 +91,7 @@ export default {
 			<ion-icon class="product-icon" name="boat-outline"></ion-icon>
 			<span> Party on a boat!</span>`,
 			fromPrice: "fr. <strong>25 000 kr SEK</strong> a day",
-			description: `Bogila is an event venue located in Södermalm, Stockholm, with stunning views of Stockholm City Hall. The venue features an upper deck with panoramic views of the city, perfect for receptions and cocktail hours, and a lower deck that can accommodate seated dinners for 100+ guests. The venue has a unique BYOB (Bring Your Own Bottle) policy, allowing you to bring in your own choice of drinks, which can help keep costs down for your event. This versatile and unique venue is suitable for a wide variety of events, from corporate gatherings and product launches to private celebrations and weddings.`,
+			description: `Borgila is an event venue located in Södermalm, Stockholm, with stunning views of Stockholm City Hall. The venue features an upper deck with panoramic views of the city, perfect for receptions and cocktail hours, and a lower deck that can accommodate seated dinners for 100+ guests. The venue has a unique BYOB (Bring Your Own Bottle) policy, allowing you to bring in your own choice of drinks, which can help keep costs down for your event. This versatile and unique venue is suitable for a wide variety of events, from corporate gatherings and product launches to private celebrations and weddings.`,
 		},
 		visibleSETags: {
 			usp1: `
@@ -107,7 +107,7 @@ export default {
 			<ion-icon class="product-icon" name="boat-outline"></ion-icon>
 			<span> Båtparty!</span>`,
 			fromPrice: "fr. <strong>25 000 kr SEK</strong> dygn",
-			description: `Bogila är en evenemangslokal belägen på Södermalm, Stockholm, med fantastisk utsikt över Stockholms Stadshus. Lokalen har ett övre däck med panoramautsikt över staden, perfekt för mottagningar och cocktailmingel, och ett nedre däck som rymmer sittande middagar för 100+ gäster. Lokalen har en unik BYOB-policy (Bring Your Own Bottle), som gör att du kan ta in ditt eget val av drycker, vilket kan hjälpa till att hålla nere kostnaderna för ditt evenemang. Denna mångsidiga och unika lokal är lämplig för en mängd olika evenemang, från företagsevent och produktlanseringar till privata fester och bröllop.`,
+			description: `Borgila är en evenemangslokal belägen på Södermalm, Stockholm, med fantastisk utsikt över Stockholms Stadshus. Lokalen har ett övre däck med panoramautsikt över staden, perfekt för mottagningar och cocktailmingel, och ett nedre däck som rymmer sittande middagar för 100+ gäster. Lokalen har en unik BYOB-policy (Bring Your Own Bottle), som gör att du kan ta in ditt eget val av drycker, vilket kan hjälpa till att hålla nere kostnaderna för ditt evenemang. Denna mångsidiga och unika lokal är lämplig för en mängd olika evenemang, från företagsevent och produktlanseringar till privata fester och bröllop.`,
 		},
 		invisibleTags: {
 			vendorLink: "https://www.borgila.com/",
