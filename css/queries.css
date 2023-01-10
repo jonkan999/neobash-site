@@ -156,12 +156,12 @@
 
 	.main-nav-link:link,
 	.main-nav-link:visited {
-		font-size: 2.5rem;
+		font-size: 2.8rem;
 	}
 
 	.main-nav-link.nav-cta:link,
 	.main-nav-link.nav-cta:visited {
-		font-size: 1.8rem;
+		font-size: 2.1rem;
 	}
 
 	.language-dropdown-buttton select {
