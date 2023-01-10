@@ -25,7 +25,7 @@ const language = {
 		navAbout: "About",
 		navBlog: "Blog",
 		navContact: "contact us",
-		heroContact: "contact us",
+		heroContact: "our products",
 		heroEventbuilder: "event builder",
 		categoriesHeader: "This is the neobash event builder",
 		categoriesHeaderDescription:
@@ -104,7 +104,7 @@ const language = {
 		navAbout: "Om oss",
 		navBlog: "Blogg",
 		navContact: "kontakta oss",
-		heroContact: "kontakta oss",
+		heroContact: "våra produkter",
 		heroEventbuilder: "bygg ditt event",
 		categoriesHeader: "This is the neobash event builder",
 		categoriesHeaderDescription:

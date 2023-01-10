@@ -546,6 +546,10 @@
 		height: 18rem;
 		width: 15rem;
 	}
+
+	.lower-header-button-icon {
+		display: none;
+	}
 }
 
 /**************************/

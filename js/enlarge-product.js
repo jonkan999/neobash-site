@@ -81,7 +81,7 @@ document.addEventListener("click", async function (event) {
 			/* If it doesnt have a hash or the hash is not se then we set EN */
 			clickedElement.parentElement.innerHTML += generateProductHTMLLarge(
 				cards[clickedElement.getAttribute("id")],
-				"se"
+				"en"
 			);
 		}
 	} else if (clickedElement && shadowEl.classList[1] === "active-shadow") {

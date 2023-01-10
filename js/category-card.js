@@ -67,6 +67,62 @@ export default {
 		},
 	},
 
+	venueBorgila: {
+		id: "venueBorgila",
+		name: "Borgila, Södermalm",
+		articleName: "venue-borgila",
+		category: "venue,wedding",
+		image: `<img
+				src="img/product-Borgila.jpg"
+				alt="Image of Borgila"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 400 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 100 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="boat-outline"></ion-icon>
+			<span> Party on a boat!</span>`,
+			fromPrice: "fr. <strong>25 000 kr SEK</strong> a day",
+			description: `Bogila is an event venue located in Södermalm, Stockholm, with stunning views of Stockholm City Hall. The venue features an upper deck with panoramic views of the city, perfect for receptions and cocktail hours, and a lower deck that can accommodate seated dinners for 100+ guests. The venue has a unique BYOB (Bring Your Own Bottle) policy, allowing you to bring in your own choice of drinks, which can help keep costs down for your event. This versatile and unique venue is suitable for a wide variety of events, from corporate gatherings and product launches to private celebrations and weddings.`,
+		},
+		visibleSETags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 400 minglandes</span>`,
+			usp2: `							
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 100 sittandes</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="boat-outline"></ion-icon>
+			<span> Båtparty!</span>`,
+			fromPrice: "fr. <strong>25 000 kr SEK</strong> dygn",
+			description: `Bogila är en evenemangslokal belägen på Södermalm, Stockholm, med fantastisk utsikt över Stockholms Stadshus. Lokalen har ett övre däck med panoramautsikt över staden, perfekt för mottagningar och cocktailmingel, och ett nedre däck som rymmer sittande middagar för 100+ gäster. Lokalen har en unik BYOB-policy (Bring Your Own Bottle), som gör att du kan ta in ditt eget val av drycker, vilket kan hjälpa till att hålla nere kostnaderna för ditt evenemang. Denna mångsidiga och unika lokal är lämplig för en mängd olika evenemang, från företagsevent och produktlanseringar till privata fester och bröllop.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://www.borgila.com/",
+			vibe1: "cool",
+			vibe2: "city central location",
+			vibe3: "boat",
+			vibe4: "late night",
+			vibe5: "posh",
+			maxPeople: "400",
+			maxSeated: "100",
+			price: "medium",
+			catRank: "2",
+		},
+	},
+
 	venueFafangan: {
 		id: "venueFafangan",
 		name: "Fåfängan, Södermalm",
@@ -95,13 +151,7 @@ export default {
 			></ion-icon>
 			<span> Fantastic view</span>`,
 			fromPrice: "fr. <strong>40 000 kr SEK</strong> a day",
-			description: `Skyddsrummet, with a central location on walking distance from
-			Mariatorget, is ideal for basically any party. It's divided in to two
-			main sections. The brick room, with seating for 150 guests, and the
-			larger mountain room that is also fully equipped with light and sound.
-			The cool industrial atmosphere make Skyddsrummet ideal for product
-			release mingles, vernisages and just about any other party with an
-			eclectic audience.`,
+			description: `Fåfängan is a unique event venue on Södermalm, Stockholm, offering fantastic views of the inner city, with a heated greenhouse, lookout point terrace and a restaurant with serving rights. Perfect for hosting events such as corporate gatherings or private celebrations.`,
 		},
 		visibleSETags: {
 			usp1: `
@@ -120,13 +170,7 @@ export default {
 			></ion-icon>
 			<span> Fantastisk utsikt</span>`,
 			fromPrice: "fr. <strong>40 000 kr SEK</strong> dygn",
-			description: `Skyddsrummet, med centralt läge på gångavstånd från
-			Mariatorget, är perfekt för i princip alla fester. Lokalen är uppdelad i två
-			huvudsektioner. Tegelrummet, med plats för 150 gäster, och det större
-			Bergrummet som dessutom är fullt utrustat med ljud ljus till festen.
-			Den coola industriella atmosfären gör Skyddsrummet idealiskt för release-fester
-			i samband med produktsläpp, Personalfester, vernisager och precis vilken annan fest som helst med
-			fokus på eklektiska gäster.`,
+			description: `Fåfängan är en unik eventlokal på Södermalm i Stockholm, med fantastisk utsikt över innerstaden. I anslutning till lokalen finns uppvärmt växthus, utsiktsplatsterrass och restaurang med fullständiga rättigheter. Perfekt för företagsevent och privata fester.`,
 		},
 		invisibleTags: {
 			vendorLink: "https://fafangan.se/",

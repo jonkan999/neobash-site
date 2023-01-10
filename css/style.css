@@ -299,9 +299,13 @@
 }
 
 .how-it-works-left-images.images-1 {
-	background-image: url(../img/geisha-thinking.jpg);
-	box-shadow: 5rem 2rem 1.5rem 0.1rem white inset,
-		-1rem -2rem 1rem 0.1rem white inset;
+	background-image: url(../img/geisha-wondering.jpg);
+	transform: scaleX(-1);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* 	box-shadow: 5rem 2rem 1.5rem 0.1rem white inset,
+		-1rem -2rem 1rem 0.1rem white inset; */
 }
 
 .how-it-works-left-images.images-3 {
@@ -861,7 +865,7 @@
 .right-nav-box {
 	position: relative;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: center;
 	gap: 4rem;
 }
@@ -1080,6 +1084,7 @@
 }
 
 .categories-icon {
+	display: none;
 	height: 5rem;
 	width: 5rem;
 }
@@ -1089,6 +1094,24 @@
   stroke: #47394b !important;  doesnt seem to work*/
 	border-bottom: solid 0.3rem #47394b;
 	margin-bottom: -0.3rem;
+}
+
+.category-list-element.active .categories-icon {
+	display: block;
+	animation: easeIn ease 0.5s;
+	-webkit-animation: easeIn ease 0.5s;
+	-moz-animation: easeIn ease 0.5s;
+	-o-animation: easeIn ease 0.5s;
+	-ms-animation: easeIn ease 0.5s;
+}
+
+@keyframes easeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 /***************************** */
