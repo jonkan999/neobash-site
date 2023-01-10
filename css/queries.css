@@ -300,7 +300,11 @@
 	.geisha-gif-overlay-text {
 		font-size: 2.4rem;
 	}
+
 	.category-page-header {
+		padding: 2.6rem 2.6rem;
+	}
+	.bash-basket-page-header {
 		padding: 2.6rem 2.6rem 2.6rem 0;
 	}
 	.section-product-grid {
