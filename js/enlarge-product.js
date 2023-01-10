@@ -32,6 +32,7 @@ document.addEventListener("click", async function (event) {
 			getBasket();
 		} else if (event.target.closest(".add-button")) {
 			addToBasket();
+			window.scrollTo(0, 0);
 		}
 	}
 	console.log(itemCounter);
