@@ -311,9 +311,9 @@
 .how-it-works-left-images.images-3 {
 	/* prefiltered huerotation 150dg, auto-lvel, inksketch outline 0 coloring 62*/
 	background-image: url(../img/geisha-sending.jpg);
-	filter: none;
-	box-shadow: 3rem 3rem 2rem 0.1rem white inset,
-		-3rem -2rem 2rem 0.1rem white inset;
+	/* background-size: contain; */
+	background-repeat: no-repeat;
+	background-position: center;
 	grid-row: 3/4;
 }
 
@@ -353,14 +353,16 @@
 }
 
 .how-it-works-right-images.images-2 {
-	background-image: url(../img/geisha-writing-mirrored.jpg);
-	box-shadow: 3rem 3rem 2rem 0.1rem white inset,
-		-3rem -2rem 2rem 0.1rem white inset;
+	background-image: url(../img/geisha-sleeping.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .how-it-works-right-images.images-4 {
 	background-image: url(../img/geisha-waiting-mirrored-filter.jpg);
-	box-shadow: 3rem 3rem 2rem 0.1rem white inset,
-		-3rem -2rem 2rem 0.1rem white inset;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 	grid-row: 2/3;
 }
 
@@ -538,7 +540,11 @@
 	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
 
-	background-image: linear-gradient(to right, rgba(247, 228, 252, 1), #e4cde3);
+	background-image: linear-gradient(
+		to right,
+		rgba(247, 228, 252, 0.3),
+		#d0c3ba
+	);
 	overflow: hidden;
 }
 
@@ -560,16 +566,16 @@
 }
 
 .cta-img-box {
-	background-image: linear-gradient(
+	background-image: /* linear-gradient(
 			to right,
 
 			rgba(247, 228, 252, 0.452),
 			rgba(238, 190, 250, 0.253)
-		),
-		url(../img/contact-form-img-2.jpg);
+		), */ url(../img/contact-form-img-2.jpg);
+	filter: sepia(0.3) saturate(0.5) brightness(1.1);
 
 	background-size: cover;
-	background-position: bottom;
+	background-position: center;
 }
 
 .cta-form {
@@ -595,7 +601,8 @@
 	font-family: inherit;
 	color: inherit;
 	border: none;
-	background-color: #fdf2e9;
+	background-color: #fdf7fe;
+	border: solid 1px #555;
 	border-radius: 9px;
 	box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
 }
@@ -618,7 +625,8 @@
 
 .cta-form button {
 	grid-column: 2 / 3;
-	box-shadow: 0 0.1rem 0.5rem rgba(71, 57, 75, 0.1);
+	box-shadow: 0 0.1rem 0.5rem rgba(71, 57, 75, 0.3);
+	background-color: #f7dffd;
 }
 
 .button-icon {
@@ -638,7 +646,8 @@
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
-	transform: translate(60%, -220%) rotate(-10deg);
+	transform: translate(40%, -220%) rotate(-10deg);
+	z-index: 1;
 }
 
 .call-us-number {

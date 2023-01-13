@@ -432,14 +432,18 @@
 
 	.cta {
 		grid-template-columns: 1fr;
-		background-image: linear-gradient(to top, rgba(247, 228, 252, 1), #e4cde3);
+		background-image: linear-gradient(
+			to top,
+			rgba(247, 228, 252, 0.3),
+			#d0c3ba
+		);
 	}
 
 	.cta-img-box {
 		grid-row: 1/2;
 		background-size: cover;
 		background-position: bottom;
-		height: 25rem;
+		height: 30rem;
 	}
 
 	.cta-form {
