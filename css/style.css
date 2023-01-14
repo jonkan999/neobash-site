@@ -290,7 +290,7 @@
 }
 
 .how-it-works-left-images {
-	width: 60%;
+	width: 100%;
 	height: 35rem;
 	background-size: cover;
 	background-position: center;
@@ -301,7 +301,7 @@
 .how-it-works-left-images.images-1 {
 	background-image: url(../img/geisha-wondering.jpg);
 	transform: scaleX(-1);
-	background-size: contain;
+	/* background-size: contain; */
 	background-repeat: no-repeat;
 	background-position: center;
 	/* 	box-shadow: 5rem 2rem 1.5rem 0.1rem white inset,
@@ -345,7 +345,7 @@
 }
 
 .how-it-works-right-images {
-	width: 60%;
+	width: 100%;
 	height: 35rem;
 	background-size: cover;
 	background-position: center;
@@ -353,17 +353,18 @@
 }
 
 .how-it-works-right-images.images-2 {
-	background-image: url(../img/geisha-sleeping.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.how-it-works-right-images.images-4 {
 	background-image: url(../img/geisha-waiting-mirrored-filter.jpg);
-	background-size: contain;
+	/* background-size: contain; */
 	background-repeat: no-repeat;
 	background-position: center;
 	grid-row: 2/3;
+}
+.how-it-works-right-images.images-4 {
+	background-image: url(../img/geisha-sleeping.jpg);
+	/* background-size: contain; */
+	background-repeat: no-repeat;
+	background-position: center;
+	grid-row: 4/5;
 }
 
 /***************************** */
