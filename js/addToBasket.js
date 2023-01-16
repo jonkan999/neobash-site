@@ -1,21 +1,8 @@
 import { updateItemCounter } from "/js/updateItemCounter.js";
 
-export function addToBasket() {
-	const productId = document.getElementsByClassName(
-		"product-card product-card-large"
-	)[0];
-	console.log(productId.id);
-	/* 	var price = $(productParent).find(".price span").text();
-	var productName = $(productParent).find(".productname").text();
-	var quantity = $(productParent).find(".product-quantity").val();
+export function addToBasket(productId) {
+	console.log(productId);
 
-	var cartItem = {
-		productName: productName,
-		price: price,
-		quantity: quantity,
-	};
-	var cartItemJSON = JSON.stringify(cartItem);
-*/
 	let basketArray = new Array();
 	// If javascript shopping cart session is not empty
 	if (sessionStorage.getItem("bash-basket")) {
@@ -23,14 +10,17 @@ export function addToBasket() {
 	}
 
 	//if item does not already exists in basket, add it
-	if (!basketArray.includes(productId.id)) {
-		basketArray.push(productId.id);
+	if (!basketArray.includes(productId)) {
+		basketArray.push(productId);
 	}
 
 	const basketJSON = JSON.stringify(basketArray);
 	sessionStorage.setItem("bash-basket", basketJSON);
 	console.log(basketJSON);
 
-	//update item number in html
-	updateItemCounter();
+	//update item number in html, ignore if in event-builder
+	if (document.URL.includes("category-page")) {
+		console.log("h");
+		updateItemCounter();
+	}
 }

@@ -31,7 +31,10 @@ document.addEventListener("click", async function (event) {
 			removeFromBasket();
 			getBasket();
 		} else if (event.target.closest(".add-button")) {
-			addToBasket();
+			const productId = document.getElementsByClassName(
+				"product-card product-card-large"
+			)[0];
+			addToBasket(productId.id);
 			window.scrollTo(0, 0);
 		}
 	}

@@ -1,3 +1,5 @@
+import { addToBasket } from "/js/addToBasket.js";
+
 const eventBuilderElement = document.querySelector(".event-builder");
 eventBuilderElement.addEventListener("click", async function () {
 	const src = "event-builder/date-question.html";
@@ -103,6 +105,25 @@ document.addEventListener("click", async function (event) {
 					behavior: "smooth",
 				});
 
+				//Adding items to bash basket, this will later be based on
+				//the user input questions
+				const itemsToLoad = [];
+				itemsToLoad.push(
+					"venueSkyddsrummet",
+					"foodMackverket",
+					"foodChurroskungarna",
+					"decorMirrorballs",
+					"drinksLovnas"
+				);
+				console.log("element");
+				for (let index = 0; index < itemsToLoad.length; index++) {
+					const productId = itemsToLoad[index];
+					console.log(productId);
+					addToBasket(productId);
+				}
+				console.log("element");
+
+				//Generating some sort of dummy graphic
 				var elem = document.querySelector(".progress-bar-inside");
 				var message1 = document.querySelector(".progress-bar-message1");
 				var message2 = document.querySelector(".progress-bar-message2");
