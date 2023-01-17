@@ -15,17 +15,27 @@
 <url>
   <loc>https://neobash.se/category-page.html</loc>
   <lastmod>2022-12-06T11:54:57+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.85</priority>
 </url>
 <url>
   <loc>https://neobash.se/blog.html</loc>
   <lastmod>2022-12-06T11:54:57+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.70</priority>
 </url>
 <url>
-  <loc>https://neobash.se/bash-basket</loc>
+  <loc>https://neobash.se/bash-basket.html</loc>
   <lastmod>2022-12-06T11:54:57+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://neobash.se/checkout.html</loc>
+  <lastmod>2022-12-06T11:54:57+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://neobash.se/submission-success.html</loc>
+  <lastmod>2022-12-06T11:54:57+00:00</lastmod>
+  <priority>0.50</priority>
 </url>
 <url>
   <loc>https://neobash.se/index.html</loc>
