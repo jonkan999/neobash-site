@@ -5,7 +5,7 @@ export default {
 		articleName: "venue-skyddsrummet",
 		category: "venue,wedding",
 		image: `<img
-				src="img/product-skyddsrummet.jpg"
+				src="img/product-images/skyddsrummet.jpg"
 				alt="Image of Skyddsrummet"
 				class="product-img"
 			/>`,
@@ -73,7 +73,7 @@ export default {
 		articleName: "venue-borgila",
 		category: "venue,wedding",
 		image: `<img
-				src="img/product-Borgila.jpg"
+				src="img/product-images/Borgila.jpg"
 				alt="Image of Borgila"
 				class="product-img"
 			/>`,
@@ -130,7 +130,7 @@ export default {
 		category: "venue,wedding",
 		image: `
 		<img
-			src="img/product-fafangan.jpg"
+			src="img/product-images/fafangan.jpg"
 			alt="Image of Fåfängan"
 			class="product-img"
 		/>`,
@@ -193,7 +193,7 @@ export default {
 		category: "venue",
 		image: `
 		<img
-			src="img/product-tolv.jpg"
+			src="img/product-images/tolv.jpg"
 			alt="Image of Tolv Stockholm"
 			class="product-img"
 		/>`,
@@ -268,7 +268,7 @@ export default {
 		category: "venue",
 		image: `
 		<img
-			src="img/product-byblos.jpg"
+			src="img/product-images/byblos.jpg"
 			alt="Image of Byblos Restaurang"
 			class="product-img"
 		/>`,
@@ -343,7 +343,7 @@ export default {
 		category: "venue",
 		image: `
 		<img
-			src="img/product-lumafabriken.jpg"
+			src="img/product-images/lumafabriken.jpg"
 			alt="Image of Lumafabriken Restaurang"
 			class="product-img"
 		/>`,
@@ -418,7 +418,7 @@ export default {
 		category: "food",
 		image: `
 		<img
-			src="img/product-mackverket.jpg"
+			src="img/product-images/mackverket.jpg"
 			alt="Image of Skyddsrummet"
 			class="product-img"
 		/>`,
@@ -487,7 +487,7 @@ export default {
 		category: "food",
 		image: `
 		<img
-			src="img/product-churroskungarna.jpg"
+			src="img/product-images/churroskungarna.jpg"
 			alt="Image of Skyddsrummet"
 			class="product-img"
 		/>`,
@@ -556,7 +556,7 @@ export default {
 		category: "decor",
 		image: `
 		<img
-			src="img/product-discoballs.jpg"
+			src="img/product-images/discoballs.jpg"
 			alt="Image of Skyddsrummet"
 			class="product-img decor-discoballs-img"
 		/>`,
@@ -615,7 +615,7 @@ export default {
 		category: "drinks",
 		image: `
 		<img
-			src="img/product-lovnas.jpg"
+			src="img/product-images/lovnas.jpg"
 			alt="Image of Skyddsrummet"
 			class="product-img drinks-lovnas-img"
 		/>`,
@@ -668,6 +668,454 @@ export default {
 			maxSeated: "n/a",
 			price: "medium",
 			catRank: "1",
+		},
+	},
+	venueSjovillan: {
+		id: "venueSjovillan",
+		name: "Sjövillan, Nyckelviken",
+		articleName: "venue-sjovillan",
+		category: "venue,wedding",
+		image: `<img
+				src="img/product-images/sjovillan.jpg"
+				alt="Image of Sjövillan"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 48 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 48 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span> scenic lake view</span>`,
+			fromPrice: "fr. <strong>7 000 kr SEK</strong> a day",
+			description: `
+
+			A beautiful summer cottage on the shores of a tranquil lake, this event venue is the perfect setting for a romantic wedding, or other special occasions. The natural beauty of the lake and surrounding forest creates a serene and idyllic atmosphere, while the charming cottage offers a cozy and intimate space for your special day. With ample space for both indoor and outdoor celebrations, this venue is sure to make your wedding, or company get together, a truly unforgettable experience.
+`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink:
+				"https://www.nyckelvikensherrgard.se/index.php/festvaning/boka-sjoevillan",
+			vibe1: "beautiful",
+			vibe2: "summer",
+			vibe3: "cottage",
+			vibe4: "lake",
+			vibe5: "wedding",
+			maxPeople: "48",
+			maxSeated: "48",
+			price: "light",
+			catRank: "4",
+		},
+	},
+	venueT5Community: {
+		id: "venueT5Community",
+		name: "T5 Community, Stockholm",
+		articleName: "venue-T5Community",
+		category: "venue,party",
+		image: `<img
+				src="img/product-images/T5Community.jpg"
+				alt="Image of T5Community"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 120 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 80 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span>Big open space</span>`,
+			fromPrice: "fr. <strong>13 600 kr SEK</strong> a day",
+			description: `
+
+T5 Community is a dynamic coworking space in the heart of Stockholm city.
+With its own entrance they offer you a big venue with tons of opportunities. Like a clean canvas you can create the perfect event from a Kick-Off to TED-talks.`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://tomtebogatan5.se/event",
+			vibe1: "Conference",
+			vibe2: "Studio",
+			vibe3: "Spacious",
+			vibe4: "Showroom",
+			vibe5: "pop-up",
+			maxPeople: "120",
+			maxSeated: "80",
+			price: "medium",
+			catRank: "3",
+		},
+	},
+	venueMSAmbiance: {
+		id: "venueMSAmbiance",
+		name: "M/S Ambiance, Stockholm",
+		articleName: "venue-MSAmbiance",
+		category: "venue,party",
+		image: `<img
+				src="img/product-images/MSAmbiance.jpg"
+				alt="Image of Skyddsrummet"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 150 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 80 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span>Big open space</span>`,
+			fromPrice: "fr. <strong>6 100 kr SEK</strong> p hour",
+			description: `
+
+The perfect party boat with a large sun deck from which you can enjoy the amazing view. Relax in lounge furniture with a cold drink, while you get to experience Stockholm's archipelago from the front row.
+
+The boat is a perfect platform for all kinds of parties. You have exclusive rights to the boat with both bar and food, while you are only a stone's throw from the nightlife of the old town when we are back at the dock.
+`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://strandrederi.com/vara-batar/",
+			vibe1: "Summer",
+			vibe2: "BBQ",
+			vibe3: "Midsummer",
+			vibe4: "wedding",
+			vibe5: "party",
+			maxPeople: "150",
+			maxSeated: "80",
+			price: "medium",
+			catRank: "2",
+		},
+	},
+	venueBergrummet: {
+		id: "venueBergrummet",
+		name: "Bergrummet, Skeppsholmen",
+		articleName: "venue-Bergrummet",
+		category: "venue,party",
+		image: `<img
+				src="img/product-images/Bergrummet.jpg"
+				alt="Image of Bergrummet"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 250 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 200 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span>Big open space</span>`,
+			fromPrice: "fr. <strong>50 000 kr SEK</strong> a day",
+			description: `
+
+Directly after the bridge to Skeppsholmen is the entrance to the amazing cave, which offers an unique party environment.
+`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://www.skeppsholmsgruppen.se/en/bergrummet",
+			vibe1: "Conference",
+			vibe2: "Wedding",
+			vibe3: "Kick-Off",
+			vibe4: "Party",
+			vibe5: "Concert",
+			maxPeople: "250",
+			maxSeated: "200",
+			price: "high",
+			catRank: "2",
+		},
+	},
+	venueEricEricsonhallen: {
+		id: "venueEricEricsonhallen",
+		name: "Eric Ericsonhallen, Skeppsholmen",
+		articleName: "venue-EricEricsonhallen",
+		category: "venue,party",
+		image: `<img
+				src="img/product-images/EricEricsonhallen.jpg"
+				alt="Image of Skyddsrummet"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 500 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 430 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span>Big open space</span>`,
+			fromPrice: "fr. <strong>50 000 kr SEK</strong> a day",
+			description: `
+
+Eric Ericsonhallen has perhaps central Stockholm's most attractive location, and its powerful design and stately interior give the event that little extra that is required to make a good event perfect.
+`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://ericericsonhallen.se/boka/event/",
+			vibe1: "Conference",
+			vibe2: "Wedding",
+			vibe3: "Kick-Off",
+			vibe4: "Party",
+			vibe5: "Concert",
+			maxPeople: "500",
+			maxSeated: "430",
+			price: "high",
+			catRank: "4",
+		},
+	},
+	venueTheBeach: {
+		id: "venueTheBeach",
+		name: "The beach, Huddinge",
+		articleName: "venue-TheBeach",
+		category: "venue,party",
+		image: `<img
+				src="img/product-images/TheBeach.jpg"
+				alt="Image of Skyddsrummet"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 650 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 500 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span>Big open space</span>`,
+			fromPrice: "fr. <strong>50 000 kr SEK</strong> a day",
+			description: `
+
+a large beach for your event. Have a beach party, or a kick off with obstacle courses or host a volleyball tournament
+`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://www.thebeach.se/",
+			vibe1: "Beach party",
+			vibe2: "Beach Volleyball",
+			vibe3: "Kick-Off",
+			vibe4: "Party",
+			vibe5: "Concert",
+			maxPeople: "500",
+			maxSeated: "430",
+			price: "medium",
+			catRank: "4",
+		},
+	},
+	venueGenerator: {
+		id: "venueGenerator",
+		name: "Generator, Stockholm",
+		articleName: "venue-Generator",
+		category: "venue,party",
+		image: `<img
+				src="img/product-images/Generator.jpg"
+				alt="Image of Skyddsrummet"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 150 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 70 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span>Big open space</span>`,
+			fromPrice: "fr. <strong>13 000 kr SEK</strong> a day",
+			description: `
+
+In the heart of Stockholm is Generator, a high end hostel. They have the perfect venue for your event. 
+`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://staygenerator.com/meetings-and-events?lang=sv-SE",
+			vibe1: "Kick-Off",
+			vibe2: "Conference",
+			vibe3: "Birthday party",
+			vibe4: "Party",
+			vibe5: "Concert",
+			maxPeople: "150",
+			maxSeated: "70",
+			price: "light",
+			catRank: "2",
+		},
+	},
+	venueCedergrenskaTornetRiddarsalen: {
+		id: "venueCedergrenskaTornetRiddarsalen",
+		name: "Cedergrenska Tornet/Riddarsalen, Stocksund",
+		articleName: "venue-CedergrenskaTornetRiddarsalen",
+		category: "venue,party",
+		image: `<img
+				src="img/product-images/CedergrenskaTornetRiddarsalen.jpg"
+				alt="Image of Cedergrenska Tornet/Riddarsalen"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 170 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 120 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span>Big open space</span>`,
+			fromPrice: "fr. <strong>9 000 kr SEK</strong> a day",
+			description: `
+
+The red brick-building is used today as a banquet hall and conference room for both large and small groups. With its special layout, Cedergrenska Tornet is a perfect building for a different conference or party. During the same occasion, it is possible to use several salons. 
+With a beautiful fireplace, high ceilings and access to the roof terrace, the party/conference will be an unforgettable experience.
+`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://cedergrenskatornet.se/vara-lokaler/",
+			vibe1: "Kick-Off",
+			vibe2: "Conference",
+			vibe3: "Wedding",
+			vibe4: "Party",
+			vibe5: "Concert",
+			maxPeople: "170",
+			maxSeated: "120",
+			price: "light",
+			catRank: "3",
+		},
+	},
+	venueWestmanskaPalatsetGlassalen: {
+		id: "venueWestmanskaPalatsetGlassalen",
+		name: "Westmanska Palatset, Stocksund",
+		articleName: "venue-WestmanskaPalatsetGlassalen",
+		category: "venue,party",
+		image: `<img
+				src="img/product-images/WestmanskaPalatsetGlassalen.jpg"
+				alt="Image of Westmanska Palatset"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 200 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 80 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span>Big open space</span>`,
+			fromPrice: "fr. <strong>15 000 kr SEK</strong> a day",
+			description: `
+
+Light and airy premises with panoramic windows facing our lovely courtyard.
+
+Westmanska Palatset offers unique event spaces in an attractive location. Whether you want to organize an exclusive dinner, a mingling party, a wedding or a company party, we have the party rooms for you.
+
+`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://cedergrenskatornet.se/vara-lokaler/",
+			vibe1: "Kick-Off",
+			vibe2: "Conference",
+			vibe3: "Wedding",
+			vibe4: "Party",
+			vibe5: "Big spaces",
+			maxPeople: "200",
+			maxSeated: "80",
+			price: "medium",
+			catRank: "2",
 		},
 	},
 };
