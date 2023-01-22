@@ -7,19 +7,25 @@ import { isBYOB } from "/js/isBYOB.js";
 /* loops through all articles in category-card.js json and generates the product grid */
 export function makeCategoryArticles() {
 	productGrid.innerHTML = "";
-	console.log("running makeCategoryArticles");
-	for (let key in cards) {
-		let article = cards[key];
-		/* only append with selected category */
-		const urlParams = new URLSearchParams(window.location.search);
-		const currentCat = urlParams.get("category");
-		const byob = urlParams.get("byob");
-		console.log(currentCat);
-		/* const currentCat = document.getElementsByClassName(
-			"category-list-element active"
-		)[0]; */
 
+	const urlParams = new URLSearchParams(window.location.search);
+	const currentCat = urlParams.get("category");
+	const byob = urlParams.get("byob");
+
+	//sort according to rank, maybe move this to only run once
+	let sortable = [];
+	for (let id in cards) {
+		sortable.push([id, cards[id].invisibleTags.catRank]);
+	}
+
+	sortable.sort(function (a, b) {
+		return a[1] - b[1];
+	});
+
+	for (let i = 0; i < sortable.length; i++) {
+		let article = cards[sortable[i][0]];
 		if (currentCat) {
+			/* only append with selected category */
 			if (
 				article.category.trim().split(",").includes(currentCat) &&
 				isBYOB(byob, article.invisibleTags.byob)
