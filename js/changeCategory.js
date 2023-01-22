@@ -1,4 +1,5 @@
 import { makeCategoryArticles } from "/js/makeCategoryArticles.js";
+import { replaceQueryParam } from "/js/replaceQueryParam.js";
 
 export function changeCategory(clickedCategory) {
 	console.log("running changeCategory");
@@ -15,6 +16,14 @@ export function changeCategory(clickedCategory) {
 		return;
 		//clickedCategory.classList.toggle("active");
 	} else {
+		//change url params to the active category
+		replaceQueryParam(
+			"category",
+			clickedCategory
+				.getElementsByTagName("span")[0]
+				.innerHTML.toLowerCase()
+				.trim()
+		);
 		//If other boxes are active, untoggle and then toggle the clicked
 		if (document.getElementsByClassName("category-list-element active")[0]) {
 			document

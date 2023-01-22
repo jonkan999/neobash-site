@@ -1,5 +1,5 @@
 categoryList.innerHTML = `
-<li class="category-list-element active">
+<li class="category-list-element">
 <a href="#" class="category-list-link">
   <!--             <img
     src="svg-icons/venue-icon.svg"

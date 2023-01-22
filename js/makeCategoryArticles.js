@@ -10,17 +10,15 @@ export function makeCategoryArticles() {
 	for (let key in cards) {
 		let article = cards[key];
 		/* only append with selected category */
-		const currentCat = document.getElementsByClassName(
+		const urlParams = new URLSearchParams(window.location.search);
+		const currentCat = urlParams.get("category");
+		console.log(currentCat);
+		/* const currentCat = document.getElementsByClassName(
 			"category-list-element active"
-		)[0];
+		)[0]; */
 
 		if (currentCat) {
-			if (
-				article.category
-					.trim()
-					.split(",")
-					.includes(currentCat.innerText.toLowerCase().trim())
-			) {
+			if (article.category.trim().split(",").includes(currentCat)) {
 				/*trim() needed to account for safari reading in a line break here https://stackoverflow.com/questions/61219317/javascript-if-evaluating-differently-in-firefox-and-safari*/
 				if (window.location.hash) {
 					// Set the content of the webpage

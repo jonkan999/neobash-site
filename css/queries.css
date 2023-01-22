@@ -114,6 +114,7 @@
 
 		/* 3) Hide it from screen readers */
 		visibility: hidden;
+		overflow: hidden;
 	}
 
 	.nav-open .main-nav {
@@ -138,6 +139,31 @@
 		}
 		100% {
 			transform: translateX(0%);
+		}
+	}
+
+	.nav-close .main-nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 1;
+		pointer-events: auto;
+		visibility: visible;
+		transform: translateX(100%);
+		animation: slideOut ease 0.5s;
+		-webkit-animation: slideOut ease 0.5s;
+		-moz-animation: slideOut ease 0.5s;
+		-o-animation: slideOut ease 0.5s;
+		-ms-animation: slideOut ease 0.5s;
+		z-index: 1;
+	}
+
+	@keyframes slideOut {
+		0% {
+			transform: translateX(0%);
+		}
+		100% {
+			transform: translateX(100%);
 		}
 	}
 
@@ -169,7 +195,7 @@
 	}
 
 	.header-buttons {
-		gap: 0.3rem;
+		gap: 1.5rem;
 	}
 
 	.header-buttons button {
