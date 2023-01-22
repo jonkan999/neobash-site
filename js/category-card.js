@@ -179,6 +179,8 @@ export default {
 			vibe3: "posh",
 			vibe4: "late night",
 			vibe5: "high-end",
+			byob: "0",
+			byof: "0",
 			maxPeople: "700",
 			maxSeated: "180",
 			price: "medium",

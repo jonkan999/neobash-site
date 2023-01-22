@@ -1,6 +1,7 @@
 import cards from "/js/category-card.js";
 import { generateProductHTML } from "/js/generateProductHTML.js";
 import { updateItemCounter } from "/js/updateItemCounter.js";
+import { isBYOB } from "/js/isBYOB.js";
 /* console.log(cards[Object.keys(cards)[0]]); */
 
 /* loops through all articles in category-card.js json and generates the product grid */
@@ -12,13 +13,17 @@ export function makeCategoryArticles() {
 		/* only append with selected category */
 		const urlParams = new URLSearchParams(window.location.search);
 		const currentCat = urlParams.get("category");
+		const byob = urlParams.get("byob");
 		console.log(currentCat);
 		/* const currentCat = document.getElementsByClassName(
 			"category-list-element active"
 		)[0]; */
 
 		if (currentCat) {
-			if (article.category.trim().split(",").includes(currentCat)) {
+			if (
+				article.category.trim().split(",").includes(currentCat) &&
+				isBYOB(byob, article.invisibleTags.byob)
+			) {
 				/*trim() needed to account for safari reading in a line break here https://stackoverflow.com/questions/61219317/javascript-if-evaluating-differently-in-firefox-and-safari*/
 				if (window.location.hash) {
 					// Set the content of the webpage
