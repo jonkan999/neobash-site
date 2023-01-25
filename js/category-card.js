@@ -1120,4 +1120,317 @@ Westmanska Palatset offers unique event spaces in an attractive location. Whethe
 			catRank: "2",
 		},
 	},
+	venueSjofartshusetNeptunisalen: {
+		id: "venueSjofartshusetNeptunisalen",
+		name: "Sjöfartshuset/Neptunisalen, Stockholm",
+		articleName: "venue-SjofartshusetNeptunisalen",
+		category: "venue,party",
+		image: `<img
+				src="img/product-images/SjofartshusetNeptunisalen.jpg"
+				alt="Image of Sjöfartshuset/Neptunisalen"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 220 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 146 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span>Big open space</span>`,
+			fromPrice: "fr. <strong>6 246 kr SEK</strong> a day",
+			description: `
+
+Come and celebrate life's all celebrations at Sjöfartshuset, dining rooms and salons from rustic attic to elegant Gustavian style. Both floors offer a magnificent view towards the water.
+From Skeppsbron 10, people have heard the laughter of the party since the 17th century.
+
+
+`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://www.sjofartshuset.se/festvaning/",
+			vibe1: "Kick-Off",
+			vibe2: "Conference",
+			vibe3: "Wedding",
+			vibe4: "Party",
+			vibe5: "Big spaces",
+			maxPeople: "220",
+			maxSeated: "146",
+			price: "light",
+			catRank: "3",
+		},
+	},
+	venueJunibackensFestvaning: {
+		id: "venueJunibackensFestvaning",
+		name: "Junibackens Festvåning, Stockholm",
+		articleName: "venue-JunibackensFestvaning",
+		category: "venue,party",
+		image: `<img
+				src="img/product-images/JunibackensFestvaning.jpg"
+				alt="Image of Junibackens Festvåning"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 300 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 150 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span>Big open space</span>`,
+			fromPrice: "fr. <strong>15 000 kr SEK</strong> a day",
+			description: `
+
+Invite friends, family or colleagues to a party with the best view in town! Step into a magical fairytale world out of the ordinary where only the imagination sets the limits! Junibacken accepts groups of at least 50 adults.
+
+
+`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink:
+				"https://www.junibacken.se/festvaning/?gclid=CjwKCAiAoL6eBhA3EiwAXDom5lNkjfMTBCIH92lIWBx9TvueJ0xBUpyMGoeTtpeMw7FYDCl5H7JDRBoCDKkQAvD_BwE",
+			vibe1: "Kick-Off",
+			vibe2: "Conference",
+			vibe3: "Wedding",
+			vibe4: "Party",
+			vibe5: "Big spaces",
+			maxPeople: "300",
+			maxSeated: "150",
+			price: "medium",
+			catRank: "2",
+		},
+	},
+	venueLangholmenFestvaning: {
+		id: "venueLangholmenFestvaning",
+		name: "Långholmen Festvåning, Stockholm",
+		articleName: "venue-LångholmenFestvaning",
+		category: "venue,party",
+		image: `<img
+				src="img/product-images/LangholmenFestvaning.jpg"
+				alt="Image of Långholmen Festvåning"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 100 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 90 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span>Big open space</span>`,
+			fromPrice: "fr. <strong>7 500 kr SEK</strong> a day",
+			description: `
+
+If you are looking for a beautiful and traditional party venue in a unique and peaceful place in Stockholm, you have found the right place. Långholmen's party floor is private and castle-like!
+
+
+`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://langholmen.com/restaurang/festvaning/",
+			vibe1: "Kick-Off",
+			vibe2: "Conference",
+			vibe3: "Wedding",
+			vibe4: "Party",
+			vibe5: "Big spaces",
+			maxPeople: "100",
+			maxSeated: "90",
+			price: "light",
+			catRank: "2",
+		},
+	},
+	venueH62: {
+		id: "venueH62",
+		name: "H62 / Festvåning, Stockholm",
+		articleName: "venue-H62",
+		category: "venue,party",
+		image: `<img
+				src="img/product-images/H62.jpg"
+				alt="Image of H62 / Festvåning"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 175 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 70 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span>Big open space</span>`,
+			fromPrice: "fr. <strong>6 000 kr SEK</strong> a day",
+			description: `
+
+H62 is located in a cosy, whitestone cellar vault, dating back to the 19th century. Two larger halls are connected by nice corridors and smaller rooms with tables and chairs.
+
+
+`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://h62.se/packages",
+			vibe1: "Kick-Off",
+			vibe2: "Conference",
+			vibe3: "Wedding",
+			vibe4: "Party",
+			vibe5: "Big spaces",
+			maxPeople: "175",
+			maxSeated: "70",
+			price: "light",
+			catRank: "3",
+		},
+	},
+	venue7APosthuset: {
+		id: "venue7APosthuset",
+		name: "7APosthuset, Stockholm",
+		articleName: "venue-7APosthuset",
+		category: "venue,party",
+		image: `<img
+				src="img/product-images/7APosthuset.jpg"
+				alt="Image of 7APosthuset"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 300 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 168 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span>Big open space</span>`,
+			fromPrice: "fr. <strong>49 900 kr SEK</strong> a day",
+			description: `
+
+Magnificent events in historic surroundings.
+
+The central location and premises that offer both character and capacity make 7A Posthuset an excellent choice for your next event. The building's two atriums offer a spectacular ceiling height, brick-clad walls and a generous amount of light through the glass roof for all kinds of dinners and events.
+
+
+
+`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://7a.se/anlaggningar/7a-posthuset/",
+			vibe1: "Kick-Off",
+			vibe2: "Conference",
+			vibe3: "Wedding",
+			vibe4: "Party",
+			vibe5: "Big spaces",
+			maxPeople: "300",
+			maxSeated: "168",
+			price: "high",
+			catRank: "2",
+		},
+	},
+	venueMalarhojdensDansskolaFestvaning: {
+		id: "venueMalarhojdensDansskolaFestvaning",
+		name: "Mälarhöjdens Dansskola & Festvåning, Stockholm",
+		articleName: "venue-MalarhojdensDansskolaFestvaning",
+		category: "venue,party",
+		image: `<img
+				src="img/product-images/MalarhojdensDansskolaFestvaning.jpg"
+				alt="Image of Mälarhöjdens Dansskola & Festvåning"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon class="product-icon" name="people-outline"></ion-icon>
+			<span> 100 mingling</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> 100 seated</span>`,
+			usp3: `
+			<ion-icon class="product-icon" name="flash-outline"></ion-icon>
+			<span>Big open space</span>`,
+			fromPrice: "fr. <strong>3 000 kr SEK</strong> a day",
+			description: `
+
+A unique venue on two levels located just a stone's throw from the beautiful Mälaren shore with nature, piers and marinas all around. High ceilings make the venue unique and the acoustics perfect for singing or other performances during the dinner or wedding party.
+
+
+
+`,
+		},
+		visibleSETags: {
+			usp1: ``,
+			usp2: ``,
+			usp3: ``,
+			fromPrice: "",
+			description: `.`,
+		},
+		invisibleTags: {
+			vendorLink:
+				"https://malarhojdensdansskola.se/hyr-lokalen/priser-44050687",
+			vibe1: "Kick-Off",
+			vibe2: "Conference",
+			vibe3: "Wedding",
+			vibe4: "Party",
+			vibe5: "Big spaces",
+			maxPeople: "100",
+			maxSeated: "100",
+			price: "light",
+			catRank: "4",
+		},
+	},
 };

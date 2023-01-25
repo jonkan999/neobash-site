@@ -1,10 +1,7 @@
 import cards from "/js/category-card.js";
-import { generateProductHTML } from "/js/generateProductHTML.js";
 import { updateItemCounter } from "/js/updateItemCounter.js";
 import { isBYOB } from "/js/isBYOB.js";
-/* console.log(cards[Object.keys(cards)[0]]); */
-
-/* loops through all articles in category-card.js json and generates the product grid */
+import { makeArticle } from "/js/makeArticle.js";
 export function makeCategoryArticles() {
 	productGrid.innerHTML = "";
 
@@ -30,20 +27,11 @@ export function makeCategoryArticles() {
 				article.category.trim().split(",").includes(currentCat) &&
 				isBYOB(byob, article.invisibleTags.byob)
 			) {
-				/*trim() needed to account for safari reading in a line break here https://stackoverflow.com/questions/61219317/javascript-if-evaluating-differently-in-firefox-and-safari*/
-				if (window.location.hash) {
-					// Set the content of the webpage
-					// depending on the hash value
-					if (document.getElementById("selectLanguage").value === "SE") {
-						productGrid.innerHTML += generateProductHTML(article, "se");
-					} else {
-						productGrid.innerHTML += generateProductHTML(article, "en");
-					}
-				} else {
-					/* If it doesnt have a hash or the hash is not se then we set EN */
-					productGrid.innerHTML += generateProductHTML(article, "en");
-				}
+				makeArticle(article);
 			}
+		} else {
+			/* currentCat null, no category chosen load all */
+			makeArticle(article);
 		}
 	}
 }
