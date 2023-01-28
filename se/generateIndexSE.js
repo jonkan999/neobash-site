@@ -2,6 +2,10 @@ const fs = require("fs");
 
 // The object containing the replacement text
 const seText = {
+	selectLanguage: `
+  <option value="EN">EN</option>
+  <option value="SE" selected>SE</option>
+  `,
 	heroHeader: "tänk på ditt drömevent. <br> vi får det att ske.",
 	navCategories: "Kategorier",
 	navHowItWorks: "Hur det funkar",
@@ -104,9 +108,11 @@ fs.readFile("C:/Users/ENGJOE/neobash-site/index.html", "utf8", (err, data) => {
 		console.log(seText[key]); */
 	}
 
+	$("#selectLanguage option[value='SE']").selected = true;
+
 	// Write the modified HTML to a new file
 	fs.writeFile(
-		"C:/Users/ENGJOE/neobash-site/se/index.html",
+		"C:/Users/ENGJOE/neobash-site/se.html",
 		$.html(),
 		"utf8",
 		(err) => {

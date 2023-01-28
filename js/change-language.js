@@ -1,4 +1,18 @@
-///////////////////////////////////////////////////////////
+function changeLanguage() {
+	const e = document.getElementById("selectLanguage");
+	console.log(e.value);
+	if (e.value == "EN") {
+		location.href = "../index.html";
+		document.getElementById("selectLanguage").value = "EN";
+	} else if (e.value == "SE") {
+		location.href = "../se.html";
+		document.querySelector(
+			"#selectLanguage option[value='SE']"
+		).selected = true;
+	}
+}
+
+/* ///////////////////////////////////////////////////////////
 // Change language on user preference
 
 // Create a function to change
@@ -251,3 +265,4 @@ if (window.location.hash) {
 		contactInquiryInput.innerHTML = language.se.contactInquiryInput;
 	}
 }
+ */
