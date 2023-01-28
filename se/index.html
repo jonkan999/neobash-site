@@ -1,0 +1,421 @@
+<!DOCTYPE html><html lang="en"><head>
+		<!-- Google tag (gtag.js) -->
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3K0BFNG8B7"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-3K0BFNG8B7");
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- removes safari autozoom on focus -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+		<script defer="" src="../js/mobile-nav.js"></script>
+		<script defer="" src="../js/script.js"></script>
+		<script type="module" defer="" src="../js/brand-logo-animation.js"></script>
+		<script type="module" defer="" src="../js/event-builder.js"></script>
+		<script defer="" src="../js/change-language.js"></script>
+		<script defer="" src="../js/neobashLogoSVG.js"></script>
+
+		<link rel="stylesheet" href="../css/general.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/event-builder.css">
+
+		<link rel="stylesheet" href="../css/queries.css">
+
+		<title>
+			Neobash - Plans and coordinates events such as afterworks, kickoffs and
+			weddings, in the Stockholm area.
+		</title>
+		<link rel="icon" href="../img/favicon.png">
+		<meta name="description" content="Neobash is the home to the best event suppliers in Stockholm, from weddings to after works, we coordinate the event so you can just sit back, relax and enjoy your party.">
+		<meta name="keywords" content="Organizing event in Stockholm, Bröllop på budget, Billig bröllopsdekor tips, Party planning in Stockholm">
+	</head>
+
+	<body>
+		<div class="full-page-shadow"></div>
+		<header class="header">
+			<a href="../https://neobash.se/" title="Neobash event page" class="header-logo" aria-label="Neobash brand logo" id="neobashTopLogo">
+			</a>
+
+			<nav class="main-nav">
+				<ul class="main-nav-list">
+					<li>
+						<a class="main-nav-link" href="../https://neobash.se/category-page.html?category=venue" title="Event categories" id="navCategories">Kategorier</a>
+					</li>
+					<li>
+						<a class="main-nav-link" href="#how-it-works" id="navHowItWorks">Hur det funkar</a>
+					</li>
+					<li><a class="main-nav-link" href="#" id="navAbout">Om oss</a></li>
+					<li>
+						<a class="main-nav-link" href="https://neobash.se/blog.html" title="Blog about events, weddings and afterworks" id="navBlog">Blogg</a>
+					</li>
+					<div class="main-nav-link language-dropdown-buttton">
+						<select class="language-dropdown select-language" id="selectLanguage" onchange="changeLanguage()">
+							<option value="EN">EN</option>
+							<option value="SE">SE</option>
+						</select>
+					</div>
+
+					<li>
+						<a class="main-nav-link nav-cta" href="#cta" id="navContact">kontakta oss</a>
+					</li>
+				</ul>
+			</nav>
+
+			<button class="btn-mobile-nav">
+				<ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+				<ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+			</button>
+		</header>
+		<main>
+			<section class="section-hero" id="hero">
+				<div class="hero">
+					<div class="hero-text-box">
+						<h1 class="heading-primary" id="heroHeader">tänk på ditt drömevent. <br> vi får det att ske.</h1>
+						<div class="hero-buttons">
+							<a href="category-page.html?category=venue" title="Event categories" class="btn btn--cta" id="heroContact">våra produkter</a>
+							<a href="#" title="Event builder" class="btn event-builder" id="heroEventbuilder">bygg ditt event</a>
+						</div>
+					</div>
+					<div class="hero-brand-box">
+						<p class="brand-name">
+							NEO <br>
+							BASH
+						</p>
+						<svg class="brand-background" viewBox="0 0 200 200" fill="none">
+							<!-- Add a path with an empty data attribute, fill it with the gradient we defined earlier -->
+							<path class="path4" d="" stroke="#F3D9FA" stroke-width="6"></path>
+							<path class="path1" d="" stroke="black" stroke-width="2"></path>
+							<path class="path2" d="" stroke="black" stroke-width="2"></path>
+							<path class="path3" d="" stroke="black" stroke-width="2"></path>
+							<path class="path5" d="" stroke="black" stroke-width="2"></path>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-event-categories" id="categories">
+				<div class="container">
+					<h2 class="heading-secondary heading--centered heading--upper" id="categoriesHeader">This is the neobash event builder</h2>
+					<p class="event-categories-description" id="categoriesHeaderDescription">Här har vi samlat Stockholms bästa event-leverantörer. Välj en kategori och börja utforska deras lösningar.</p>
+				</div>
+
+				<div class="container grid grid--3-cols grid--centered">
+					<a class="category-card" href="https://neobash.se/category-page.html?category=venue" title="Event venues">
+						<img src="../img/venue-image.jpg" alt="Image of event venues">
+						<span class="category-card-text" id="categoriesVenue">lokaler</span>
+					</a>
+
+					<a class="category-card category-card--darker" href="https://neobash.se/category-page.html?category=food" title="Event catering and food trucks">
+						<img src="../img/catering-image.jpg" alt="Image of event catering">
+						<span class="category-card-text">catering</span>
+					</a>
+
+					<a class="category-card category-card--darker" href="https://neobash.se/category-page.html?category=wedding" title="Weddings and wedding suppliers">
+						<img src="../img/wedding-image.jpg" alt="Image of wedding">
+						<span class="category-card-text" id="categoriesWedding">bröllop</span>
+					</a>
+
+					<a class="category-card category-card--darker" href="https://neobash.se/category-page.html?category=drinks" title="drink solutions and drink suppliers">
+						<img src="../img/drink-solutions-image.jpg" alt="Image of drink solutions for events">
+						<span class="category-card-text" id="categoriesDrinks">dryckeslösningar</span>
+					</a>
+
+					<a class="category-card category-card--darker" href="https://neobash.se/category-page.html?category=entertainment" title="suppliers of entertainment for events">
+						<img src="../img/entertainment-image.jpg" alt="Image of event entertainment">
+						<span class="category-card-text" id="categoriesEntertainment">underhållning</span>
+					</a>
+
+					<a class="category-card category-card--darker" href="https://neobash.se/category-page.html?category=decor" title="event decor suppliers">
+						<img src="../img/decor-image.jpg" alt="Image of event decor">
+						<span class="category-card-text" id="categoriesDecor">dekor</span>
+					</a>
+				</div>
+			</section>
+
+			<section class="section-how-it-works" id="how-it-works">
+				<div class="container">
+					<h2 class="heading-secondary heading--centered" id="howHeader">Let us take care of the planning and you just relax and enjoy your party</h2>
+					<div class="grid grid--3-cols">
+						<div class="how-it-works-left-images images-1" role="img" aria-label="Image of Geisha thinking"></div>
+
+						<div class="how-it-works-left-images images-3" role="img" aria-label="Image of Geisha sending"></div>
+						<div class="how-it-works-description description-1">
+							<h3 class="how-it-works-description-header" id="howHeadersub1">Beskriv ditt event</h3>
+							<p id="howHeadersubContent1">Fundera igenom hur du vill utforma ditt evenemang. Överväg ditt val av plats,      atmosfär, mat, dryck, underhållning.</p>
+							<div class="how-it-works-connector"></div>
+						</div>
+						<div class="how-it-works-description description-2">
+							<h3 class="how-it-works-description-header" id="howHeadersub2">Gå igenom våra leverantörers erbjudanden, eller låt oss göra det åt dig!</h3>
+							<p id="howHeadersubContent2">Utforska våra hundratals handutvalda partnerleverantörer och        produkter, för att hitta det som bäst passar det du har föreställt dig. Eller,        eller gå igenom vår automatiserade eventbyggare och matcha        leverantörer och produkter till ditt event.</p>
+							<div class="how-it-works-connector"></div>
+						</div>
+						<div class="how-it-works-description description-3">
+							<h3 class="how-it-works-description-header" id="howHeadersub3">Skicka in dina val</h3>
+							<p id="howHeadersubContent3">Vårt team av erfarna eventplanerare kommer att få det och        igång med koordineringen.</p>
+							<div class="how-it-works-connector"></div>
+						</div>
+						<div class="how-it-works-description description-4">
+							<h3 class="how-it-works-description-header" id="howHeadersub4">Slappna av och <strong>njut av</strong> din fest</h3>
+							<p id="howHeadersubContent4">Vi återkommer snarast till dig via mail eller telefon,        som du föredrar. Vi går igenom eventet och tar hand om allt,        medan du kan luta dig tillbaka och slappna av.</p>
+							<a href="#cta" class="btn btn--cta" id="howContact">kontakta oss</a>
+						</div>
+						<div class="how-it-works-right-images images-2" role="img" aria-label="Image of Geisha writing"></div>
+						<div class="how-it-works-right-images images-4" role="img" aria-label="Image of Geisha waiting"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-blog" id="blog">
+				<div class="container">
+					<h2 class="heading-secondary">What is new</h2>
+
+					<article class="blog-article">
+						<div class="grid grid--2-cols">
+							<div class="blog-article-body">
+								<h3 class="blog-article-header">
+									Three hacks to make your christmas outfit pop <br>
+									&nbsp; - without being tacky
+								</h3>
+
+								<p class="blog-article-paragraph">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Ipsum vel aliquam magnam earum minima placeat nihil saepe ad
+									aut laborum? Illo harum sed placeat! Cum distinctio facere
+									harum voluptatum quod! Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Illum dolore sit saepe veniam autem neque
+									cumque, fuga maiores atque sequi at expedita, quibusdam
+									officiis vitae nulla repellendus qui eveniet odit. Lorem,
+									ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+									totam id quis odio inventore, rerum dolorem alias ab debitis,
+									ea possimus. Ad ipsa unde fugit vel quia, illo praesentium
+									modi!
+								</p>
+								<p class="blog-article-paragraph">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Ipsum vel aliquam magnam earum minima placeat nihil saepe ad
+									aut laborum? Illo harum sed placeat! Cum distinctio facere
+									harum voluptatum quod! Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Illum dolore sit saepe veniam autem neque
+									cumque, fuga maiores atque sequi at expedita, quibusdam
+									officiis vitae nulla repellendus qui eveniet odit. Lorem,
+									ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+									totam id quis odio inventore, rerum dolorem alias ab debitis,
+									ea possimus. Ad ipsa unde fugit vel quia, illo praesentium
+									modi!
+								</p>
+							</div>
+							<button class="read-more-button">
+								<ion-icon class="read-more-icon" name="chevron-down-outline"></ion-icon>
+							</button>
+
+							<div class="blog-article-media-box">
+								<div class="blog-article-gif">
+									<video class="blog-article-video" loop="" autoplay="" muted="" playsinline="">
+										<source class="blog-article-video-src" src="/https://i.gifer.com/48Z.mp4" itemprop="contentUrl" type="video/mp4" aria-label="Video of cat in Santa Costume">
+									</video>
+									<span class="cat-gif-overlay-text">Merry.. ♥</span>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="blog-article">
+						<div class="grid grid--2-cols">
+							<div class="blog-article-body">
+								<h3 class="blog-article-header">
+									Release countdown - We are <strong>Launching</strong> first of
+									january
+								</h3>
+								<p class="blog-article-paragraph">
+									From the first of january we will launch our complete set of
+									features and anyone will be able to schedule events and
+									reserve modular vendor products through our event portal.
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Ipsum vel aliquam magnam earum minima placeat nihil saepe ad
+									aut laborum? Illo harum sed placeat! Cum distinctio facere
+									harum voluptatum quod! Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Illum dolore sit saepe veniam autem neque
+									cumque, fuga maiores atque sequi at expedita, quibusdam
+									officiis vitae nulla repellendus qui eveniet odit. Lorem,
+									ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+									totam id quis odio inventore, rerum dolorem alias ab debitis,
+									ea possimus. Ad ipsa unde fugit vel quia, illo praesentium
+									modi!
+								</p>
+								<p class="blog-article-paragraph">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Ipsum vel aliquam magnam earum minima placeat nihil saepe ad
+									aut laborum? Illo harum sed placeat! Cum distinctio facere
+									harum voluptatum quod! Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Illum dolore sit saepe veniam autem neque
+									cumque, fuga maiores atque sequi at expedita, quibusdam
+									officiis vitae nulla repellendus qui eveniet odit. Lorem,
+									ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+									totam id quis odio inventore, rerum dolorem alias ab debitis,
+									ea possimus. Ad ipsa unde fugit vel quia, illo praesentium
+									modi!
+								</p>
+							</div>
+							<button class="read-more-button">
+								<ion-icon class="read-more-icon" name="chevron-down-outline"></ion-icon>
+							</button>
+
+							<div class="blog-article-media-box">
+								<div class="blog-article-gif">
+									<video class="blog-article-video" loop="" autoplay="" muted="" playsinline="">
+										<source class="blog-article-video-src" src="https://i.gifer.com/fyPm.mp4" itemprop="contentUrl" type="video/mp4" aria-label="Video of man spilling champagne">
+									</video>
+									<span class="cat-gif-overlay-text">It'll be fine.. </span>
+								</div>
+							</div>
+						</div>
+					</article>
+					<div class="to-blog-box">
+						<a class="to-blog-link" href="https://neobash.se/blog.html" title="Blog where we collect inspirational articles about events, weddings and afterwoorks">Check out all our inspirational articles about events
+							<svg class="to-blog-arrow" width="243" height="69" viewBox="0 0 243 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 45C2 57.9291 10.8533 61.542 22.6667 64.5556C45.5717 70.3987 70.6248 62.6825 92.7778 57C124.389 48.8913 154.804 38.4476 183 22" stroke="#666" stroke-width="6" stroke-linecap="round"></path>
+								<path d="M159 16C165.688 14.8853 172.189 12.1247 179 11C198.645 7.7559 218.576 6.14713 238.167 2.55557C239.135 2.37808 241.752 1.58603 241.111 2.33335C238.677 5.17276 236.102 7.95882 233.111 10.2222C222.591 18.1833 211.171 24.5242 201 33" stroke="#666" stroke-width="6" stroke-linecap="round"></path>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-cta" id="cta">
+				<div class="container">
+					<div class="cta">
+						<div class="cta-text-box">
+							<h2 class="heading-secondary" id="contactHeader">Hör av dig och planera ditt event med oss!</h2>
+							<p class="cta-text" id="contactParagraph">Fyll i vårt formulär och någon av våra fantastiska eventhandläggare      kommer återkomma till dig och berättar mer om vad vi kan erbjuda,      samt guidar dig genom planeringsprocessen.</p>
+
+							<form class="cta-form" name="contact-form" action="./submission-success.html" netlify="">
+								<div id="contactNameInput">
+    <label for="full-name">För och Efternamn</label>
+    <input id="full-name" type="text" placeholder="John Smith" name="full-name" required=""></div>
+								<div id="contactMailInput">
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="jag@example.com" name="email" required=""></div>
+								<div class="inquiry-field" id="contactInquiryInput">
+    <label for="inquiry">Vad kan vi hjälpa dig med?</label>
+    <textarea id="inquiry" type="inquiry" name="inquiry" placeholder="Jag vill bara veta mer om era grymma tjänster!"></textarea>
+    <span class="call-us-text" id="contactCall">Eller ring oss bara på: <br><a class="call-us-number" href="tel:0765687878">0765687878</a></span>
+    </div>
+								<input type="hidden" name="request-details" value="&nbsp;" id="checkoutDetails">
+								<!-- <input type="checkbox" />
+                    <input type="number" /> -->
+
+								<button type="submit" class="btn btn--form">
+									send
+									<ion-icon class="button-icon" name="paper-plane-outline"></ion-icon>
+								</button>
+							</form>
+						</div>
+						<div class="cta-img-box" role="img" aria-label="Image of a weird phone being picked up"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="container cute-dog-container">
+			<h2 class="heading-secondary heading--centered">
+				Just our cute little dog Tous
+			</h2>
+
+			<div class="cute-dog">
+				<video class="tous-test" src="../videos/test-edited.mp4" loop="" autoplay="" muted="" playsinline=""></video>
+			</div>
+		</div>
+
+		<footer class="section-footer">
+			<div class="container grid grid--footer">
+				<div class="logo-col">
+					<a href="#" class="footer-logo" aria-label="Neobash brand logo" id="neobashBotLogo">
+					</a>
+					<ul class="social-links">
+						<li class="footer-link">
+							<a href="https://neobash.se/" title="Neobash main page">
+								<ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+							</a>
+						</li>
+						<li class="footer-link">
+							<a href="#">
+								<ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+							</a>
+						</li>
+						<li class="footer-link">
+							<a href="#">
+								<ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+							</a>
+						</li>
+					</ul>
+
+					<p class="copyright">
+						copyright © 2022 by Neobash AB. All rights reserved.
+					</p>
+				</div>
+
+				<div class="adress-col">
+					<p class="footer-heading">Contact us</p>
+
+					<address class="contacts">
+						<p class="address">
+							Vintertullstorget 24, 116 43, Stockholm, Sweden
+						</p>
+						<p class="footer-link">
+							<a href="tel:+46 76 568 78 78">+46 76 568 78 78</a> <br>
+							<a href="mailto:hind.emilia@gmail.com">hind.emilia@neobash.se</a>
+						</p>
+					</address>
+				</div>
+
+				<nav class="nav-col">
+					<p class="footer-heading">Company</p>
+					<ul class="footer-nav">
+						<li class="footer-link"><a href="#">About Neobash</a></li>
+						<li class="footer-link"><a href="#">For Business</a></li>
+						<li class="footer-link"><a href="#">Esteemed partners</a></li>
+						<li class="footer-link"><a href="#">Careers</a></li>
+					</ul>
+				</nav>
+				<nav class="nav-col">
+					<p class="footer-heading">Partners</p>
+					<ul class="footer-nav">
+						<li class="footer-link"><a href="#">Partner 1</a></li>
+						<li class="footer-link"><a href="#">Partner 2</a></li>
+						<li class="footer-link"><a href="#">Partner 3</a></li>
+						<li class="footer-link"><a href="#">Partner 4</a></li>
+					</ul>
+				</nav>
+				<nav class="nav-col">
+					<p class="footer-heading">Resources</p>
+					<ul class="footer-nav">
+						<li class="footer-link"><a href="#">Blog archive</a></li>
+						<li class="footer-link"><a href="#">Help center</a></li>
+						<li class="footer-link"><a href="#">Privacy &amp; terms</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+	
+
+</body></html>
