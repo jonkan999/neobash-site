@@ -92,6 +92,18 @@
 			>
 			</a>
 
+			<script>
+				fetch("../js/category-card.json")
+					.then((res) => res.json())
+					.then((cards) => {
+						console.log(cards);
+					})
+					.catch((error) => {
+						// Handle any errors that may occur
+						console.error(error);
+					});
+			</script>
+
 			<nav class="main-nav">
 				<ul class="main-nav-list">
 					<li>

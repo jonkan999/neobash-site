@@ -50,24 +50,24 @@
 		></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-		<script defer src="js/bashBasketSVG.js"></script>
-		<script type="module" defer src="js/getSummary.js"></script>
-		<script defer src="js/openSummary.js"></script>
+		<script defer src="../js/bashBasketSVG.js"></script>
+		<script type="module" defer src="../js/getSummary.js"></script>
+		<script defer src="../js/openSummary.js"></script>
 
-		<link rel="stylesheet" href="css/general.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/bash-basket.css" />
-		<link rel="stylesheet" href="css/checkout.css" />
-		<link rel="stylesheet" href="css/queries.css" />
+		<link rel="stylesheet" href="../css/general.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/bash-basket.css" />
+		<link rel="stylesheet" href="../css/checkout.css" />
+		<link rel="stylesheet" href="../css/queries.css" />
 
 		<title>
 			Bash Basket - Your basket of supplier products that will make up your
 			event
 		</title>
-		<link rel="icon" href="img/favicon.png" />
+		<link rel="icon" href="../img/favicon.png" />
 		<meta
 			name="description"
-			content="Event Basket containing all the selected products that will make up a event or party. Currently limited to the Stockholm Area"
+			content="Event Basket containing all the selected products that will make up an event or party. Currently limited to the Stockholm Area"
 		/>
 	</head>
 	<body>
@@ -76,6 +76,7 @@
 			<div class="header-container">
 				<div class="upper-header">
 					<a
+						id="neobashTopLogo"
 						href="https://neobash.se/category-page.html?category=venue"
 						title="Neobash event categories, venues, food, decor etc."
 						class="header-logo"
@@ -112,7 +113,7 @@
 						</svg>
 					</a>
 					<div class="header-box">
-						<h1 class="heading-primary scroll-text">
+						<h1 id="headerScroll" class="heading-primary scroll-text">
 							Bash Basket - Your collection of event products
 						</h1>
 					</div>
@@ -126,7 +127,10 @@
 
 		<section class="section-request-summary">
 			<div class="container request-container">
-				<h2 class="heading-secondary heading-secondary-request">
+				<h2
+					id="requestSummary"
+					class="heading-secondary heading-secondary-request"
+				>
 					Request summary
 				</h2>
 
@@ -211,7 +215,7 @@
 							<!-- <input type="checkbox" />
 									<input type="number" /> -->
 
-							<button type="submit" class="btn btn--form">
+							<button id="contactSubmit" type="submit" class="btn btn--form">
 								submit
 								<ion-icon
 									class="button-icon"

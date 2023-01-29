@@ -11,7 +11,7 @@ const seText = {
 	navHowItWorks: "Hur det funkar",
 	navAbout: "Om oss",
 	navBlog: "Blogg",
-	navContact: "kontakta oss",
+	navContact: "Kontakta oss",
 	heroContact: "våra produkter",
 	heroEventbuilder: "bygg ditt event",
 	categoriesHeader: "This is the neobash event builder",

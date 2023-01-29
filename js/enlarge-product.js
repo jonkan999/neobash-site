@@ -4,13 +4,17 @@
 /* const venueSkyddsrummet = $("#venueSkyddsrummet").load(
   "product-cards/venue-skyddsrummet-clicked.html"
 ); */
-import cards from "./category-card.js";
+//import cards from "./category-card.js";
 import { generateProductHTMLLarge } from "/js/generateProductHTMLLarge.js";
 import { changeCategory } from "/js/changeCategory.js";
 import { addToBasket } from "/js/addToBasket.js";
 import { removeFromBasket } from "/js/removeFromBasket.js";
 import { scrollLowerHeader } from "/js/scrollLowerHeader.js";
 import { getBasket } from "/js/getBasket.js";
+
+//const card = require("../js/category-card.json");
+
+//console.log(card);
 
 document.addEventListener("click", async function (event) {
 	const clickedElement = event.target.closest(".product-card");
@@ -19,6 +23,7 @@ document.addEventListener("click", async function (event) {
 	const addBtn = document.querySelector(".add-button");
 	const scrollBtn = document.querySelector(".lower-header-button-icon");
 	const clearBasketBtn = document.querySelector(".close-btn-container");
+	const isSwedish = document.URL.includes("/se/");
 
 	if (scrollBtn) {
 		if (event.target.closest(".lower-header-button-icon")) {
@@ -63,31 +68,34 @@ document.addEventListener("click", async function (event) {
 	// If user clicks inside the element, enlarge and shadow
 	if (clickedElement && shadowEl.classList[1] != "active-shadow") {
 		shadowEl.classList.toggle("active-shadow");
-		/* const src =
+		fetch("../js/category-card.json")
+			.then((response) => {
+				if (!response.ok) {
+					throw new Error(`HTTP error! status: ${response.status}`);
+				}
+				return response.json();
+			})
+			.then((cards) => {
+				/* const src =
       "product-cards/" + clickedElement.getAttribute("name") + "-clicked.html";
     const resp = await fetch(src);
     const venueSkyddsrummet = await resp.text(); */
-		if (window.location.hash) {
-			// Set the content of the webpage
-			// depending on the hash value
-			if (window.location.hash == "#se") {
-				clickedElement.parentElement.innerHTML += generateProductHTMLLarge(
-					cards[clickedElement.getAttribute("id")],
-					"se"
-				);
-			} else {
-				clickedElement.parentElement.innerHTML += generateProductHTMLLarge(
-					cards[clickedElement.getAttribute("id")],
-					"se"
-				);
-			}
-		} else {
-			/* If it doesnt have a hash or the hash is not se then we set EN */
-			clickedElement.parentElement.innerHTML += generateProductHTMLLarge(
-				cards[clickedElement.getAttribute("id")],
-				"en"
-			);
-		}
+				if (isSwedish) {
+					clickedElement.parentElement.innerHTML += generateProductHTMLLarge(
+						cards[clickedElement.getAttribute("id")],
+						"se"
+					);
+				} else {
+					clickedElement.parentElement.innerHTML += generateProductHTMLLarge(
+						cards[clickedElement.getAttribute("id")],
+						"se"
+					);
+				}
+			})
+			.catch((error) => {
+				// Handle any errors that may occur
+				console.error(error);
+			});
 	} else if (clickedElement && shadowEl.classList[1] === "active-shadow") {
 		// If user clicks inside the element, and it is enlarged, minimize and remove shadow
 		shadowEl.classList.toggle("active-shadow");

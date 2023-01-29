@@ -49,27 +49,27 @@
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 		></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script defer src="js/neobashLogoSVG.js"></script>
-		<script defer src="js/categoryListElementSVG.js"></script>
-		<script defer src="js/setActiveCategory.js"></script>
-		<script defer src="js/bashBasketSVG.js"></script>
+		<script defer src="../js/neobashLogoSVG.js"></script>
+		<script defer src="../js/categoryListElementSVG.js"></script>
+		<script defer src="../js/setActiveCategory.js"></script>
+		<script defer src="../js/bashBasketSVG.js"></script>
 		<!-- 	<script defer src="js/category-dropdowns.js"></script> -->
-		<script defer src="js/change-language-categories.js"></script>
+		<script defer src="../js/change-language-categories.js"></script>
 
-		<script type="module" defer src="js/makeCategoryArticles.js"></script>
-		<script type="module" defer src="js/enlarge-product.js"></script>
-		<script type="module" defer src="js/addToBasket.js"></script>
-		<script type="module" defer src="js/filterChoices.js"></script>
+		<script type="module" defer src="../js/makeCategoryArticles.js"></script>
+		<script type="module" defer src="../js/enlarge-product.js"></script>
+		<script type="module" defer src="../js/addToBasket.js"></script>
+		<script type="module" defer src="../js/filterChoices.js"></script>
 
-		<link rel="stylesheet" href="css/general.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/queries.css" />
+		<link rel="stylesheet" href="../css/general.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/queries.css" />
 
 		<title>
 			Neobash event builder - Assemble any event such as Afterwork, Kick-Off,
 			Dinner party or wedding in Stockholm
 		</title>
-		<link rel="icon" href="img/favicon.png" />
+		<link rel="icon" href="../img/favicon.png" />
 		<meta
 			name="description"
 			content="Neobash event builder lets you assemble your event, such as Afterwork, Kick-Off, Dinner party or wedding, according to your own liking and then we make it happen. Currently limited to the Stockholm Area"
@@ -90,7 +90,7 @@
 					</a>
 
 					<div class="header-buttons">
-						<button class="guests-button">
+						<button id="guestsButton" class="guests-button">
 							<span>Guests</span>
 							<ion-icon
 								class="header-button-icon"
@@ -98,23 +98,23 @@
 							></ion-icon>
 						</button>
 						<div class="checkboxes">
-							<div class="checkbox-container">
-								<div id="bring-booze" class="header-checkbox">
+							<div id="bringBoozeContainer" class="checkbox-container">
+								<div id="bringBooze" class="header-checkbox">
 									<ion-icon
 										name="checkmark-outline"
 										class="check-icon"
 									></ion-icon>
 								</div>
-								<span for="bring-booze">Bring Your Own Booze</span>
+								<span for="bringBooze">Bring Your Own Booze</span>
 							</div>
-							<div class="checkbox-container">
-								<div id="bring-food" class="header-checkbox">
+							<div id="bringFoodContainer" class="checkbox-container">
+								<div id="bringFood" class="header-checkbox">
 									<ion-icon
 										name="checkmark-outline"
 										class="check-icon"
 									></ion-icon>
 								</div>
-								<span for="bring-food">Bring Your Own Food</span>
+								<span for="bringFood">Bring Your Own Food</span>
 							</div>
 						</div>
 					</div>

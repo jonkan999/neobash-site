@@ -1,11 +1,13 @@
-export default {
+const fs = require("fs");
+
+card = {
 	venueSkyddsrummet: {
 		id: "venueSkyddsrummet",
 		name: "Skyddsrummet, Södermalm",
 		articleName: "venue-skyddsrummet",
 		category: "venue,wedding",
 		image: `<img
-				src="img/product-images/skyddsrummet.jpg"
+				src="../img/product-images/skyddsrummet.jpg"
 				alt="Image of Skyddsrummet"
 				class="product-img"
 			/>`,
@@ -73,7 +75,7 @@ export default {
 		articleName: "venue-borgila",
 		category: "venue,wedding",
 		image: `<img
-				src="img/product-images/Borgila.jpg"
+				src="../img/product-images/Borgila.jpg"
 				alt="Image of Borgila"
 				class="product-img"
 			/>`,
@@ -130,7 +132,7 @@ export default {
 		category: "venue,wedding",
 		image: `
 		<img
-			src="img/product-images/fafangan.jpg"
+			src="../img/product-images/fafangan.jpg"
 			alt="Image of Fåfängan"
 			class="product-img"
 		/>`,
@@ -195,7 +197,7 @@ export default {
 		category: "venue",
 		image: `
 		<img
-			src="img/product-images/tolv.jpg"
+			src="../img/product-images/tolv.jpg"
 			alt="Image of Tolv Stockholm"
 			class="product-img"
 		/>`,
@@ -270,7 +272,7 @@ export default {
 		category: "venue",
 		image: `
 		<img
-			src="img/product-images/byblos.jpg"
+			src="../img/product-images/byblos.jpg"
 			alt="Image of Byblos Restaurang"
 			class="product-img"
 		/>`,
@@ -345,7 +347,7 @@ export default {
 		category: "venue",
 		image: `
 		<img
-			src="img/product-images/lumafabriken.jpg"
+			src="../img/product-images/lumafabriken.jpg"
 			alt="Image of Lumafabriken Restaurang"
 			class="product-img"
 		/>`,
@@ -420,7 +422,7 @@ export default {
 		category: "food",
 		image: `
 		<img
-			src="img/product-images/mackverket.jpg"
+			src="../img/product-images/mackverket.jpg"
 			alt="Image of Skyddsrummet"
 			class="product-img"
 		/>`,
@@ -489,7 +491,7 @@ export default {
 		category: "food",
 		image: `
 		<img
-			src="img/product-images/churroskungarna.jpg"
+			src="../img/product-images/churroskungarna.jpg"
 			alt="Image of Skyddsrummet"
 			class="product-img"
 		/>`,
@@ -558,7 +560,7 @@ export default {
 		category: "decor",
 		image: `
 		<img
-			src="img/product-images/discoballs.jpg"
+			src="../img/product-images/discoballs.jpg"
 			alt="Image of Skyddsrummet"
 			class="product-img decor-discoballs-img"
 		/>`,
@@ -617,7 +619,7 @@ export default {
 		category: "drinks",
 		image: `
 		<img
-			src="img/product-images/lovnas.jpg"
+			src="../img/product-images/lovnas.jpg"
 			alt="Image of Skyddsrummet"
 			class="product-img drinks-lovnas-img"
 		/>`,
@@ -678,7 +680,7 @@ export default {
 		articleName: "venue-sjovillan",
 		category: "venue,wedding",
 		image: `<img
-				src="img/product-images/sjovillan.jpg"
+				src="../img/product-images/sjovillan.jpg"
 				alt="Image of Sjövillan"
 				class="product-img"
 			/>`,
@@ -728,7 +730,7 @@ export default {
 		articleName: "venue-T5Community",
 		category: "venue,party",
 		image: `<img
-				src="img/product-images/T5Community.jpg"
+				src="../img/product-images/T5Community.jpg"
 				alt="Image of T5Community"
 				class="product-img"
 			/>`,
@@ -777,7 +779,7 @@ With its own entrance they offer you a big venue with tons of opportunities. Lik
 		articleName: "venue-MSAmbiance",
 		category: "venue,party",
 		image: `<img
-				src="img/product-images/MSAmbiance.jpg"
+				src="../img/product-images/MSAmbiance.jpg"
 				alt="Image of Skyddsrummet"
 				class="product-img"
 			/>`,
@@ -828,7 +830,7 @@ The boat is a perfect platform for all kinds of parties. You have exclusive righ
 		articleName: "venue-Bergrummet",
 		category: "venue,party",
 		image: `<img
-				src="img/product-images/Bergrummet.jpg"
+				src="../img/product-images/Bergrummet.jpg"
 				alt="Image of Bergrummet"
 				class="product-img"
 			/>`,
@@ -877,7 +879,7 @@ Directly after the bridge to Skeppsholmen is the entrance to the amazing cave, w
 		articleName: "venue-EricEricsonhallen",
 		category: "venue,party",
 		image: `<img
-				src="img/product-images/EricEricsonhallen.jpg"
+				src="../img/product-images/EricEricsonhallen.jpg"
 				alt="Image of Skyddsrummet"
 				class="product-img"
 			/>`,
@@ -926,7 +928,7 @@ Eric Ericsonhallen has perhaps central Stockholm's most attractive location, and
 		articleName: "venue-TheBeach",
 		category: "venue,party",
 		image: `<img
-				src="img/product-images/TheBeach.jpg"
+				src="../img/product-images/TheBeach.jpg"
 				alt="Image of Skyddsrummet"
 				class="product-img"
 			/>`,
@@ -975,7 +977,7 @@ a large beach for your event. Have a beach party, or a kick off with obstacle co
 		articleName: "venue-Generator",
 		category: "venue,party",
 		image: `<img
-				src="img/product-images/Generator.jpg"
+				src="../img/product-images/Generator.jpg"
 				alt="Image of Skyddsrummet"
 				class="product-img"
 			/>`,
@@ -1024,7 +1026,7 @@ In the heart of Stockholm is Generator, a high end hostel. They have the perfect
 		articleName: "venue-CedergrenskaTornetRiddarsalen",
 		category: "venue,party",
 		image: `<img
-				src="img/product-images/CedergrenskaTornetRiddarsalen.jpg"
+				src="../img/product-images/CedergrenskaTornetRiddarsalen.jpg"
 				alt="Image of Cedergrenska Tornet/Riddarsalen"
 				class="product-img"
 			/>`,
@@ -1074,7 +1076,7 @@ With a beautiful fireplace, high ceilings and access to the roof terrace, the pa
 		articleName: "venue-WestmanskaPalatsetGlassalen",
 		category: "venue,party",
 		image: `<img
-				src="img/product-images/WestmanskaPalatsetGlassalen.jpg"
+				src="../img/product-images/WestmanskaPalatsetGlassalen.jpg"
 				alt="Image of Westmanska Palatset"
 				class="product-img"
 			/>`,
@@ -1126,7 +1128,7 @@ Westmanska Palatset offers unique event spaces in an attractive location. Whethe
 		articleName: "venue-SjofartshusetNeptunisalen",
 		category: "venue,party",
 		image: `<img
-				src="img/product-images/SjofartshusetNeptunisalen.jpg"
+				src="../img/product-images/SjofartshusetNeptunisalen.jpg"
 				alt="Image of Sjöfartshuset/Neptunisalen"
 				class="product-img"
 			/>`,
@@ -1178,7 +1180,7 @@ From Skeppsbron 10, people have heard the laughter of the party since the 17th c
 		articleName: "venue-JunibackensFestvaning",
 		category: "venue,party",
 		image: `<img
-				src="img/product-images/JunibackensFestvaning.jpg"
+				src="../img/product-images/JunibackensFestvaning.jpg"
 				alt="Image of Junibackens Festvåning"
 				class="product-img"
 			/>`,
@@ -1230,7 +1232,7 @@ Invite friends, family or colleagues to a party with the best view in town! Step
 		articleName: "venue-LångholmenFestvaning",
 		category: "venue,party",
 		image: `<img
-				src="img/product-images/LangholmenFestvaning.jpg"
+				src="../img/product-images/LangholmenFestvaning.jpg"
 				alt="Image of Långholmen Festvåning"
 				class="product-img"
 			/>`,
@@ -1281,7 +1283,7 @@ If you are looking for a beautiful and traditional party venue in a unique and p
 		articleName: "venue-H62",
 		category: "venue,party",
 		image: `<img
-				src="img/product-images/H62.jpg"
+				src="../img/product-images/H62.jpg"
 				alt="Image of H62 / Festvåning"
 				class="product-img"
 			/>`,
@@ -1332,7 +1334,7 @@ H62 is located in a cosy, whitestone cellar vault, dating back to the 19th centu
 		articleName: "venue-7APosthuset",
 		category: "venue,party",
 		image: `<img
-				src="img/product-images/7APosthuset.jpg"
+				src="../img/product-images/7APosthuset.jpg"
 				alt="Image of 7APosthuset"
 				class="product-img"
 			/>`,
@@ -1386,7 +1388,7 @@ The central location and premises that offer both character and capacity make 7A
 		articleName: "venue-MalarhojdensDansskolaFestvaning",
 		category: "venue,party",
 		image: `<img
-				src="img/product-images/MalarhojdensDansskolaFestvaning.jpg"
+				src="../img/product-images/MalarhojdensDansskolaFestvaning.jpg"
 				alt="Image of Mälarhöjdens Dansskola & Festvåning"
 				class="product-img"
 			/>`,
@@ -1434,3 +1436,14 @@ A unique venue on two levels located just a stone's throw from the beautiful Mä
 		},
 	},
 };
+
+const json = JSON.stringify(card);
+
+fs.writeFile(
+	"C:/Users/ENGJOE/neobash-site/js/category-card.json",
+	json,
+	(err) => {
+		if (err) throw err;
+		console.log("The file has been saved!");
+	}
+);

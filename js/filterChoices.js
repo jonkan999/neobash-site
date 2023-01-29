@@ -2,8 +2,8 @@ import { replaceQueryParam } from "/js/replaceQueryParam.js";
 import { dropQueryParam } from "/js/dropQueryParam.js";
 import { makeCategoryArticles } from "/js/makeCategoryArticles.js";
 
-const booze = document.getElementById("bring-booze");
-const food = document.getElementById("bring-food");
+const booze = document.getElementById("bringBooze");
+const food = document.getElementById("bringFood");
 
 booze.addEventListener("click", function () {
 	this.classList.toggle("active");

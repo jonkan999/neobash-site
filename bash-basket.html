@@ -50,20 +50,20 @@
 		></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-		<script defer src="js/bashBasketSVG.js"></script>
-		<script type="module" defer src="js/enlarge-product.js"></script>
-		<script type="module" defer src="js/getBasket.js"></script>
+		<script defer src="../js/bashBasketSVG.js"></script>
+		<script type="module" defer src="../js/enlarge-product.js"></script>
+		<script type="module" defer src="../js/getBasket.js"></script>
 
-		<link rel="stylesheet" href="css/general.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/bash-basket.css" />
-		<link rel="stylesheet" href="css/queries.css" />
+		<link rel="stylesheet" href="../css/general.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/bash-basket.css" />
+		<link rel="stylesheet" href="../css/queries.css" />
 
 		<title>
 			Bash Basket - Your basket of supplier products that will make up your
 			event
 		</title>
-		<link rel="icon" href="img/favicon.png" />
+		<link rel="icon" href="../img/favicon.png" />
 		<meta
 			name="description"
 			content="Event Basket containing all the selected products that will make up a event or party. Currently limited to the Stockholm Area"
@@ -75,6 +75,7 @@
 			<div class="header-container">
 				<div class="upper-header">
 					<a
+						id="neobashTopLogo"
 						href="./category-page.html?category=venue"
 						class="header-logo"
 						aria-label="Neobash brand logo"
@@ -110,7 +111,7 @@
 						</svg>
 					</a>
 					<div class="header-box">
-						<h1 class="heading-primary scroll-text">
+						<h1 id="headerScroll" class="heading-primary scroll-text">
 							Bash Basket - Your collection of event products
 						</h1>
 					</div>
@@ -127,7 +128,9 @@
 		</section>
 
 		<div class="check-out-footer">
-			<a href="/checkout.html" class="checkout-btn">proceed to checkout</a>
+			<a id="checkoutButton" href="/checkout.html" class="checkout-btn"
+				>proceed to checkout</a
+			>
 		</div>
 	</body>
 </html>
