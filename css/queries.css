@@ -220,6 +220,11 @@
 	.close-btn-container {
 		right: -0.4rem;
 	}
+
+	.byob-venues-article {
+		/* height: 140%; */
+		width: 170%;
+	}
 }
 
 /**************************/
@@ -748,6 +753,7 @@
 	.section-blog .grid--2-cols {
 		grid-template-columns: 1fr;
 		row-gap: 2rem;
+		column-gap: 0rem;
 	}
 
 	.section-blog .heading-secondary {
@@ -942,5 +948,27 @@
 
 	.heading-secondary-request {
 		font-size: 2.8rem;
+	}
+	.upper-article {
+		grid-column: 1/3;
+		grid-row: 2;
+	}
+	.inner-article {
+		grid-column: 1/3;
+		grid-row: 3;
+	}
+	.byob-venues-article {
+		/* height: 140%; */
+		width: 170%;
+	}
+	.read-full-button {
+		top: 94%;
+	}
+	.blog-article-header {
+		margin-top: 0;
+	}
+	.blog-article-media-box {
+		justify-self: center;
+		align-self: center;
 	}
 }
