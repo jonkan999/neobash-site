@@ -1,5 +1,9 @@
 const fs = require("fs");
 
+//name of article to be replaced
+const article_name_1 =
+	"discover-the-7-best-event-venues-in-stockholm-with-own-food-and-alcohol-option";
+
 // The object containing the replacement text
 const seText = {
 	hrefs: {
@@ -9,8 +13,6 @@ const seText = {
 		navBlog: "https://neobash.se/se/blog.html",
 		navContact: "../se.html#cta",
 		navCategoriesDescription: "https://neobash.se/se/category-page.html",
-		"discover-the-7-best-event-venues-in-stockholm-with-own-food-and-alcohol-option":
-			"../se/blogg/discover-the-7-best-event-venues-in-stockholm-with-own-food-and-alcohol-option.html",
 	},
 	innerTexts: {
 		submissionHeading: "Tack för att du kontaktade oss!",
@@ -68,12 +70,27 @@ fs.readFile("C:/Users/ENGJOE/neobash-site/blog.html", "utf8", (err, data) => {
 		// Replace the inner HTML of the element with the specified ID
 		$(`#${key}`).html(seText["innerTexts"][key]);
 	}
+	//didnt get this particular one to work, think its something with the id name
+	$(`#${article_name_1}`).html(`
+	LÄS HELA ARTIKELN
+	<ion-icon
+		class="read-more-icon"
+		name="chevron-forward-outline"
+	></ion-icon>
+	`);
 
 	// Iterate through the href keys of the seText object and alter each anchors href
 	for (const key in seText["hrefs"]) {
 		// Replace the href of the element with the specified ID
 		$(`#${key}`).attr("href", seText["hrefs"][key]);
 	}
+	//didnt get this particular one to work, think its something with the id name
+	$(`#${article_name_1}`).attr(
+		"href",
+		`
+	/se/blogg/${article_name_1}.html
+	`
+	);
 
 	$("#selectLanguage option[value='SE']").attr("selected", true);
 

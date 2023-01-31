@@ -60,8 +60,7 @@ async function translateBlogPost(data) {
 	for (const classToTranslate of classesToTranslate) {
 		$(classToTranslate).each(function () {
 			if ($(this).html().includes("<a")) {
-				const text = $(this).html();
-				console.log(text);
+				const text = $(this).html().replace('href="/', 'href="/se/');
 
 				promises.push(
 					translate(text).then((translatedText) => {
