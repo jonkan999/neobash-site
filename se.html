@@ -54,32 +54,44 @@
 	<body>
 		<div class="full-page-shadow"></div>
 		<header class="header">
-			<a href="https://neobash.se/" title="Neobash event page" class="header-logo" aria-label="Neobash brand logo" id="neobashTopLogo">
+			<a href="https://neobash.se/se" title="Neobash event page" class="header-logo" aria-label="Neobash brand logo" id="neobashTopLogo">
 			</a>
+
+			<script>
+				fetch("../js/category-card.json")
+					.then((res) => res.json())
+					.then((cards) => {
+						console.log(cards);
+					})
+					.catch((error) => {
+						// Handle any errors that may occur
+						console.error(error);
+					});
+			</script>
 
 			<nav class="main-nav">
 				<ul class="main-nav-list">
 					<li>
-						<a class="main-nav-link" href="https://neobash.se/category-page.html?category=venue" title="Event categories" id="navCategories">Kategorier</a>
+						<a class="main-nav-link" href="https://neobash.se/se/category-page.html" title="Event categories" id="navCategories">Kategorier</a>
 					</li>
 					<li>
-						<a class="main-nav-link" href="#how-it-works" id="navHowItWorks">Hur det funkar</a>
+						<a class="main-nav-link" href="../se.html#how-it-works" id="navHowItWorks">Hur det funkar</a>
 					</li>
 					<li>
 						<a class="main-nav-link" href="#" id="navAbout">Om oss</a>
 					</li>
 					<li>
-						<a class="main-nav-link" href="https://neobash.se/blog.html" title="Blog about events, weddings and afterworks" id="navBlog">Blogg</a>
+						<a class="main-nav-link" href="https://neobash.se/se/blog.html" title="Blog about events, weddings and afterworks" id="navBlog">Blogg</a>
 					</li>
 					<div class="main-nav-link language-dropdown-buttton">
 						<select class="language-dropdown select-language" id="selectLanguage" onchange="changeLanguage()">
   <option value="EN">EN</option>
-  <option value="SE" selected="">SE</option>
+  <option value="SE" selected="true">SE</option>
   </select>
 					</div>
 
 					<li>
-						<a class="main-nav-link nav-cta" href="#cta" id="navContact">Kontakta oss</a>
+						<a class="main-nav-link nav-cta" href="../se.html#cta" id="navContact">Kontakta oss</a>
 					</li>
 				</ul>
 			</nav>

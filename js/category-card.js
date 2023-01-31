@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-card = {
+cards = {
 	venueSkyddsrummet: {
 		id: "venueSkyddsrummet",
 		name: "Skyddsrummet, Södermalm",
@@ -1437,7 +1437,20 @@ A unique venue on two levels located just a stone's throw from the beautiful Mä
 	},
 };
 
-const json = JSON.stringify(card);
+let sortedCards = {};
+let cardIds = Object.keys(cards);
+console.log(cards[Object.keys(cards)[0]]);
+//sort according to rank
+cardIds.sort((a, b) => {
+	return cards[a].invisibleTags.catRank - cards[b].invisibleTags.catRank;
+});
+
+//reinsert sorted cards
+for (let id of cardIds) {
+	sortedCards[id] = cards[id];
+}
+console.log(sortedCards[Object.keys(cards)[0]]);
+const json = JSON.stringify(sortedCards);
 
 fs.writeFile(
 	"C:/Users/ENGJOE/neobash-site/js/category-card.json",

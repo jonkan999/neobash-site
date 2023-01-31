@@ -1,7 +1,18 @@
 function changeLanguage() {
 	const e = document.getElementById("selectLanguage");
-	console.log(e.value);
-	if (e.value == "EN") {
+
+	//Checks if we are in blog site
+	const isBlog = document.URL.includes("blog");
+
+	if (e.value == "EN" && isBlog) {
+		location.href = "../blog.html";
+		document.getElementById("selectLanguage").value = "EN";
+	} else if (e.value == "SE" && isBlog) {
+		location.href = "../se/blog.html";
+		document.querySelector(
+			"#selectLanguage option[value='SE']"
+		).selected = true;
+	} else if (e.value == "EN") {
 		location.href = "../index.html";
 		document.getElementById("selectLanguage").value = "EN";
 	} else if (e.value == "SE") {
