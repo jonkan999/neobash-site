@@ -59,12 +59,24 @@ async function translateBlogPost(data) {
 
 	for (const classToTranslate of classesToTranslate) {
 		$(classToTranslate).each(function () {
-			const text = $(this).text();
-			promises.push(
-				translate(text).then((translatedText) => {
-					$(this).text(translatedText);
-				})
-			);
+			if ($(this).html().includes("<a")) {
+				const text = $(this).html();
+				console.log(text);
+
+				promises.push(
+					translate(text).then((translatedText) => {
+						$(this).html(translatedText);
+					})
+				);
+			} else {
+				const text = $(this).text();
+
+				promises.push(
+					translate(text).then((translatedText) => {
+						$(this).text(translatedText);
+					})
+				);
+			}
 		});
 	}
 
