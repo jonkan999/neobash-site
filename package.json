@@ -1,10 +1,8 @@
 {
   "dependencies": {
     "@georgedoescode/spline": "^1.0.1",
-    "@vitalets/google-translate-api": "^9.1.0",
     "axios": "^1.2.6",
     "cheerio": "^1.0.0-rc.12",
-    "google-translate-api": "^2.3.0",
     "jquery": "^3.6.1",
     "simplex-noise": "^4.0.1"
   }
