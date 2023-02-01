@@ -40,7 +40,10 @@ export function makeCategoryArticles() {
 					}
 				} else {
 					/* currentCat null, no category chosen load all */
-					makeArticle(article);
+					/*Still check filters*/
+					if (isBYOB(byob, article.invisibleTags.byob)) {
+						makeArticle(article);
+					}
 				}
 			}
 			updateItemCounter();
