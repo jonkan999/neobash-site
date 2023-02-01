@@ -57,6 +57,16 @@ async function translateBlogPost(data) {
 
 	const promises = [];
 
+	//Translate title
+	const title = $(".title").text();
+	const translatedTitle = await translate(title);
+	$(".title").text(translatedTitle);
+
+	//Translate meta description
+	const description = $("meta[name='description']").attr("content");
+	const translatedDescription = await translate(description);
+	$("meta[name='description']").attr("content", translatedDescription);
+
 	for (const classToTranslate of classesToTranslate) {
 		$(classToTranslate).each(function () {
 			if ($(this).html().includes("<a")) {
