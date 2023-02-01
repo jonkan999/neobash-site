@@ -522,8 +522,16 @@
 	width: 170%;
 }
 
-.blog-article-video-src {
+.vegan-wedding-article {
+	height: 130%;
+	width: 130%;
+	position: absolute;
+	object-fit: contain;
+	left: 50%; /* % of surrounding element */
+	top: 50%;
+	transform: translate(-50%, -50%); /* % of current element */
 }
+
 .cat-gif-overlay-text {
 	position: absolute;
 	color: #fdf7fe;

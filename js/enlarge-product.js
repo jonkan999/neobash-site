@@ -88,7 +88,7 @@ document.addEventListener("click", async function (event) {
 				} else {
 					clickedElement.parentElement.innerHTML += generateProductHTMLLarge(
 						cards[clickedElement.getAttribute("id")],
-						"se"
+						"en"
 					);
 				}
 			})

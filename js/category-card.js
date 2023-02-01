@@ -549,7 +549,7 @@ cards = {
 			maxPeople: "500",
 			maxSeated: "30",
 			price: "low",
-			catRank: "2",
+			catRank: "3",
 		},
 	},
 
@@ -1433,6 +1433,241 @@ A unique venue on two levels located just a stone's throw from the beautiful Mä
 			maxSeated: "100",
 			price: "light",
 			catRank: "4",
+		},
+	},
+	foodVeganoCatering: {
+		id: "foodVeganoCatering",
+		name: "Vegano Catering, Stockholm",
+		articleName: "food-VeganoCatering",
+		category: "food,wedding",
+		image: `<img
+				src="../img/product-images/VeganoCatering.jpg"
+				alt="Image of Vegano Catering food"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon name="cash-outline"></ion-icon>
+			<span> 3-course from 270 sek per person</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> Suitible for up to 200 ppl</span>`,
+			usp3: `
+			<ion-icon name="leaf-outline"></ion-icon>
+			<span> Vegan!</span>`,
+			fromPrice: "fr. <strong>270 kr SEK</strong> per guest",
+			description: `
+			At Vegano, they believe that food is an essential part of any successful event. That's why they are dedicated to delivering truly delicious and innovative cuisine, using only the freshest, locally-sourced ingredients. Their experienced chefs have a passion for the vegan lifestyle and a deep understanding of how to create amazing dishes without the use of animal products. With a commitment to simple, sustainable and locally-sourced ingredients, you can trust that every bite you take will be absolutely wonderful.
+			`,
+		},
+		visibleSETags: {
+			usp1: `
+			<ion-icon name="cash-outline"></ion-icon>
+			<span> Trerätters från 270 sek per person</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> Lämpligt för upp till 200 gäster</span>`,
+			usp3: `
+			<ion-icon name="leaf-outline"></ion-icon>
+			<span> Veganskt!</span>`,
+			fromPrice: "fr. <strong>270 kr SEK</strong> per gäst",
+			description: `Vegano är passionerade över att mat är en viktig del av alla framgångsrika event. Det är därför de är dedikerade till att leverera verkligt utsökt och innovativ mat, med endast de färskaste, lokalt framställda ingredienserna. Deras erfarna kockar har en passion för den veganska livsstilen och en djup förståelse för hur man skapar fantastiska rätter utan användning av animaliska produkter. Med ett engagemang för enkla, hållbara och närproducerade råvaror kan du lita på att varje tugga du tar kommer att bli helt underbar.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://veganocatering.se/",
+			vibe1: "vegan",
+			vibe2: "colorful",
+			vibe3: "cool",
+			vibe4: "tasty",
+			vibe5: "cozy",
+			maxPeople: "200",
+			maxSeated: "30",
+			price: "medium",
+			catRank: "2",
+		},
+	},
+	foodNoBones: {
+		id: "foodNoBones",
+		name: "No Bones, Bagarmossen",
+		articleName: "food-NoBones",
+		category: "food,wedding",
+		image: `<img
+				src="../img/product-images/NoBones.jpg"
+				alt="Image of No bones' boxed food"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon name="cash-outline"></ion-icon>
+			<span> Buffe from 159 sek per person</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> Suitible for 10 to 100+ ppl</span>`,
+			usp3: `
+			<ion-icon name="leaf-outline"></ion-icon>
+			<span> Plant based!</span>`,
+			fromPrice: "fr. <strong>159 kr SEK</strong> per guest",
+			description: `
+			No Bones Catering is a family-owned business that brings a passion for plant-based cuisine and a wealth of experience to their catering services. The company produces its own proteins, ensuring the freshest and highest quality ingredients in every dish. The chefs at No Bones Catering are experts in classic hot dishes, and all meals are served in eco-friendly food boxes that are kind to the environment. With their dedication to plant-based cooking and their commitment to sustainability, No Bones Catering provides a truly unforgettable dining experience for their clients.
+			`,
+		},
+		visibleSETags: {
+			usp1: `
+			<ion-icon name="cash-outline"></ion-icon>
+			<span> Buffeer från 159 sek per person</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> Lämpligt för 10 till 100+ gäster</span>`,
+			usp3: `
+			<ion-icon name="leaf-outline"></ion-icon>
+			<span> Växtbaserat!</span>`,
+			fromPrice: "fr. <strong>159 kr SEK</strong> per gäst",
+			description: `
+			No Bones Catering är ett familjeägt företag som tillför en passion för växtbaserad mat och en mängd erfarenhet till sina cateringtjänster. Företaget producerar sina egna proteiner, vilket säkerställer de färskaste ingredienserna av högsta kvalitet i varje maträtt. Kockarna på No Bones Catering är experter på klassiska varma rätter och alla måltider serveras i miljövänliga matlådor som är snälla mot miljön. Med sitt engagemang för växtbaserad matlagning och sitt engagemang för hållbarhet ger No Bones Catering en verkligt oförglömlig matupplevelse för sina kunder.
+			`,
+		},
+		invisibleTags: {
+			vendorLink: "https://www.nobones.se/",
+			vibe1: "vegan",
+			vibe2: "colorful",
+			vibe3: "cool",
+			vibe4: "tasty",
+			vibe5: "cozy",
+			maxPeople: "200",
+			maxSeated: "30",
+			price: "budget",
+			catRank: "2",
+		},
+	},
+	foodLilaLotus: {
+		id: "foodLilaLotus",
+		name: "Lila Lotus, Vasastan",
+		articleName: "food-LilaLotus",
+		category: "food,wedding",
+		image: `<img
+				src="../img/product-images/lilalotus.jpg"
+				alt="Image of Lila Lotus food"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon name="cash-outline"></ion-icon>
+			<span> Dishes from around 220 sek per person</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> Suitible for up to 150 ppl</span>`,
+			usp3: `
+			<ion-icon name="leaf-outline"></ion-icon>
+			<span> Vegan and gluten free!</span>`,
+			fromPrice: "fr. <strong>200 kr SEK</strong> per guest",
+			description: `
+			Lila Lotus Catering is dedicated to providing delicious and healthy vegetarian cuisine, made with only the finest organic ingredients. Their focus is on raw food, and every dish they offer is both vegan and gluten-free, making it a great choice for those with dietary restrictions. If you're interested in booking catering with Lila Lotus, simply fill out the form on their website and they will be happy to assist you. With their commitment to quality and wellness, Lila Lotus Catering is the perfect choice for your next event.
+			`,
+		},
+		visibleSETags: {
+			usp1: `
+			<ion-icon name="cash-outline"></ion-icon>
+			<span> Rätter för cirka 220 sek per person</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> Lämpligt för upp till 150 gäster</span>`,
+			usp3: `
+			<ion-icon name="leaf-outline"></ion-icon>
+			<span> Växtbaserat!</span>`,
+			fromPrice: "fr. <strong>200 kr SEK</strong> per gäst",
+			description: `
+			
+Lila Lotus Catering är dedikerad till att tillhandahålla läckra och hälsosamma vegetariska rätter, gjorda av endast de finaste ekologiska ingredienserna. Deras fokus ligger på raw food, och varje maträtt de erbjuder är både vegansk och glutenfri, vilket gör det till ett utmärkt val för dem med kostpreferenser. Med sitt engagemang för kvalitet och välbefinnande är Lila Lotus Catering det perfekta valet för ditt nästa event.
+			`,
+		},
+		invisibleTags: {
+			vendorLink: "https://lilalotus.se/",
+			vibe1: "vegan",
+			vibe2: "glutenfree",
+			vibe3: "healthy",
+			vibe4: "posh",
+			vibe5: "cozy",
+			maxPeople: "150",
+			maxSeated: "30",
+			price: "medium",
+			catRank: "2",
+		},
+	},
+	foodBlissCafe: {
+		id: "foodBlissCafe",
+		name: "Bliss Cafe, Södermalm",
+		articleName: "food-BlissCafe",
+		category: "food,wedding",
+		image: `<img
+				src="../img/product-images/BlissCafe.jpg"
+				alt="Image of Bliss cafe Buffee"
+				class="product-img"
+			/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon name="cash-outline"></ion-icon>
+			<span> Dishes from around 130 sek per person</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> Suitible for up 10 to 100+ ppl</span>`,
+			usp3: `
+			<ion-icon name="leaf-outline"></ion-icon>
+			<span> Rawfood and vegan!</span>`,
+			fromPrice: "fr. <strong>200 kr SEK</strong> per guest",
+			description: `
+			Bliss Cafe is a unique dining experience located in Stockholm. As the city's first raw vegan cafe and restaurant, everything on the menu is 100% raw food. The team at Bliss Cafe believe that consuming fresh and unprocessed food leads to better health, increased energy levels, and greater overall vitality. By not heating their dishes above 42 degrees, they ensure that all of the nutrients and life energy of the ingredients are preserved. If you're looking for a healthy and delicious dining option, Bliss Cafe is a must-visit.
+			`,
+		},
+		visibleSETags: {
+			usp1: `
+			<ion-icon name="cash-outline"></ion-icon>
+			<span> Rätter för cirka 130 sek per person</span>`,
+			usp2: `
+			<ion-icon
+				class="product-icon"
+				name="restaurant-outline"
+			></ion-icon>
+			<span> Lämpligt för 10 to 100+ gäster</span>`,
+			usp3: `
+			<ion-icon name="leaf-outline"></ion-icon>
+			<span> Rawfood och veganskt!</span>`,
+			fromPrice: "fr. <strong>130 kr SEK</strong> per gäst",
+			description: `
+			Bliss Cafe är en unik matupplevelse belägen i Stockholm. Som stadens första raw veganska café och restaurang är allt på menyn 100% raw food. Teamet på Bliss Cafe tror att konsumtion av färsk och obearbetad mat leder till bättre hälsa, ökade energinivåer och större övergripande vitalitet. Genom att inte värma upp sina rätter över 42 grader säkerställer de att alla näringsämnen och livsenergi från ingredienserna bevaras. Om du letar efter ett hälsosamt och utsökt matalternativ till festen är Bliss Cafe en no-brainer.
+			`,
+		},
+		invisibleTags: {
+			vendorLink: "https://blisscafe.se/",
+			vibe1: "vegan",
+			vibe2: "rawfood",
+			vibe3: "healthy",
+			vibe4: "posh",
+			vibe5: "cozy",
+			maxPeople: "100",
+			maxSeated: "30",
+			price: "medium",
+			catRank: "1",
 		},
 	},
 };

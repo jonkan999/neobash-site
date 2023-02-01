@@ -14,7 +14,8 @@ export function makeCategoryArticles() {
 		})
 		.then((cards) => {
 			productGrid.innerHTML = "";
-
+			console.log("produkter");
+			console.log(cards);
 			const urlParams = new URLSearchParams(window.location.search);
 			const currentCat = urlParams.get("category");
 			const byob = urlParams.get("byob");
