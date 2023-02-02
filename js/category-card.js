@@ -612,68 +612,6 @@ cards = {
 		},
 	},
 
-	drinksLovnas: {
-		id: "drinksLovnas",
-		name: "Lövnäs Bryggeri, Mörkö",
-		articleName: "drinks-lovnas",
-		category: "drinks",
-		image: `
-		<img
-			src="../img/product-images/lovnas.jpg"
-			alt="Image of Skyddsrummet"
-			class="product-img drinks-lovnas-img"
-		/>`,
-		visibleENTags: {
-			usp1: `
-			<ion-icon name="beer-outline"></ion-icon>
-			<span> Locally sourced micro brewery</span>`,
-			usp2: `
-			<ion-icon name="color-palette-outline"></ion-icon>
-			<span> Dizzying amount of flavors available</span>`,
-			usp3: `
-			<ion-icon name="diamond-outline"></ion-icon>
-			<span> Available for offsite guided tastings</span>`,
-			fromPrice: "fr. <strong>2 000 kr SEK</strong> a person",
-			description: `Skyddsrummet, with a central location on walking distance from
-			Mariatorget, is ideal for basically any party. It's divided in to two
-			main sections. The brick room, with seating for 150 guests, and the
-			larger mountain room that is also fully equipped with light and sound.
-			The cool industrial atmosphere make Skyddsrummet ideal for product
-			release mingles, vernisages and just about any other party with an
-			eclectic audience.`,
-		},
-		visibleSETags: {
-			usp1: `
-			<ion-icon name="beer-outline"></ion-icon>
-			<span> Lokalproducerande mikrobryggeri</span>`,
-			usp2: `
-			<ion-icon name="color-palette-outline"></ion-icon>
-			<span> Massvis av smaker</span>`,
-			usp3: `
-			<ion-icon name="diamond-outline"></ion-icon>
-			<span> Möjlighet att boka guidad ölprovning till din fest</span>`,
-			fromPrice: "fr. <strong>2 000 kr SEK</strong> per person",
-			description: `Skyddsrummet, with a central location on walking distance from
-			Mariatorget, is ideal for basically any party. It's divided in to two
-			main sections. The brick room, with seating for 150 guests, and the
-			larger mountain room that is also fully equipped with light and sound.
-			The cool industrial atmosphere make Skyddsrummet ideal for product
-			release mingles, vernisages and just about any other party with an
-			eclectic audience.`,
-		},
-		invisibleTags: {
-			vendorLink: "https://lovnasbryggeri.se/",
-			vibe1: "micro-brewery",
-			vibe2: "local",
-			vibe3: "sustainable",
-			vibe4: "party",
-			vibe5: "indoor",
-			maxPeople: "n/a",
-			maxSeated: "n/a",
-			price: "medium",
-			catRank: "1",
-		},
-	},
 	venueSjovillan: {
 		id: "venueSjovillan",
 		name: "Sjövillan, Nyckelviken",
@@ -1668,6 +1606,225 @@ Lila Lotus Catering är dedikerad till att tillhandahålla läckra och hälsosam
 			maxSeated: "30",
 			price: "medium",
 			catRank: "1",
+		},
+	},
+	drinksFountain: {
+		id: "drinksFountain",
+		name: "Cocktail Fountain",
+		articleName: "drinks-fountain",
+		category: "drinks,wedding,party",
+		image: `
+		<img
+			src="../img/product-images/fountain.jpg"
+			alt="Image of Cocktail Fountain"
+			class="product-img"
+		/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon name="walk-outline"></ion-icon>
+			<span> Self serve drinks for everyone</span>`,
+			usp2: `
+			<ion-icon name="glasses"></ion-icon>
+			<span> Unabashedly cool</span>`,
+			usp3: `
+			<ion-icon name="water-outline"></ion-icon>
+			<span> None alcoholic options</span>`,
+			fromPrice: "fr. <strong>1 000 kr SEK</strong> a day",
+			description: `
+			Introducing the amazing Cocktail Fountain - the ultimate addition to any party or gathering. Standing tall and proud, this fountain is the perfect solution for serving a variety of drinks, both alcoholic and non-alcoholic. Impress your guests with its towering presence, and enjoy the convenience of having your drinks flow smoothly and continuously, eliminating the need for constant refills. Make a statement and bring the fun to your next party with the Cocktail Fountain.
+			`,
+		},
+		visibleSETags: {
+			usp1: `
+			<ion-icon name="walk-outline"></ion-icon>
+			<span> Självservering av drinkar till alla</span>`,
+			usp2: `
+			<ion-icon name="glasses"></ion-icon>
+			<span> Ogenerat cool</span>`,
+			usp3: `
+			<ion-icon name="water-outline"></ion-icon>
+			<span> Funkar alkoholfritt</span>`,
+			fromPrice: "fr. <strong>1 000 kr SEK</strong> per dygn",
+			description: `
+			Drinkfontänen - det ultimata tillskottet till vilken fest eller sammankomst som helst. Vi tycker fontänen är den perfekta lösningen för att servera en stor mängd olika drycker, både alkoholhaltiga och alkoholfria, till många gäster. Imponera på dina gäster med en flera meter hög drunkfontän och njut av bekvämligheten med att dina drycker flödar smidigt och kontinuerligt, och eliminera behovet av att ständigt fylla på. Gör ett statement med drinkfontänen på din nästa fest.
+			`,
+		},
+		invisibleTags: {
+			vendorLink:
+				"https://hyrenchokladfontan.se/produkt-kategori/hyra/dryckesfontaner/",
+			vibe1: "cool",
+			vibe2: "party",
+			vibe3: "large gathering",
+			vibe4: "posh",
+			vibe5: "indoor",
+			maxPeople: "n/a",
+			maxSeated: "n/a",
+			price: "medium",
+			catRank: "1",
+		},
+	},
+	drinksFrozenMargarita: {
+		id: "drinksFrozenMargarita",
+		name: "Frozen Margarita / Daquiri",
+		articleName: "drinks-FrozenMargarita",
+		category: "drinks",
+		image: `
+		<img
+			src="../img/product-images/FrozenMargarita.jpg"
+			alt="Image of Frozen Margarita"
+			class="product-img"
+		/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon name="snow-outline"></ion-icon>
+			<span>Ice cold</span>`,
+			usp2: `
+			<ion-icon name="glasses"></ion-icon>
+			<span> Good vibes</span>`,
+			usp3: `
+			<ion-icon name="water-outline"></ion-icon>
+			<span> None alcoholic options a.k.a. a Slushie!</span>`,
+			fromPrice: "fr. <strong>700 kr SEK</strong> a day",
+			description: `
+			An awesome addition to any event or celebration. With the ability to serve multiple drinks at once, the Frozen Margarita Machine is the perfect solution for entertaining a crowd. Whether you're hosting a backyard barbecue, a wedding reception, or any other special occasion, your guests are sure to love the convenience and deliciousness of these frozen margaritas.
+			
+			`,
+		},
+		visibleSETags: {
+			usp1: `
+			<ion-icon name="snow-outline"></ion-icon>
+			<span>Ice cold</span>`,
+			usp2: `
+			<ion-icon name="glasses"></ion-icon>
+			<span> Härliga vibes</span>`,
+			usp3: `
+			<ion-icon name="water-outline"></ion-icon>
+			<span> Alkoholfria alternativet, Slushie!</span>`,
+			fromPrice: "fr. <strong>700 kr SEK</strong> per dag",
+			description: `
+			
+Ett fantastiskt tillskott till alla evenemang eller fester. Frozen margaritas i en slushmaskin ger dig möjligheten att servera flera drinkar samtidigt och är en perfekt lösning för för större grupper. Oavsett om du är värd för en bakgårdsgrill, en bröllopsmottagning eller något annat speciellt tillfälle, så kommer dina gäster älska den!`,
+		},
+		invisibleTags: {
+			vendorLink: "https://glasspojkarna.se/slush/",
+			vibe1: "hipp",
+			vibe2: "party",
+			vibe3: "large gathering",
+			vibe4: "summer",
+			vibe5: "",
+			maxPeople: "n/a",
+			maxSeated: "n/a",
+			price: "medium",
+			catRank: "1",
+		},
+	},
+	drinkscustomlabel: {
+		id: "drinkscustomlabel",
+		name: "Custom labeled beer",
+		articleName: "drinks-customlabel",
+		category: "drinks,wedding,party",
+		image: `
+		<img
+			src="../img/product-images/customlabel.jpg"
+			alt="Image of Custom labeled beer"
+			class="product-img"
+		/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon name="beer-outline"></ion-icon>
+			<span> YOUR beer without the crafting hassle </span>`,
+			usp2: `
+			<ion-icon name="color-palette-outline"></ion-icon>
+			<span> Order in advance and get your own style</span>`,
+			usp3: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Impress you guests</span>`,
+			fromPrice: "fr. <strong>25 kr SEK</strong> a bottle",
+			description: `
+			Custom labeled beer for your events! Add a touch of personalization to your special occasion by creating custom labeled beer that perfectly reflects your style and brand. Whether you're hosting a wedding, a corporate event, or any other celebration, custom labeled beer is the perfect way to make a lasting impression on your guests.
+			
+			`,
+		},
+		visibleSETags: {
+			usp1: `
+			<ion-icon name="beer-outline"></ion-icon>
+			<span> DIN öl utan bryggbesvären </span>`,
+			usp2: `
+			<ion-icon name="color-palette-outline"></ion-icon>
+			<span> Order in advance and get your own style</span>`,
+			usp3: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Impress you guests</span>`,
+			fromPrice: "fr. <strong>25 kr SEK</strong> per flaska",
+			description: `
+			
+Specialmärkt öl för dina event! Lägg till en touch av dig själv eller ditt brand till det speciella tillfället genom att skapa egna etiketter som perfekt speglar din stil och ditt varumärke. Oavsett om du är värd för ett bröllop, ett företagsevent eller något annat firande, är de egendesignade etiketterna det perfekta sättet att göra ett bestående intryck på dina gäster.`,
+		},
+		invisibleTags: {
+			vendorLink: "https://lovnasbryggeri.se/",
+			vibe1: "custom",
+			vibe2: "micro-brewery",
+			vibe3: "impress",
+			vibe4: "party",
+			vibe5: "indoor",
+			maxPeople: "n/a",
+			maxSeated: "n/a",
+			price: "budget",
+			catRank: "2",
+		},
+	},
+	drinksLovnas: {
+		id: "drinksLovnas",
+		name: "Lövnäs Bryggeri, Mörkö",
+		articleName: "drinks-lovnas",
+		category: "drinks",
+		image: `
+		<img
+			src="../img/product-images/lovnas.jpg"
+			alt="Image of Skyddsrummet"
+			class="product-img drinks-lovnas-img"
+		/>`,
+		visibleENTags: {
+			usp1: `
+			<ion-icon name="beer-outline"></ion-icon>
+			<span> Locally sourced micro brewery</span>`,
+			usp2: `
+			<ion-icon name="color-palette-outline"></ion-icon>
+			<span> Dizzying amount of flavors available</span>`,
+			usp3: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Available for offsite guided tastings</span>`,
+			fromPrice: "fr. <strong>2 000 kr SEK</strong> a person",
+			description: `
+			Lövnäs Bryggeri is a local micro brewery located in the picturesque Mörkö. This brewery is dedicated to sustainability and utilizing locally sourced ingredients from their own farm, to craft unique and delicious thirst quenchers. Whether you're a seasoned beer drinker or trying craft beer for the first time, you won't be disappointed by the quality and taste of the beers at Lövnäs Bryggeri.
+			`,
+		},
+		visibleSETags: {
+			usp1: `
+			<ion-icon name="beer-outline"></ion-icon>
+			<span> Lokalproducerande mikrobryggeri</span>`,
+			usp2: `
+			<ion-icon name="color-palette-outline"></ion-icon>
+			<span> Massvis av smaker</span>`,
+			usp3: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Möjlighet att boka guidad ölprovning till din fest</span>`,
+			fromPrice: "fr. <strong>2 000 kr SEK</strong> per person",
+			description: `
+			Lövnäs Bryggeri är ett lokalt mikrobryggeri beläget i pittoreska Mörkö. Detta bryggeri är dedikerat till hållbarhet och använder lokalt framställda ingredienser från sin egen gård för att tillverka unika törstsläckare. Oavsett om du är en rutinerad öldrickare eller provar hantverksöl för första gången kommer du inte att bli besviken över kvaliteten och smaken på ölen på Lövnäs Bryggeri.
+			`,
+		},
+		invisibleTags: {
+			vendorLink: "https://lovnasbryggeri.se/",
+			vibe1: "micro-brewery",
+			vibe2: "local",
+			vibe3: "sustainable",
+			vibe4: "party",
+			vibe5: "indoor",
+			maxPeople: "n/a",
+			maxSeated: "n/a",
+			price: "medium",
+			catRank: "2",
 		},
 	},
 };

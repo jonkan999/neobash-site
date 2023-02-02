@@ -95,13 +95,13 @@ async function translateBlogPost(data) {
 
 async function main() {
 	const data = fs.readFileSync(
-		"C:/Users/ENGJOE/neobash-site/blog/Say-I-Do-to-the-Best-Vegan-Wedding-Catering-in-Stockholm.html",
+		"C:/Users/ENGJOE/neobash-site/blog/Impress-Your-Guests-with-Unique-Drink-Solutions-for-Your-Next-Event.html",
 		"utf-8"
 	);
 	const translatedData = await translateBlogPost(data);
 	/* console.log(translatedData); */
 	fs.writeFileSync(
-		"C:/Users/ENGJOE/neobash-site/se/blogg/Say-I-Do-to-the-Best-Vegan-Wedding-Catering-in-Stockholm.html",
+		"C:/Users/ENGJOE/neobash-site/se/blogg/Impress-Your-Guests-with-Unique-Drink-Solutions-for-Your-Next-Event.html",
 		translatedData,
 		"utf-8"
 	);

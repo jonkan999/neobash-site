@@ -532,6 +532,18 @@
 	transform: translate(-50%, -50%); /* % of current element */
 }
 
+.drink-solutions-article {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	object-fit: contain;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	left: 50%; /* % of surrounding element */
+	top: 50%;
+	transform: translate(-50%, -50%); /* % of current element */
+}
+
 .cat-gif-overlay-text {
 	position: absolute;
 	color: #fdf7fe;
