@@ -18,6 +18,7 @@ import { getBasket } from "/js/getBasket.js";
 
 document.addEventListener("click", async function (event) {
 	const clickedElement = event.target.closest(".product-card");
+	const clickedCloseCard = event.target.closest(".close-btn");
 	const clickedCategory = event.target.closest(".category-list-element");
 	const shadowEl = document.querySelector(".full-page-shadow");
 	const addBtn = document.querySelector(".add-button");
@@ -96,14 +97,22 @@ document.addEventListener("click", async function (event) {
 				// Handle any errors that may occur
 				console.error(error);
 			});
-	} else if (clickedElement && shadowEl.classList[1] === "active-shadow") {
-		// If user clicks inside the element, and it is enlarged, minimize and remove shadow
+	} else if (clickedCloseCard) {
+		// If user clicks close enlarged element
 		shadowEl.classList.toggle("active-shadow");
-		//and if enlarged card exists, remove it
+
 		const cardLarge = document.querySelector(".product-card-large");
 		if (cardLarge) {
 			cardLarge.parentNode.removeChild(cardLarge);
 		}
+	} else if (clickedElement && shadowEl.classList[1] === "active-shadow") {
+		// If user clicks inside the element, and it is enlarged, do nothing
+		//shadowEl.classList.toggle("active-shadow");
+		//and if enlarged card exists, remove it
+		/*const cardLarge = document.querySelector(".product-card-large");
+		if (cardLarge) {
+			cardLarge.parentNode.removeChild(cardLarge);
+		}*/
 	} else if (
 		clickedElement === null &&
 		shadowEl.classList[1] === "active-shadow"
