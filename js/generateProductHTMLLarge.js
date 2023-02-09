@@ -1,30 +1,31 @@
 export function generateProductHTMLLarge(article, language) {
-	/* takes article object and language as an input and generates product html*/
-	let usp1Tag = article.visibleENTags.usp1;
-	let usp2Tag = article.visibleENTags.usp2;
-	let usp3Tag = article.visibleENTags.usp3;
-	let priceTag = article.visibleENTags.fromPrice;
-	let description = article.visibleENTags.description;
-	let goTo = "Go to vendor site";
-	let add = "add";
-	if (language === "se") {
-		usp1Tag = article.visibleSETags.usp1;
-		usp2Tag = article.visibleSETags.usp2;
-		usp3Tag = article.visibleSETags.usp3;
-		description = article.visibleSETags.description;
-		goTo = "Besök deras hemsida";
-		let add = "Lägg till";
-	}
-	let remove = "";
-	if (document.URL.includes("bash-basket")) {
-		remove = "remove-button";
-		add = "remove";
-	}
-	const newHTML = `
-  <article class="product-card product-card-large" id="${article.id}">
+  /* takes article object and language as an input and generates product html*/
+  let usp1Tag = article.visibleENTags.usp1;
+  let usp2Tag = article.visibleENTags.usp2;
+  let usp3Tag = article.visibleENTags.usp3;
+  let priceTag = article.visibleENTags.fromPrice;
+  let description = article.visibleENTags.description;
+  let goTo = "Go to vendor site";
+  let add = "add";
+  if (language === "se") {
+    usp1Tag = article.visibleSETags.usp1;
+    usp2Tag = article.visibleSETags.usp2;
+    usp3Tag = article.visibleSETags.usp3;
+    description = article.visibleSETags.description;
+    goTo = "Besök deras hemsida";
+    let add = "Lägg till";
+  }
+  let remove = "";
+  if (document.URL.includes("bash-basket")) {
+    remove = "remove-button";
+    add = "remove";
+  }
+  const newHTML = `
   <div class="close-btn-anchor">
     <ion-icon class="close-btn" name="close-outline"></ion-icon>
   </div>
+  <article class="product-card product-card-large" id="${article.id}">
+
   ${article.image}
   <div class="product-description">
     <div class="name-and-rating">
@@ -67,6 +68,6 @@ export function generateProductHTMLLarge(article, language) {
 
 
   `;
-	//adding event listener to add btn
-	return newHTML;
+  //adding event listener to add btn
+  return newHTML;
 }
