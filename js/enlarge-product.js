@@ -69,7 +69,7 @@ document.addEventListener("click", async function (event) {
   // If user clicks inside the element, enlarge and shadow
   if (clickedElement && shadowEl.classList[1] != "active-shadow") {
     shadowEl.classList.toggle("active-shadow");
-    fetch("../js/category-card.json")
+    fetch("/js/category-card.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);

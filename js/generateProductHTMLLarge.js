@@ -33,7 +33,7 @@ export function generateProductHTMLLarge(article, language) {
       <div class="product-rating">
         <img
           class="rating-icon"
-          src="../svg-icons/star-outline.svg"
+          src="/svg-icons/star-outline.svg"
           alt="star icon for rating"
         />
         <span>New</span>

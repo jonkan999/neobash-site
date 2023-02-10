@@ -1,72 +1,55 @@
+const cheerio = require("cheerio");
 const fs = require("fs");
 
-function createPage(englishKeyword, swedishKeyword) {
-  fs.readFile("category-page-keywords.html", "utf-8", (err, data) => {
-    if (err) throw err;
+const englishKeyword = "Design own labeled beer";
+const swedishKeyword = "Designa och beställ öl med egen etikett";
 
-    // Replace the title and meta description with "Neobash - " + english_keyword
-    let englishData = data
-      .replace(
-        /<title>.*<\/title>/,
-        `<title>Neobash - ${englishKeyword}</title>`
-      )
-      .replace(
-        /<meta name="description" content=".*">/,
-        `<meta name="description" content="Neobash - ${englishKeyword}">`
-      );
+// List of query strings
+const selections = ["drinkscustomlabel"];
 
-    // Replace the text in id=headerScroll
-    englishData = englishData.replace(
-      /<div id="headerScroll">.*<\/div>/,
-      `<div id="headerScroll">Category selection based on ${englishKeyword}</div>`
-    );
+// Load the HTML content into cheerio
+const htmlContent = fs.readFileSync("category-page-keywords.html", "utf-8");
+const $ = cheerio.load(htmlContent);
 
-    // Replace the title and meta description with "Neobash - " + swedish_keyword
-    let swedishData = data
-      .replace(
-        /<title>.*<\/title>/,
-        `<title>Neobash - ${swedishKeyword}</title>`
-      )
-      .replace(
-        /<meta name="description" content=".*">/,
-        `<meta name="description" content="Neobash - ${swedishKeyword}">`
-      );
+// Update the title
+$("title").text(`Neobash - ${englishKeyword}`);
 
-    // Replace the text in id=headerScroll
-    // Currently, this just replaces the text with "Swedish Keyword Text"
-    // You can add your own logic to select the text based on the swedish_keyword
-    swedishData = swedishData.replace(
-      /<div id="headerScroll">.*<\/div>/,
-      `<div id="headerScroll">Urval baserat på ${swedishKeyword}</div>`
-    );
+// Update the meta description
+$('meta[name="description"]').attr("content", `Neobash - ${englishKeyword}`);
 
-    // Write the modified HTML to files
-    fs.writeFile(
-      `category-page/banner-site/${englishKeyword.replace(/\s+/g, "-")}.html`,
-      englishData,
-      "utf-8",
-      (err) => {
-        if (err) throw err;
-        console.log(`English page created: ${englishKeyword}.html`);
-      }
-    );
-    fs.writeFile(
-      `se/category-page/banner-site/${swedishKeyword.replace(
-        /\s+/g,
-        "-"
-      )}.html`,
-      swedishData,
-      "utf-8",
-      (err) => {
-        if (err) throw err;
-        console.log(`Swedish page created: ${swedishKeyword}.html`);
-      }
-    );
-  });
-}
+// Update the header text
+$("#headerScroll").text(`Category selection for: ${englishKeyword}`);
 
-// Call the createPage function with the english and swedish keywords
-createPage(
-  "event venue södermalm",
-  "hyra festlokal södermalm, söder, mariatorget"
+//Updating initial querystring
+
+const queryString = "?id=" + selections.join("&id=");
+$("head").append(`
+  <script defer>
+    const currentUrl = window.location.href;
+    const queryString = \"${queryString}\";
+    const newUrl = currentUrl + queryString;
+    window.history.pushState({}, "", newUrl);
+  </script>
+`);
+
+// Save the updated HTML to a file
+fs.writeFileSync(
+  `category-page/banner-site/${englishKeyword
+    .replace(/ /g, "-")
+    .replace(/,/g, "")}.html`,
+  $.html(),
+  "utf-8"
+);
+
+// Repeat the process for the Swedish keyword
+$("title").text(`Neobash - ${swedishKeyword}`);
+$('meta[name="description"]').attr("content", `Neobash - ${swedishKeyword}`);
+$("#headerScroll").text(`Utvalt innehåll för: ${swedishKeyword}`);
+
+fs.writeFileSync(
+  `se/category-page/banner-site/${swedishKeyword
+    .replace(/ /g, "-")
+    .replace(/,/g, "")}.html`,
+  $.html(),
+  "utf-8"
 );
