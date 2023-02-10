@@ -455,10 +455,12 @@
     padding: 0 3.6rem;
   }
 
-  .category-card img {
+  .category-card img,
+  .category-card video {
     width: 20rem;
     height: 35rem;
   }
+
   .section-event-categories .grid--3-cols {
     column-gap: 0;
   }
@@ -666,7 +668,8 @@
     margin-bottom: 4.6rem;
   }
 
-  .category-card img {
+  .category-card img,
+  .category-card video {
     width: 17rem;
     height: 30rem;
   }
@@ -894,6 +897,10 @@
   }
   .product-card-large {
     width: 90vw;
+  }
+  .close-btn {
+    font-size: 2rem;
+    transform: translate(42vw);
   }
   .add-button {
     border-radius: 1rem;
