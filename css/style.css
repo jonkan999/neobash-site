@@ -225,7 +225,8 @@
   position: relative;
 }
 
-.category-card img {
+.category-card img,
+.category-card video {
   object-fit: cover;
   filter: sepia(0.3) saturate(0.5) brightness(1.1);
   width: 35rem;
@@ -1363,7 +1364,8 @@
 .product-card:active {
   cursor: pointer;
 }
-.product-img {
+.product-img,
+.product-video {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;

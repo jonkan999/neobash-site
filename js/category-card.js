@@ -74,11 +74,15 @@ cards = {
     name: "Borgila, Södermalm",
     articleName: "venue-borgila",
     category: "venue,wedding",
-    image: `<img
-				src="/img/product-images/Borgila.jpg"
-				alt="Image of Borgila"
-				class="product-img"
-			/>`,
+    image: `
+		<video
+		class="product-video"
+		src="/videos/borgila.mp4"
+		loop
+		autoplay
+		muted
+		playsinline
+	></video>`,
     visibleENTags: {
       usp1: `
 			<ion-icon class="product-icon" name="people-outline"></ion-icon>
@@ -553,6 +557,60 @@ cards = {
     },
   },
 
+  decorLedClouds: {
+    id: "decorLedClouds",
+    name: "Led Clouds",
+    articleName: "decor-ledclouds",
+    category: "decor",
+    image: `
+		<video
+		class="product-video"
+		src="/videos/ledclouds.mp4"
+		loop
+		autoplay
+		muted
+		playsinline
+	></video>`,
+    visibleENTags: {
+      usp1: `
+			<ion-icon name="walk-outline"></ion-icon>
+			<span> Dancing people guarantee</span>`,
+      usp2: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Amazing vibe!</span>`,
+      usp3: `
+			<ion-icon name="color-palette--outline"></ion-icon>
+			<span> Choose the color theme from your phone</span>`,
+      fromPrice: "fr. <strong>5 000 kr SEK</strong> a day",
+      description: `Perfect for putting a unique touch on that party. Remote-controlled LED clouds that light up the party in exactly the color you want. Easily controlled from an app on the phone. We follow along and help with suspension on site. Combines very well with disco balls, which we can also provide.`,
+    },
+    visibleSETags: {
+      usp1: `
+			<ion-icon name="walk-outline"></ion-icon>
+			<span> Bra party garanti</span>`,
+      usp2: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Amazing vibe!</span>`,
+      usp3: `
+			<ion-icon name="color-palette--outline"></ion-icon>
+			<span> Bestäm färgtemat i mobilen</span>`,
+      fromPrice: "fr. <strong>5 000 kr SEK</strong> dygn",
+      description: `Perfekt för att sätta en unik prägel på den fest. Fjärrstyrda LED-moln som lyser upp festen i precis vilken färg du vill. Styrs enkelt från app i mobilen. Vi hänger med och hjälper till med upphängning på plats. Kombineras väldigt bra med diskokulor, som vi också kan tillhandahålla.`,
+    },
+    invisibleTags: {
+      vendorLink: "https://neobash.se/",
+      vibe1: "own-brand",
+      vibe2: "cool",
+      vibe3: "neon",
+      vibe4: "party",
+      vibe5: "indoor",
+      maxPeople: "n/a",
+      maxSeated: "n/a",
+      price: "medium",
+      catRank: "1",
+    },
+  },
+
   decorMirrorballs: {
     id: "decorMirrorballs",
     name: "Neon Lights and Mirror Balls",
@@ -608,7 +666,7 @@ cards = {
       maxPeople: "n/a",
       maxSeated: "n/a",
       price: "medium",
-      catRank: "1",
+      catRank: "2",
     },
   },
 
