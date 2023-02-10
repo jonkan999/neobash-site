@@ -1672,11 +1672,14 @@ Lila Lotus Catering är dedikerad till att tillhandahålla läckra och hälsosam
     articleName: "drinks-fountain",
     category: "drinks,wedding,party",
     image: `
-		<img
-			src="/img/product-images/fountain.jpg"
-			alt="Image of Cocktail Fountain"
-			class="product-img"
-		/>`,
+		<video
+		class="product-video"
+		src="/videos/fountain.mp4"
+		loop
+		autoplay
+		muted
+		playsinline
+	></video>`,
     visibleENTags: {
       usp1: `
 			<ion-icon name="walk-outline"></ion-icon>
