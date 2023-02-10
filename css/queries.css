@@ -899,8 +899,8 @@
     width: 90vw;
   }
   .close-btn {
-    font-size: 2rem;
-    transform: translate(42vw);
+    font-size: 4rem;
+    transform: translate(88vw);
   }
   .add-button {
     border-radius: 1rem;
