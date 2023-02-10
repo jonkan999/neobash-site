@@ -225,6 +225,13 @@
     /* height: 140%; */
     width: 170%;
   }
+
+  .scroll-text {
+    /* increase speed for smaller screens */
+    -moz-animation: scroller 8s linear infinite;
+    -webkit-animation: scroller 8s linear infinite;
+    animation: scroller 8s linear infinite;
+  }
 }
 
 /**************************/
