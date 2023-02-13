@@ -579,7 +579,7 @@ cards = {
 			<ion-icon name="diamond-outline"></ion-icon>
 			<span> Amazing vibe!</span>`,
       usp3: `
-			<ion-icon name="color-palette--outline"></ion-icon>
+			<ion-icon name="color-palette-outline"></ion-icon>
 			<span> Choose the color theme from your phone</span>`,
       fromPrice: "fr. <strong>5 000 kr SEK</strong> a day",
       description: `Perfect for putting a unique touch on that party. Remote-controlled LED clouds that light up the party in exactly the color you want. Easily controlled from an app on the phone. We follow along and help with suspension on site. Combines very well with disco balls, which we can also provide.`,
@@ -592,7 +592,7 @@ cards = {
 			<ion-icon name="diamond-outline"></ion-icon>
 			<span> Amazing vibe!</span>`,
       usp3: `
-			<ion-icon name="color-palette--outline"></ion-icon>
+			<ion-icon name="color-palette-outline"></ion-icon>
 			<span> Bestäm färgtemat i mobilen</span>`,
       fromPrice: "fr. <strong>5 000 kr SEK</strong> dygn",
       description: `Perfekt för att sätta en unik prägel på den fest. Fjärrstyrda LED-moln som lyser upp festen i precis vilken färg du vill. Styrs enkelt från app i mobilen. Vi hänger med och hjälper till med upphängning på plats. Kombineras väldigt bra med diskokulor, som vi också kan tillhandahålla.`,

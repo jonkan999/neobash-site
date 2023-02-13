@@ -1147,6 +1147,10 @@
   }
 }
 
+.clear-basket-anchor {
+  position: relative;
+}
+
 .close-btn-container {
   position: absolute;
   display: flex;
