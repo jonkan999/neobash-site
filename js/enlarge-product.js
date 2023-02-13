@@ -25,14 +25,17 @@ document.addEventListener("click", async function (event) {
   const scrollBtn = document.querySelector(".lower-header-button-icon");
   const clearBasketBtn = document.querySelector(".close-btn-container");
   const isSwedish = document.URL.includes("/se/");
+  console.log(addBtn);
 
   if (scrollBtn) {
+    console.log("scrollBtn");
     if (event.target.closest(".lower-header-button-icon")) {
       scrollLowerHeader(event.target.closest(".lower-header-button-icon"));
     }
   }
 
   if (addBtn) {
+    console.log("addBtn");
     if (event.target.closest(".remove-button")) {
       removeFromBasket();
       getBasket();
@@ -43,9 +46,16 @@ document.addEventListener("click", async function (event) {
       addToBasket(productId.id);
       window.scrollTo(0, 0);
     }
+    shadowEl.classList.toggle("active-shadow");
+    const cardLarge = document.querySelector(".product-card-large");
+    cardLarge.parentNode.removeChild(cardLarge);
+    document.querySelector(".close-btn-anchor").remove();
+    document.querySelector(".close-btn").remove();
+    return;
   }
-  console.log(itemCounter);
+
   if (clearBasketBtn) {
+    console.log("clearBasketBtn");
     if (event.target.closest(".close-btn-container")) {
       //if clear basket is clicked wipe out bash basket and reset item counter and clear basket button
       setTimeout(function () {
@@ -62,12 +72,14 @@ document.addEventListener("click", async function (event) {
   }
   //Generate new category
   if (clickedCategory) {
+    console.log("clickedCategory");
     changeCategory(clickedCategory);
   }
 
   //Enlarge or remove large product
   // If user clicks inside the element, enlarge and shadow
   if (clickedElement && shadowEl.classList[1] != "active-shadow") {
+    console.log("clicked inside element");
     shadowEl.classList.toggle("active-shadow");
     fetch("/js/category-card.json")
       .then((response) => {
@@ -108,6 +120,7 @@ document.addEventListener("click", async function (event) {
       document.querySelector(".close-btn").remove();
     }
   } else if (clickedElement && shadowEl.classList[1] === "active-shadow") {
+    console.log("clickedElement & acitveshadow");
     // If user clicks inside the element, and it is enlarged, do nothing
     //shadowEl.classList.toggle("active-shadow");
     //and if enlarged card exists, remove it
