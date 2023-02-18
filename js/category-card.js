@@ -82,6 +82,7 @@ cards = {
 		autoplay
 		muted
 		playsinline
+    poster="/videos/borgila-poster.jpg"
 	></video>`,
     visibleENTags: {
       usp1: `
@@ -570,6 +571,7 @@ cards = {
 		autoplay
 		muted
 		playsinline
+    poster="/videos/ledclouds-poster.jpg"
 	></video>`,
     visibleENTags: {
       usp1: `
@@ -1679,6 +1681,7 @@ Lila Lotus Catering är dedikerad till att tillhandahålla läckra och hälsosam
 		autoplay
 		muted
 		playsinline
+    poster="/videos/fountain-poster.jpg"
 	></video>`,
     visibleENTags: {
       usp1: `
