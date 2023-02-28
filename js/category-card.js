@@ -1891,6 +1891,122 @@ Specialmärkt öl för dina event! Lägg till en touch av dig själv eller ditt 
       catRank: "2",
     },
   },
+  entertainmentChezMiled: {
+    id: "entertainmentChezMiled",
+    name: "Chez Miled",
+    articleName: "entertainment-chezmiled",
+    category: "entertainment",
+    image: `
+		<video
+      class="product-video"
+      src="/videos/chezmiled.gif"
+      loop
+      autoplay
+      muted
+      playsinline
+      poster="/videos/chezmiled-poster.jpg"
+    ></video>`,
+    visibleENTags: {
+      usp1: `
+			<ion-icon name="star-outline"></ion-icon>
+			<span> Tooth jewelry</span>`,
+      usp2: `
+			<ion-icon name="color-palette-outline"></ion-icon>
+			<span> Dizzying amount of colors and materials</span>`,
+      usp3: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Grills and shine in your smile</span>`,
+      fromPrice: "fr. <strong>2 000 kr SEK</strong>",
+      description: `
+			Our team of skilled dental artists use only the highest quality materials and techniques to ensure that your new smile is both safe and stunning. Whether you want a subtle shimmer or a bold statement piece, we can create a design that is tailored to your style and personality. We specialize in adding silver, gold, or Swarovski crystal accents to your teeth, transforming your smile into a work of art.
+			`,
+    },
+    visibleSETags: {
+      usp1: `
+			<ion-icon name="star-outline"></ion-icon>
+			<span> Tandsmycken</span>`,
+      usp2: `
+			<ion-icon name="color-palette-outline"></ion-icon>
+			<span> Svindlande mängd färger och material</span>`,
+      usp3: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Grills and shine in your smile</span>`,
+      fromPrice: "fr. <strong>2 000 kr SEK</strong>",
+      description: `
+			Vårt team av skickliga tandläkare använder endast material och tekniker av högsta kvalitet för att säkerställa att ditt nya leende är både säkert och fantastiskt. Oavsett om du vill ha ett subtilt shine eller ett bold statement, kan vi skapa en design som är skräddarsydd efter din stil och personlighet. Vi är specialiserade på att lägga till silver-, guld- eller Swarovski-kristallaccenter på dina tänder och förvandla ditt leende till ett work of art.
+			`,
+    },
+    invisibleTags: {
+      vendorLink: "https://www.instagram.com/chezmiled/",
+      vibe1: "Shine",
+      vibe2: "Cool",
+      vibe3: "Artistic",
+      vibe4: "party",
+      vibe5: "indoor",
+      maxPeople: "n/a",
+      maxSeated: "n/a",
+      price: "medium",
+      catRank: "2",
+    },
+  },
+  entertainmentActOfEmotion: {
+    id: "entertainmentActOfEmotion",
+    name: "Act of Emotion",
+    articleName: "entertainment-actofemotion",
+    category: "entertainment",
+    image: `
+		<video
+      class="product-video"
+      src="/videos/actofemotion.gif"
+      loop
+      autoplay
+      muted
+      playsinline
+      poster="/videos/actofemotion-poster.jpg"
+    ></video>`,
+    visibleENTags: {
+      usp1: `
+			<ion-icon name="star-outline"></ion-icon>
+			<span> Jawdropping laser choreography</span>`,
+      usp2: `
+			<ion-icon name="color-palette-outline"></ion-icon>
+			<span> Tailoring branded led solutions</span>`,
+      usp3: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Unique interactive performance</span>`,
+      fromPrice: "fr. <strong>15 000 kr SEK</strong>",
+      description: `
+			Experience the future of dance with Act of Emotions groundbreaking show featuring branded LED lights and laser choreography. Their innovative production will transport you to a world of light and sound, where dance meets technology in the most electrifying way. Our talented performers will dazzle you with their moves as they are illuminated by our state-of-the-art LED lights. With each step, spin, and jump, their movements will be enhanced by the glowing colors of our branded lights, creating a stunning visual display that will leave you breathless.
+			`,
+    },
+    visibleSETags: {
+      usp1: `
+			<ion-icon name="star-outline"></ion-icon>
+			<span> Jawdropping laserkoreografi</span>`,
+      usp2: `
+			<ion-icon name="color-palette-outline"></ion-icon>
+			<span> Skräddarsyr brandade led shower</span>`,
+      usp3: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Unik interaktiv upplevelse</span>`,
+      fromPrice: "fr. <strong>15 000 kr SEK</strong>",
+      description: `
+			Upplev dansens framtid med Act of Emotions banbrytande led-show och laserkoreografi. Deras innovativa produktion tar dig till en värld av ljus och ljud, där dans möter teknik på det mest elektrifierande sättet. Deras artister kommer att blända dig med sina rörelser i state of the art lighting. Med varje steg, snurr och hopp kommer deras rörelser att förstärkas av de glödande färgerna, vilket skapar en fantastisk visuell skärm likt något du aldrig sett förut.
+			`,
+    },
+    invisibleTags: {
+      vendorLink: "http://www.actofemotion.se/",
+      vibe1: "led dance show",
+      vibe2: "Cool",
+      vibe3: "Artistic",
+      vibe4: "party",
+      vibe5: "indoor",
+      maxPeople: "n/a",
+      maxSeated: "n/a",
+      price: "medium",
+      catRank: "2",
+    },
+  },
 };
 
 let sortedCards = {};
