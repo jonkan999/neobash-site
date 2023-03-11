@@ -1226,7 +1226,7 @@ categoryList.innerHTML = `
 
 
 
-<span>Light & Sound</span></a>
+<span>Lighting</span></a>
 </li>
 <li class="category-list-element">
 <a href="#" class="category-list-link"><span>Manning</span></a>

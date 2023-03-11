@@ -633,13 +633,7 @@ cards = {
 			<span> Amazing vibe!</span>`,
       usp3: `&nbsp;`,
       fromPrice: "fr. <strong>10 000 kr SEK</strong> a day",
-      description: `Skyddsrummet, with a central location on walking distance from
-			Mariatorget, is ideal for basically any party. It's divided in to two
-			main sections. The brick room, with seating for 150 guests, and the
-			larger mountain room that is also fully equipped with light and sound.
-			The cool industrial atmosphere make Skyddsrummet ideal for product
-			release mingles, vernisages and just about any other party with an
-			eclectic audience.`,
+      description: `The neon lights and mirror balls is one of our favorite decor settings for all kinds of parties, events nad nightclubs. The neon sets a powerful mood and can be custom-made to display for the occation. And the mirror balls are just a guaranteed party starter. Especially whne we bring them in hundreds.`,
     },
     visibleSETags: {
       usp1: `
@@ -650,13 +644,8 @@ cards = {
 			<span> Amazing vibe!</span>`,
       usp3: `&nbsp;`,
       fromPrice: "fr. <strong>10 000 kr SEK</strong> dygn",
-      description: `Skyddsrummet, with a central location on walking distance from
-			Mariatorget, is ideal for basically any party. It's divided in to two
-			main sections. The brick room, with seating for 150 guests, and the
-			larger mountain room that is also fully equipped with light and sound.
-			The cool industrial atmosphere make Skyddsrummet ideal for product
-			release mingles, vernisages and just about any other party with an
-			eclectic audience.`,
+      description: `
+      Neonljus och diskokulor är bland våra favoritinredningsdetaljer för alla typer av fester, evenemang och nattklubbar. Neon är en kraftfull stämningssättare och kan skräddarsys för ert tillfälle. Och diskokulorna är bara en garanterad feststartare. Speciellt när vi tar in hundratals.`,
     },
     invisibleTags: {
       vendorLink: "https://neobash.se/",
@@ -669,6 +658,142 @@ cards = {
       maxSeated: "n/a",
       price: "medium",
       catRank: "2",
+    },
+  },
+
+  lightsoundLedTubes: {
+    id: "lightingLedTubes",
+    name: "Led Tubes",
+    articleName: "lighting-LedTubes",
+    category: "lighting",
+    image: `
+		<img
+			src="/img/product-images/discoballs.jpg"
+			alt="Image of Skyddsrummet"
+			class="product-img decor-discoballs-img"
+		/>`,
+    visibleENTags: {
+      usp1: `
+			<ion-icon name="walk-outline"></ion-icon>
+			<span> Dancing people guarantee</span>`,
+      usp2: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Amazing vibe!</span>`,
+      usp3: `&nbsp;`,
+      fromPrice: "fr. <strong>500 kr SEK</strong> a day",
+      description: `Hyrparty provides a complete self service outlet for all kinds of lighting, including led tubes. We like to combine them with other decor or branding to set a cool mood and highlight the certain centerpieces of an event`,
+    },
+    visibleSETags: {
+      usp1: `
+			<ion-icon name="walk-outline"></ion-icon>
+			<span> Bra party garanti</span>`,
+      usp2: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Amazing vibe!</span>`,
+      usp3: `&nbsp;`,
+      fromPrice: "fr. <strong>500 kr SEK</strong> dygn",
+      description: `
+      Hyrparty tillhandahåller ett komplett självbetjäningsuttag för massor av ljussättningsprodukter, inklusive led-rör. Vi gillar att kombinera dem med annan inredning eller branding för att skapa en cool stämning och lyfta fram det vi vill showcasea i varje event`,
+    },
+    invisibleTags: {
+      vendorLink: "https://hyr.party/",
+      vibe1: "own-brand",
+      vibe2: "cool",
+      vibe3: "neon",
+      vibe4: "party",
+      vibe5: "indoor",
+      maxPeople: "n/a",
+      maxSeated: "n/a",
+      price: "medium",
+      catRank: "2",
+    },
+  },
+  lightingBricklights: {
+    id: "lightingBricklights",
+    name: "Bricklights",
+    articleName: "lighting-Bricklights",
+    category: "lighting",
+    image: `
+    <img class="product-video" src="/videos/bricklights.gif" alt="Hyrparty bricklights">`,
+    visibleENTags: {
+      usp1: `
+			<ion-icon name="color-palette-outline"></ion-icon>
+			<span> Any mood you like</span>`,
+      usp2: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Amazing vibe!</span>`,
+      usp3: `&nbsp;`,
+      fromPrice: "fr. <strong>500 kr SEK</strong> a day",
+      description: `
+      Hyrparty provides a complete self-service outlet for lots of lighting products, including ambient bricklights. We like to mix colors in different sections of an event and create different light rooms for the party. Of course, it will also be very effective to use the same color in a larger room.`,
+    },
+    visibleSETags: {
+      usp1: `
+			<ion-icon name="color-palette-outline"></ion-icon>
+			<span> Vilken färgstämning du vill</span>`,
+      usp2: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Amazing vibe!</span>`,
+      usp3: `&nbsp;`,
+      fromPrice: "fr. <strong>500 kr SEK</strong> dygn",
+      description: `
+      Hyrparty tillhandahåller ett komplett självbetjäningsuttag för massor av ljussättningsprodukter, inklusive miljöljus. Vi gillar att blanda färger i olika sektioner av ett event och skapa olika ljusrum för festen. Det blir såklart också väldigt effektfullt att köra samma färg i en större lokal.`,
+    },
+    invisibleTags: {
+      vendorLink: "https://hyr.party/",
+      vibe1: "own-brand",
+      vibe2: "cool",
+      vibe3: "neon",
+      vibe4: "party",
+      vibe5: "indoor",
+      maxPeople: "n/a",
+      maxSeated: "n/a",
+      price: "medium",
+      catRank: "1",
+    },
+  },
+  venueCowpow: {
+    id: "venueCowpow",
+    name: "Cow Pow Studios",
+    articleName: "venue-cowpow",
+    category: "venue",
+    image: `
+		<img class="product-video" src="/videos/cowpow.gif" alt="Cow Pow Studios">`,
+    visibleENTags: {
+      usp1: `
+			<ion-icon name="musical-notes-outline"></ion-icon>
+			<span> Hang around production legends</span>`,
+      usp2: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Hidden gem</span>`,
+      usp3: `&nbsp;`,
+      fromPrice: "fr. <strong>20 000 kr SEK</strong> a day",
+      description: `
+      The Cow Pow Studios has opened its doors to have a select few events in the legendary halls of music producers Denniz Pop and Shellback. Don't sleep on this and contact us to schedule e.g. product releases and mingles`,
+    },
+    visibleSETags: {
+      usp1: `
+			<ion-icon name="color-palette-outline"></ion-icon>
+			<span> Vilken färgstämning du vill</span>`,
+      usp2: `
+			<ion-icon name="diamond-outline"></ion-icon>
+			<span> Amazing vibe!</span>`,
+      usp3: `&nbsp;`,
+      fromPrice: "fr. <strong>20 000 kr SEK</strong> dygn",
+      description: `
+      Cow Pow Studios har öppnat sina dörrar för att ha ett fåtal utvalda evenemang i musikproducenternas Denniz Pop och Shellbacks legendariska studio. Kontakta oss för att planera t.ex. produktsläpp och mingel`,
+    },
+    invisibleTags: {
+      vendorLink: "https://neobash.se/",
+      vibe1: "own-brand",
+      vibe2: "cool",
+      vibe3: "neon",
+      vibe4: "party",
+      vibe5: "indoor",
+      maxPeople: "n/a",
+      maxSeated: "n/a",
+      price: "medium",
+      catRank: "1",
     },
   },
 
@@ -1897,15 +2022,7 @@ Specialmärkt öl för dina event! Lägg till en touch av dig själv eller ditt 
     articleName: "entertainment-chezmiled",
     category: "entertainment",
     image: `
-		<video
-      class="product-video"
-      src="/videos/chezmiled.gif"
-      loop
-      autoplay
-      muted
-      playsinline
-      poster="/videos/chezmiled-poster.jpg"
-    ></video>`,
+		<img class="product-video" src="/videos/chezmiled.gif" alt="Chez Miled">`,
     visibleENTags: {
       usp1: `
 			<ion-icon name="star-outline"></ion-icon>
@@ -1955,15 +2072,7 @@ Specialmärkt öl för dina event! Lägg till en touch av dig själv eller ditt 
     articleName: "entertainment-actofemotion",
     category: "entertainment",
     image: `
-		<video
-      class="product-video"
-      src="/videos/actofemotion.gif"
-      loop
-      autoplay
-      muted
-      playsinline
-      poster="/videos/actofemotion-poster.jpg"
-    ></video>`,
+		<img class="product-video" src="/videos/actofemotion.gif" alt="Act of Emotion">`,
     visibleENTags: {
       usp1: `
 			<ion-icon name="star-outline"></ion-icon>
