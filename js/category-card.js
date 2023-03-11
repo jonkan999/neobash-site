@@ -752,7 +752,7 @@ cards = {
       catRank: "1",
     },
   },
-  venueCowpow: {
+  /*   venueCowpow: {
     id: "venueCowpow",
     name: "Cow Pow Studios",
     articleName: "venue-cowpow",
@@ -795,7 +795,7 @@ cards = {
       price: "medium",
       catRank: "1",
     },
-  },
+  }, */
 
   venueSjovillan: {
     id: "venueSjovillan",
