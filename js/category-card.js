@@ -223,13 +223,7 @@ cards = {
 			></ion-icon>
 			<span> Unlimited fun and games</span>`,
       fromPrice: "fr. <strong>250 000 kr SEK</strong> a day",
-      description: `Skyddsrummet, with a central location on walking distance from
-			Mariatorget, is ideal for basically any party. It's divided in to two
-			main sections. The brick room, with seating for 150 guests, and the
-			larger mountain room that is also fully equipped with light and sound.
-			The cool industrial atmosphere make Skyddsrummet ideal for product
-			release mingles, vernisages and just about any other party with an
-			eclectic audience.`,
+      description: `Looking for an event venue in Stockholm that's perfect for larger scale events with a fun twist? Look no further than Tolv! With its spacious and modern facilities, Tolv is ideal for corporate events, conferences, parties and more. But what sets Tolv apart is its wide range of games, including bowling, ping pong, shuffleboard and more, making it perfect for team-building or simply having fun. Trust us, your guests won't be able to resist the playful atmosphere and lively energy at Tolv!`,
     },
     visibleSETags: {
       usp1: `
@@ -248,13 +242,7 @@ cards = {
 			></ion-icon>
 			<span> Obegränsat spel och skoj</span>`,
       fromPrice: "fr. <strong>250 000 kr SEK</strong> dygn",
-      description: `Skyddsrummet, med centralt läge på gångavstånd från
-			Mariatorget, är perfekt för i princip alla fester. Lokalen är uppdelad i två
-			huvudsektioner. Tegelrummet, med plats för 150 gäster, och det större
-			Bergrummet som dessutom är fullt utrustat med ljud ljus till festen.
-			Den coola industriella atmosfären gör Skyddsrummet idealiskt för release-fester
-			i samband med produktsläpp, Personalfester, vernisager och precis vilken annan fest som helst med
-			fokus på eklektiska gäster.`,
+      description: `Letar du efter en evenemangslokal i Stockholm som är perfekt för större evenemang med en rolig twist? Se inte längre än till Tolv! Med sina rymliga och moderna faciliteter är Tolv idealisk för företagsevent, konferenser, fester med mera. Men det som skiljer Tolv åt är dess breda utbud av spel, inklusive bowling, pingis, shuffleboard och mer, vilket gör det perfekt för teambuilding eller helt enkelt att ha kul. Lita på oss, dina gäster kommer inte att kunna motstå den lekfulla atmosfären och den livliga energin på Tolv!`,
     },
     invisibleTags: {
       vendorLink: "https://tolv.se/",
@@ -298,13 +286,7 @@ cards = {
 			></ion-icon>
 			<span> Authentic arabian night</span>`,
       fromPrice: "fr. <strong>15 000 kr SEK</strong> a day",
-      description: `Skyddsrummet, with a central location on walking distance from
-			Mariatorget, is ideal for basically any party. It's divided in to two
-			main sections. The brick room, with seating for 150 guests, and the
-			larger mountain room that is also fully equipped with light and sound.
-			The cool industrial atmosphere make Skyddsrummet ideal for product
-			release mingles, vernisages and just about any other party with an
-			eclectic audience.`,
+      description: `Byblos in Vasastan is the ultimate event venue and restaurant for your next dinner party. With a captivating Arabic atmosphere, your guests will feel transported to another world as they indulge in our delicious Mediterranean cuisine. Our spacious and chic setting is perfect for any occasion, whether it be a corporate event, birthday party or intimate gathering. Our experienced staff will provide you with exceptional service, leaving you free to enjoy your special event. Book now and experience the magic of Byblos.`,
     },
     visibleSETags: {
       usp1: `
@@ -323,13 +305,7 @@ cards = {
 			></ion-icon>
 			<span> Autentisk arabisk afton</span>`,
       fromPrice: "fr. <strong>15 000 kr SEK</strong> dygn",
-      description: `Skyddsrummet, med centralt läge på gångavstånd från
-			Mariatorget, är perfekt för i princip alla fester. Lokalen är uppdelad i två
-			huvudsektioner. Tegelrummet, med plats för 150 gäster, och det större
-			Bergrummet som dessutom är fullt utrustat med ljud ljus till festen.
-			Den coola industriella atmosfären gör Skyddsrummet idealiskt för release-fester
-			i samband med produktsläpp, Personalfester, vernisager och precis vilken annan fest som helst med
-			fokus på eklektiska gäster.`,
+      description: `Byblos i Vasastan är den ultimata evenemangsplatsen och restaurangen för din nästa middagsbjudning. Med en fängslande arabisk atmosfär kommer dina gäster att känna sig transporterade till en annan värld när de njuter av vårt läckra medelhavsmat. Vår rymliga och eleganta miljö är perfekt för alla tillfällen, oavsett om det är ett företagsevent, födelsedagsfest eller intim sammankomst. Vår erfarna personal kommer att ge dig exceptionell service, vilket gör att du kan njuta av ditt speciella evenemang. Boka nu och upplev magin i Byblos.`,
     },
     invisibleTags: {
       vendorLink: "https://byblos.se/",
@@ -373,13 +349,7 @@ cards = {
 			></ion-icon>
 			<span> Rooftop</span>`,
       fromPrice: "fr. <strong>25 000 kr SEK</strong> a day",
-      description: `Skyddsrummet, with a central location on walking distance from
-			Mariatorget, is ideal for basically any party. It's divided in to two
-			main sections. The brick room, with seating for 150 guests, and the
-			larger mountain room that is also fully equipped with light and sound.
-			The cool industrial atmosphere make Skyddsrummet ideal for product
-			release mingles, vernisages and just about any other party with an
-			eclectic audience.`,
+      description: `Discover Lumafabriken, Stockholm's premier event venue and restaurant, perched on the top floor of a historic building with stunning views over Södermalm and the city skyline. Our unique space blends rustic charm with modern elegance, making it the perfect setting for any occasion. Whether you're looking to host a corporate event, wedding, or private party, our experienced team will work with you to create a truly unforgettable experience. With delicious cuisine, exceptional service, and breathtaking views, Lumafabriken is the ultimate destination for your next event.`,
     },
     visibleSETags: {
       usp1: `
@@ -398,13 +368,7 @@ cards = {
 			></ion-icon>
 			<span> Rooftop</span>`,
       fromPrice: "fr. <strong>25 000 kr SEK</strong> dygn",
-      description: `Skyddsrummet, med centralt läge på gångavstånd från
-			Mariatorget, är perfekt för i princip alla fester. Lokalen är uppdelad i två
-			huvudsektioner. Tegelrummet, med plats för 150 gäster, och det större
-			Bergrummet som dessutom är fullt utrustat med ljud ljus till festen.
-			Den coola industriella atmosfären gör Skyddsrummet idealiskt för release-fester
-			i samband med produktsläpp, Personalfester, vernisager och precis vilken annan fest som helst med
-			fokus på eklektiska gäster.`,
+      description: `Upptäck Lumafabriken, Stockholms främsta evenemangsplats och restaurang, uppe på översta våningen i en historisk byggnad med fantastisk utsikt över Södermalm och stadens silhuett. Vårt unika utrymme blandar rustik charm med modern elegans, vilket gör det till den perfekta miljön för alla tillfällen. Oavsett om du vill vara värd för ett företagsevent, bröllop eller privat fest, kommer vårt erfarna team att arbeta med dig för att skapa en verkligt oförglömlig upplevelse. Med utsökt mat, exceptionell service och hisnande vyer är Lumafabriken den ultimata destinationen för ditt nästa evenemang.`,
     },
     invisibleTags: {
       vendorLink: "https://luma.se/",
@@ -445,13 +409,7 @@ cards = {
 			<ion-icon name="diamond-outline"></ion-icon>
 			<span> Super tasty!</span>`,
       fromPrice: "fr. <strong>18 000 kr SEK</strong> a day",
-      description: `Skyddsrummet, with a central location on walking distance from
-			Mariatorget, is ideal for basically any party. It's divided in to two
-			main sections. The brick room, with seating for 150 guests, and the
-			larger mountain room that is also fully equipped with light and sound.
-			The cool industrial atmosphere make Skyddsrummet ideal for product
-			release mingles, vernisages and just about any other party with an
-			eclectic audience.`,
+      description: `Mackverket is the go-to food truck service for those in Stockholm who crave delicious and rustic sandwiches. Their secret lies in the use of sourdough bread which adds an extra layer of flavor to their creations. Each sandwich is made with care and attention to detail, resulting in a satisfying meal that will keep customers coming back for more. Whether you're in the mood for a classic ham and cheese or a more adventurous vegan option, Mackverket has something for everyone.`,
     },
     visibleSETags: {
       usp1: `
@@ -467,13 +425,7 @@ cards = {
 			<ion-icon name="diamond-outline"></ion-icon>
 			<span> Supersmarrigt!</span>`,
       fromPrice: "fr. <strong>18 000 kr SEK</strong> dygn",
-      description: `Skyddsrummet, med centralt läge på gångavstånd från
-			Mariatorget, är perfekt för i princip alla fester. Lokalen är uppdelad i två
-			huvudsektioner. Tegelrummet, med plats för 150 gäster, och det större
-			Bergrummet som dessutom är fullt utrustat med ljud ljus till festen.
-			Den coola industriella atmosfären gör Skyddsrummet idealiskt för release-fester
-			i samband med produktsläpp, Personalfester, vernisager och precis vilken annan fest som helst med
-			fokus på eklektiska gäster.`,
+      description: `Mackverket är go-to food truck-tjänsten för dig i Stockholm som är sugen på läckra och rustika mackor. Deras hemlighet ligger i användningen av surdegsbröd som ger ett extra lager av smak till deras skapelser. Varje smörgås är gjord med omsorg och uppmärksamhet på detaljer, vilket resulterar i en tillfredsställande måltid som får kunderna att komma tillbaka för mer. Oavsett om du är på humör för en klassisk skinka och ost eller ett mer äventyrligt veganskt alternativ, har Mackverket något för alla.`,
     },
     invisibleTags: {
       vendorLink: "https://mackverket.se/",
@@ -514,13 +466,7 @@ cards = {
 			<ion-icon name="diamond-outline"></ion-icon>
 			<span> Super tasty!</span>`,
       fromPrice: "fr. <strong>15 000 kr SEK</strong> a day",
-      description: `Skyddsrummet, with a central location on walking distance from
-			Mariatorget, is ideal for basically any party. It's divided in to two
-			main sections. The brick room, with seating for 150 guests, and the
-			larger mountain room that is also fully equipped with light and sound.
-			The cool industrial atmosphere make Skyddsrummet ideal for product
-			release mingles, vernisages and just about any other party with an
-			eclectic audience.`,
+      description: `Churros Kungarna is a food truck service in Stockholm that specializes in serving mouth-watering churros. Their churros are freshly made and crispy on the outside while being soft and fluffy on the inside. They use high-quality ingredients to ensure the perfect taste every time. Churros Kungarna offers a variety of churros flavors and toppings to satisfy every sweet tooth. Whether you're on the go or looking for a dessert after a meal, Churros Kungarna is the perfect choice for an indulgent treat.`,
     },
     visibleSETags: {
       usp1: `
@@ -536,13 +482,8 @@ cards = {
 			<ion-icon name="diamond-outline"></ion-icon>
 			<span> Supersmarrigt!</span>`,
       fromPrice: "fr. <strong>15 000 kr SEK</strong> dygn",
-      description: `Skyddsrummet, med centralt läge på gångavstånd från
-			Mariatorget, är perfekt för i princip alla fester. Lokalen är uppdelad i två
-			huvudsektioner. Tegelrummet, med plats för 150 gäster, och det större
-			Bergrummet som dessutom är fullt utrustat med ljud ljus till festen.
-			Den coola industriella atmosfären gör Skyddsrummet idealiskt för release-fester
-			i samband med produktsläpp, Personalfester, vernisager och precis vilken annan fest som helst med
-			fokus på eklektiska gäster.`,
+      description: `
+      Churros Kungarna är en food truck-tjänst i Stockholm som specialiserat sig på att servera aptitretande churros. Deras churros är nygjorda och krispiga på utsidan samtidigt som de är mjuka och fluffiga på insidan. De använder högkvalitativa ingredienser för att säkerställa den perfekta smaken varje gång. Churros Kungarna erbjuder en mängd olika churros-smaker och pålägg för att tillfredsställa varje sötsug. Oavsett om du är på språng eller letar efter en efterrätt efter en måltid, är Churros Kungarna det perfekta valet för en överseende godbit.`,
     },
     invisibleTags: {
       vendorLink: "https://churroskungarna.se/",
