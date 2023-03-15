@@ -576,6 +576,12 @@
   object-fit: cover;
   filter: sepia(0.3) saturate(0.5) brightness(1.1);
 }
+.inner-article-image.no-brightness {
+  filter: sepia(0.3) saturate(0.5) brightness(0.9);
+}
+.inner-article-image.no-filter {
+  filter: none;
+}
 .inner-article-image-text {
   display: inline-block;
 }
