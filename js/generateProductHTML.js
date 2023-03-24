@@ -5,19 +5,21 @@ export function generateProductHTML(article, language) {
   let usp2Tag = article.visibleENTags.usp2;
   let usp3Tag = article.visibleENTags.usp3;
   let priceTag = article.visibleENTags.fromPrice;
+  let description = article.visibleENTags.description;
   if (language === "se") {
     usp1Tag = article.visibleSETags.usp1;
     usp2Tag = article.visibleSETags.usp2;
     usp3Tag = article.visibleSETags.usp3;
     priceTag = article.visibleSETags.fromPrice;
+    description = article.visibleSETags.description;
   }
   const newHTML = `
   <article class="product-card" name="${article.articleName}" id="${article.id}">
   ${article.image}
   <div class="product-description">
     <div class="name-and-rating">
-      <span class="product-name"
-        ><strong>${article.name}</strong></span
+      <h2 class="product-name"
+        ><strong>${article.name}</strong></h2
       >
       <div class="product-rating">
         <img
@@ -28,6 +30,11 @@ export function generateProductHTML(article, language) {
         <span>New</span>
       </div>
     </div>
+    <div class="product-description-line">
+    <p class="product-description-inner-description hidden">
+      ${description}
+    </p>
+  </div>
     <div class="product-description-line">
       ${usp1Tag}
     </div>

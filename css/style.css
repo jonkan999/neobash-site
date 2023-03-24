@@ -1402,6 +1402,8 @@
 .product-name {
   display: inline-block;
   margin-bottom: 0.3rem;
+  font-size: 1.4rem;
+  font-weight: 200;
 }
 .product-rating {
   display: flex;
@@ -1411,9 +1413,14 @@
   height: 1.5rem;
   width: 1.5rem;
 }
+
 .product-description-line {
   display: flex;
   gap: 0.5rem;
+}
+
+.product-description-inner-description.hidden {
+  display: none;
 }
 
 .product-description-inner-description {
