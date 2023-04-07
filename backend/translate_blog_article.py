@@ -7,8 +7,8 @@ translate_client = build("translate", "v2", developerKey=translate_api)
 
 
 # Set up paths
-blog_name_en = "our-choice-of-5-simple-but-dazzling-cocktail-recipes"
-blog_name_se = "Våra-top-picks-på-5-träffsäkra-tips-till-enkla-drinkar-och-drinkrecept"
+blog_name_en = "Creative-variations-on-classic-drink-canapees-for-catering"
+blog_name_se = "Kreativa-variationer-pa-klassiska-drinktilltugg-for-catering"
 en_path = f"blog/{blog_name_en}.html"
 se_path = f"se/blogg/{blog_name_se}.html"
 
