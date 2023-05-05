@@ -1382,6 +1382,9 @@
   /* 
   box-shadow: 0.3rem 0.3rem 1rem 0.01rem rgba(0, 0, 0, 0.349); */
 }
+.product-video.no-filter {
+  filter: none;
+}
 .product-description {
   display: flex;
   flex-direction: column;

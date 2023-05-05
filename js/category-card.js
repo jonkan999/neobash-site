@@ -693,17 +693,17 @@ cards = {
       catRank: "1",
     },
   },
-  /*   venueCowpow: {
+  venueCowpow: {
     id: "venueCowpow",
     name: "Cow Pow Studios",
     articleName: "venue-cowpow",
     category: "venue",
     image: `
-		<img class="product-video" src="/videos/cowpow.gif" alt="Cow Pow Studios">`,
+		<img class="product-video no-filter" src="/videos/cowpow.gif" alt="Cow Pow Studios">`,
     visibleENTags: {
       usp1: `
 			<ion-icon name="musical-notes-outline"></ion-icon>
-			<span> Hang around production legends</span>`,
+			<span> Hang around producer legends</span>`,
       usp2: `
 			<ion-icon name="diamond-outline"></ion-icon>
 			<span> Hidden gem</span>`,
@@ -725,7 +725,7 @@ cards = {
       Cow Pow Studios har öppnat sina dörrar för att ha ett fåtal utvalda evenemang i musikproducenternas Denniz Pop och Shellbacks legendariska studio. Kontakta oss för att planera t.ex. produktsläpp och mingel`,
     },
     invisibleTags: {
-      vendorLink: "https://neobash.se/",
+      vendorLink: "https://matron.se/",
       vibe1: "own-brand",
       vibe2: "cool",
       vibe3: "neon",
@@ -736,7 +736,7 @@ cards = {
       price: "medium",
       catRank: "1",
     },
-  }, */
+  },
 
   venueSjovillan: {
     id: "venueSjovillan",
