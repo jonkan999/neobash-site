@@ -695,7 +695,7 @@ cards = {
   },
   venueCowpow: {
     id: "venueCowpow",
-    name: "Cow Pow Studios",
+    name: "Matron at Cow Pow",
     articleName: "venue-cowpow",
     category: "venue",
     image: `
