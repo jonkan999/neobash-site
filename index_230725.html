@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3K0BFNG8B7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-3K0BFNG8B7");
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- removes safari autozoom on focus -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="/js/mobile-nav.js"></script>
+    <script defer src="/js/script.js"></script>
+    <script type="module" defer src="/js/brand-logo-animation.js"></script>
+    <script type="module" defer src="/js/event-builder.js"></script>
+    <script defer src="/js/change-language.js"></script>
+    <script defer src="/js/neobashLogoSVG.js"></script>
+
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/event-builder.css" />
+
+    <link rel="stylesheet" href="/css/queries.css" />
+
+    <title>
+      Neobash - Plans and coordinates events such as afterworks, kickoffs and
+      weddings, in the Stockholm area.
+    </title>
+    <link rel="icon" href="/img/favicon.png" />
+    <meta
+      name="description"
+      content="Neobash is the home to the best event suppliers in Stockholm, from weddings to after works, we coordinate the event so you can just sit back, relax and enjoy your party."
+    />
+    <meta
+      name="keywords"
+      content="Organizing event in Stockholm, Bröllop på budget, Billig bröllopsdekor tips, Party planning in Stockholm"
+    />
+  </head>
+
+  <body>
+    <div class="full-page-shadow"></div>
+    <header class="header">
+      <a
+        href="https://neobash.se/"
+        title="Neobash event page"
+        class="header-logo"
+        aria-label="Neobash brand logo"
+        id="neobashTopLogo"
+      >
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a
+              class="main-nav-link"
+              href="https://neobash.se/category-page.html"
+              title="Event categories"
+              id="navCategories"
+              >Categories</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link" href="#how-it-works" id="navHowItWorks"
+              >How it works</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link" href="#" id="navAbout">About</a>
+          </li>
+          <li>
+            <a
+              class="main-nav-link"
+              href="https://neobash.se/blog.html"
+              title="Blog about events, weddings and afterworks"
+              id="navBlog"
+              >Blog</a
+            >
+          </li>
+          <div class="main-nav-link language-dropdown-buttton">
+            <select
+              class="language-dropdown select-language"
+              id="selectLanguage"
+              onchange="changeLanguage()"
+            >
+              <option value="EN">EN</option>
+              <option value="SE">SE</option>
+            </select>
+          </div>
+
+          <li>
+            <a class="main-nav-link nav-cta" href="#cta" id="navContact"
+              >contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero" id="hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary" id="heroHeader">
+              imagine your dream event. <br />
+              we make it happen.
+            </h1>
+            <div class="hero-buttons">
+              <a
+                href="category-page.html"
+                title="Event categories"
+                class="btn btn--cta"
+                id="heroContact"
+                >our products</a
+              >
+              <a
+                href="#"
+                title="Event builder"
+                class="btn event-builder"
+                id="heroEventbuilder"
+                >event builder</a
+              >
+            </div>
+          </div>
+          <div class="hero-brand-box">
+            <p class="brand-name">
+              NEO <br />
+              BASH
+            </p>
+            <svg class="brand-background" viewBox="0 0 200 200" fill="none">
+              <!-- Add a path with an empty data attribute, fill it with the gradient we defined earlier -->
+              <path class="path4" d="" stroke="#F3D9FA" stroke-width="6"></path>
+              <path class="path1" d="" stroke="black" stroke-width="2"></path>
+              <path class="path2" d="" stroke="black" stroke-width="2"></path>
+              <path class="path3" d="" stroke="black" stroke-width="2"></path>
+              <path class="path5" d="" stroke="black" stroke-width="2"></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-event-categories" id="categories">
+        <div class="container">
+          <h2
+            class="heading-secondary heading--centered heading--upper"
+            id="categoriesHeader"
+          >
+            This is the neobash event builder
+          </h2>
+          <p
+            class="event-categories-description"
+            id="categoriesHeaderDescription"
+          >
+            Home to the best event suppliers in Stockholm. Choose a category to
+            begin exploring.
+          </p>
+        </div>
+
+        <div class="container grid grid--3-cols grid--centered">
+          <a
+            class="category-card"
+            href="https://neobash.se/category-page.html?category=venue"
+            title="Event venues"
+          >
+            <img src="../img/venue-image.jpg" alt="Image of event venues" />
+            <span class="category-card-text" id="categoriesVenue">venues</span>
+          </a>
+
+          <a
+            class="category-card category-card--darker"
+            href="https://neobash.se/category-page.html?category=food"
+            title="Event catering and food trucks"
+          >
+            <img
+              src="../img/catering-image.jpg"
+              alt="Image of event catering"
+            />
+            <span class="category-card-text">catering</span>
+          </a>
+
+          <a
+            class="category-card category-card--darker"
+            href="https://neobash.se/category-page.html?category=wedding"
+            title="Weddings and wedding suppliers"
+          >
+            <img src="../img/wedding-image.jpg" alt="Image of wedding" />
+            <span class="category-card-text" id="categoriesWedding"
+              >wedding</span
+            >
+          </a>
+
+          <a
+            class="category-card category-card--darker"
+            href="https://neobash.se/category-page.html?category=drinks"
+            title="drink solutions and drink suppliers"
+          >
+            <video
+              class="category-card category-card--darker"
+              src="/videos/fountain.mp4"
+              loop
+              autoplay
+              muted
+              playsinline
+              poster="/videos/fountain-poster.jpg"
+            ></video>
+            <span class="category-card-text" id="categoriesDrinks"
+              >Drink Solutions</span
+            >
+          </a>
+
+          <a
+            class="category-card category-card--darker"
+            href="https://neobash.se/category-page.html?category=entertainment"
+            title="suppliers of entertainment for events"
+          >
+            <img
+              src="../img/entertainment-image.jpg"
+              alt="Image of event entertainment"
+            />
+            <span class="category-card-text" id="categoriesEntertainment"
+              >entertainment</span
+            >
+          </a>
+
+          <a
+            class="category-card category-card--darker"
+            href="https://neobash.se/category-page.html?category=decor"
+            title="event decor suppliers"
+          >
+            <img src="../img/decor-image.jpg" alt="Image of event decor" />
+            <span class="category-card-text" id="categoriesDecor">Decor</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section-how-it-works" id="how-it-works">
+        <div class="container">
+          <h2 class="heading-secondary heading--centered" id="howHeader">
+            Let us take care of the planning and you just relax and enjoy your
+            party
+          </h2>
+          <div class="grid grid--3-cols">
+            <div
+              class="how-it-works-left-images images-1"
+              role="img"
+              aria-label="Image of Geisha thinking"
+            ></div>
+
+            <div
+              class="how-it-works-left-images images-3"
+              role="img"
+              aria-label="Image of Geisha sending"
+            ></div>
+            <div class="how-it-works-description description-1">
+              <h3 class="how-it-works-description-header" id="howHeadersub1">
+                Outline your event
+              </h3>
+              <p id="howHeadersubContent1">
+                Think through how you want to outline your event. Consider your
+                choice of venue, atmosphere, food, drinks, entertainment.
+              </p>
+              <div class="how-it-works-connector"></div>
+            </div>
+            <div class="how-it-works-description description-2">
+              <h3 class="how-it-works-description-header" id="howHeadersub2">
+                Browse through our vendors, or let us do it for you!
+              </h3>
+              <p id="howHeadersubContent2">
+                Browse through our hundreds of hand selected partner vendor and
+                products, to find what best matches what you have imagined. Or,
+                write down your outline and let our
+                <a href="#" class="event-builder">automated event builder</a>
+                match vendors and products to you.
+              </p>
+              <div class="how-it-works-connector"></div>
+            </div>
+            <div class="how-it-works-description description-3">
+              <h3 class="how-it-works-description-header" id="howHeadersub3">
+                Submit your choices
+              </h3>
+              <p id="howHeadersubContent3">
+                Our team of experienced event planners will receive it on their
+                end.
+              </p>
+              <div class="how-it-works-connector"></div>
+            </div>
+            <div class="how-it-works-description description-4">
+              <h3 class="how-it-works-description-header" id="howHeadersub4">
+                Relax and <strong>enjoy</strong> your party
+              </h3>
+              <p id="howHeadersubContent4">
+                We will get back to you immediately at your prefered point of
+                contact. We go through the event and take care of the rest,
+                while you sit back and relax.
+              </p>
+              <a href="#cta" class="btn btn--cta" id="howContact">contact us</a>
+            </div>
+            <div
+              class="how-it-works-right-images images-2"
+              role="img"
+              aria-label="Image of Geisha writing"
+            ></div>
+            <div
+              class="how-it-works-right-images images-4"
+              role="img"
+              aria-label="Image of Geisha waiting"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-blog" id="blog">
+        <div class="container">
+          <h2 class="heading-secondary">What is new</h2>
+
+          <article class="blog-article">
+            <div class="grid grid--2-cols">
+              <div class="blog-article-body">
+                <h3 id="byobVenuesHeader1" class="blog-article-header">
+                  Say “I Do” to the Best Vegan Wedding Catering in Stockholm
+                </h3>
+                <span class="blog-article-date"> February 1, 2023 </span>
+
+                <p class="blog-article-paragraph">
+                  Wedding planning can be stressful, but choosing the right
+                  catering shouldn't be. If you're looking for a vegan option
+                  for your special day, Stockholm has plenty of options to
+                  choose from. In this blog post, we'll take a look at how
+                  trendy vegan catering has become in Stockholm, the health
+                  benefits of plant-based eating, and highlight four of the best
+                  vegan wedding catering options available in the city: Vegano
+                  Catering, No Bones Catering, Lila Lotus Catering, and Bliss
+                  Cafe.
+                </p>
+                <h3 class="blog-article-header">
+                  The new Vegan trend on Stockholms Catering Scene
+                </h3>
+                <p class="blog-article-paragraph">
+                  Veganism has grown in popularity in recent years, and this
+                  trend has definitely made its way to the wedding industry.
+                  More and more couples are choosing plant-based options for
+                  their big day, and Stockholm's catering scene has responded in
+                  kind. With so many options available, it's never been easier
+                  to have a beautiful and delicious vegan wedding.
+                </p>
+              </div>
+              <a
+                id="discover-the-7-best-event-venues-in-stockholm-with-own-food-and-alcohol-option"
+                class="read-full-button"
+                href="../blog/Say-I-Do-to-the-Best-Vegan-Wedding-Catering-in-Stockholm.html"
+              >
+                READ FULL ARTICLE
+                <ion-icon
+                  class="read-more-icon"
+                  name="chevron-forward-outline"
+                ></ion-icon>
+              </a>
+
+              <div class="blog-article-media-box">
+                <div class="blog-article-gif">
+                  <video
+                    class="blog-article-video byob-venues-article"
+                    loop
+                    autoplay
+                    muted
+                    playsinline
+                  >
+                    <source
+                      class="blog-article-video-src"
+                      src="https://i.gifer.com/7i5a.mp4"
+                      itemprop="contentUrl"
+                      type="video/mp4"
+                      aria-label="Video of people partying"
+                    />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-article">
+            <div class="grid grid--2-cols">
+              <div class="blog-article-body">
+                <h3 id="byobVenuesHeader1" class="blog-article-header">
+                  Impress Your Guests with Unique Drink Solutions for Your Next
+                  Event
+                </h3>
+                <span class="blog-article-date"> January 25, 2023 </span>
+
+                <p class="blog-article-paragraph">
+                  Welcome to the ultimate guide to impressing your guests with
+                  unique drink solutions for your next event. As the host of an
+                  event, it is important to create an atmosphere that is both
+                  enjoyable and memorable for your guests. And, what better way
+                  to do that than by offering unique and creative drink
+                  solutions? So, if you're looking to take your party to the
+                  next level, look no further, we got you. We have all the
+                  insider tips and tricks to make sure your guests are sipping
+                  on something special. Whether you're hosting a fancy soirée or
+                  a casual backyard bash, these drink solutions will take your
+                  event from ordinary to extraordinary.
+                </p>
+                <h3 class="blog-article-header">Soaring Cocktail Fountains</h3>
+                <p class="blog-article-paragraph">
+                  When it comes to making a statement at your event, a cocktail
+                  fountain is the way to go. These towering structures will have
+                  your guests talking for months to come. Plus, they add a touch
+                  of sophistication to any event. Fill the fountain with your
+                  favorite drinks and watch as guests help themselves to a
+                  refreshing sip. And, if you're looking to keep it classy, you
+                  can always opt for a non-alcoholic fountain. Or both!
+                </p>
+              </div>
+              <a
+                id="discover-the-7-best-event-venues-in-stockholm-with-own-food-and-alcohol-option"
+                class="read-full-button"
+                href="../blog/Impress-Your-Guests-with-Unique-Drink-Solutions-for-Your-Next-Event.html"
+              >
+                READ FULL ARTICLE
+                <ion-icon
+                  class="read-more-icon"
+                  name="chevron-forward-outline"
+                ></ion-icon>
+              </a>
+
+              <div class="blog-article-media-box">
+                <div class="blog-article-gif">
+                  <video
+                    class="blog-article-video drink-solutions-article"
+                    loop
+                    autoplay
+                    muted
+                    playsinline
+                  >
+                    <source
+                      class="blog-article-video-src"
+                      src="https://i.gifer.com/3XC.mp4"
+                      itemprop="contentUrl"
+                      type="video/mp4"
+                      aria-label="Video of kid drinking from fountain"
+                    />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </article>
+          <div class="to-blog-box">
+            <a
+              class="to-blog-link"
+              href="https://neobash.se/blog.html"
+              title="Blog where we collect inspirational articles about events, weddings and afterwoorks"
+              >Check out all our inspirational articles about events
+              <svg
+                class="to-blog-arrow"
+                width="243"
+                height="69"
+                viewBox="0 0 243 69"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 45C2 57.9291 10.8533 61.542 22.6667 64.5556C45.5717 70.3987 70.6248 62.6825 92.7778 57C124.389 48.8913 154.804 38.4476 183 22"
+                  stroke="#666"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M159 16C165.688 14.8853 172.189 12.1247 179 11C198.645 7.7559 218.576 6.14713 238.167 2.55557C239.135 2.37808 241.752 1.58603 241.111 2.33335C238.677 5.17276 236.102 7.95882 233.111 10.2222C222.591 18.1833 211.171 24.5242 201 33"
+                  stroke="#666"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary" id="contactHeader">
+                Get in touch and plan your event with us!
+              </h2>
+              <p class="cta-text" id="contactParagraph">
+                Fill out our form and one of our top of the line event handlers
+                will get back to you and tell you more about what we can offer
+                and guide you through the planning process.
+              </p>
+
+              <form
+                class="cta-form"
+                name="contact-form"
+                action="./submission-success.html"
+                netlify
+              >
+                <div id="contactNameInput">
+                  <label for="full-name">Full name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+                <div id="contactMailInput">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="inquiry-field" id="contactInquiryInput">
+                  <label for="inquiry">What do you wanna know?</label>
+                  <textarea
+                    id="inquiry"
+                    type="inquiry"
+                    name="inquiry"
+                    placeholder="I just want to hear more about your awesome services!"
+                  ></textarea>
+                  <span class="call-us-text" id="contactCall"
+                    >Or just call us at: <br /><a
+                      class="call-us-number"
+                      href="tel:0701650323"
+                      >0701650323</a
+                    ></span
+                  >
+                </div>
+                <input
+                  type="hidden"
+                  name="request-details"
+                  value="&nbsp;"
+                  id="checkoutDetails"
+                />
+                <!-- <input type="checkbox" />
+                    <input type="number" /> -->
+
+                <button type="submit" class="btn btn--form">
+                  send
+                  <ion-icon
+                    class="button-icon"
+                    name="paper-plane-outline"
+                  ></ion-icon>
+                </button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Image of a weird phone being picked up"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="container cute-dog-container">
+      <h2 class="heading-secondary heading--centered">
+        Just our cute little dog Tous
+      </h2>
+
+      <div class="cute-dog">
+        <video
+          class="tous-test"
+          src="/videos/test-edited.mp4"
+          loop
+          autoplay
+          muted
+          playsinline
+        ></video>
+      </div>
+    </div>
+
+    <footer class="section-footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a
+            href="#"
+            class="footer-logo"
+            aria-label="Neobash brand logo"
+            id="neobashBotLogo"
+          >
+          </a>
+          <ul class="social-links">
+            <li class="footer-link">
+              <a href="https://neobash.se/" title="Neobash main page">
+                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li class="footer-link">
+              <a href="#">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li class="footer-link">
+              <a href="#">
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            copyright &copy; 2022 by Neobash AB. All rights reserved.
+          </p>
+        </div>
+
+        <div class="adress-col">
+          <p class="footer-heading">Contact us</p>
+
+          <address class="contacts">
+            <p class="address">
+              Roslagsgatan 14, 113 55, Stockholm, Sweden
+            </p>
+            <p class="footer-link">
+              <a href="tel:+46 70 165 03 23">+46 70 165 03 23</a> <br />
+              <a href="mailto:hind@neobash.se">hind@neobash.se</a>
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li class="footer-link"><a href="#">About Neobash</a></li>
+            <li class="footer-link"><a href="#">For Business</a></li>
+            <li class="footer-link"><a href="#">Esteemed partners</a></li>
+            <li class="footer-link"><a href="#">Careers</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Partners</p>
+          <ul class="footer-nav">
+            <li class="footer-link"><a href="#">Partner 1</a></li>
+            <li class="footer-link"><a href="#">Partner 2</a></li>
+            <li class="footer-link"><a href="#">Partner 3</a></li>
+            <li class="footer-link"><a href="#">Partner 4</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li class="footer-link"><a href="#">Blog archive</a></li>
+            <li class="footer-link"><a href="#">Help center</a></li>
+            <li class="footer-link"><a href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

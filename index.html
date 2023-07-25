@@ -146,13 +146,55 @@
     </header>
     <main>
       <section class="section-hero" id="hero">
+        <a
+          href="#"
+          title="Event builder"
+          class="event-builder-btn"
+          id="heroEventbuilder"
+          >event builder
+          <div class="event-builder-info">
+            For when you know what you want but don't know how to find it &rarr;
+          </div></a
+        >
+        <script>
+          const eventBuilder = document.getElementById("heroEventbuilder");
+          const eventBuilderInfo = eventBuilder.querySelector(
+            ".event-builder-info"
+          );
+
+          // Function to toggle the display of the event-builder-info element
+          function toggleEventBuilderInfo() {
+            eventBuilderInfo.style.display =
+              eventBuilderInfo.style.display === "block" ? "none" : "block";
+          }
+
+          // Event listener for hover
+          eventBuilder.addEventListener("mouseenter", () => {
+            toggleEventBuilderInfo();
+          });
+
+          eventBuilder.addEventListener("mouseleave", () => {
+            toggleEventBuilderInfo();
+          });
+        </script>
+
         <div class="hero">
+          <a
+            href="#cta"
+            title="Get in touch"
+            class="reach-out-btn"
+            id="heroContact"
+            >Get in touch
+            <div class="jumping-triangle">
+              <ion-icon name="triangle-outline"></ion-icon></div
+          ></a>
+
           <div class="hero-text-box">
             <h1 class="heading-primary" id="heroHeader">
               imagine your dream event. <br />
               we make it happen.
             </h1>
-            <div class="hero-buttons">
+            <!--             <div class="hero-buttons"> decommissioned 230725
               <a
                 href="category-page.html"
                 title="Event categories"
@@ -167,7 +209,7 @@
                 id="heroEventbuilder"
                 >event builder</a
               >
-            </div>
+            </div> -->
           </div>
           <div class="hero-brand-box">
             <p class="brand-name">
@@ -659,9 +701,7 @@
           <p class="footer-heading">Contact us</p>
 
           <address class="contacts">
-            <p class="address">
-              Roslagsgatan 14, 113 55, Stockholm, Sweden
-            </p>
+            <p class="address">Roslagsgatan 14, 113 55, Stockholm, Sweden</p>
             <p class="footer-link">
               <a href="tel:+46 70 165 03 23">+46 70 165 03 23</a> <br />
               <a href="mailto:hind@neobash.se">hind@neobash.se</a>
