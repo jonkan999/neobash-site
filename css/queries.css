@@ -966,6 +966,8 @@
     width: 90vw;
   }
   .close-btn {
+    top: -2rem;
+    left: 0;
     font-size: 4rem;
     transform: translate(86vw);
   }
