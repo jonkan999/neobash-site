@@ -262,6 +262,13 @@
     align-content: center;
   }
 
+  #toGallerySection {
+    position: absolute;
+    left: 50%;
+    transform: translate(-40%, 350%);
+    font-size: 2.6rem;
+  }
+
   .logo-col {
     grid-column: 1/3;
   }
