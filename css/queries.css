@@ -504,7 +504,7 @@
   .gallery-arrow {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(5%, -30%);
     font-size: 4rem;
   }
   .section-gallery {
