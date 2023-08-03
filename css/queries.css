@@ -501,6 +501,12 @@
     font-size: 1.5rem;
   }
 
+  .gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+  }
   .section-gallery {
     padding: 12rem 0 9.6rem;
     margin-bottom: 0rem;
