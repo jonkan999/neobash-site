@@ -293,7 +293,7 @@
 
 .section-gallery {
   padding: 12rem 0 9.6rem;
-  margin-bottom: 15rem;
+  margin-bottom: 13rem;
 }
 
 .gallery-heading {
@@ -302,14 +302,14 @@
 
 .gallery-box {
   width: 46%;
-  height: 50vh;
+  height: 52vh;
 }
 
 .right-box {
-  margin: 0 0 7rem auto;
+  margin: 0 0 10vh auto;
 }
 .left-box {
-  margin: 0 auto 7rem 0;
+  margin: 0 auto 10vh 0;
 }
 
 .gallery-box-heading {
@@ -338,7 +338,7 @@
   height: 38vh;
 }
 .gallery-box-dpa {
-  height: 63vh;
+  height: 55vh;
 }
 .bottom-image-box {
   width: 100%;

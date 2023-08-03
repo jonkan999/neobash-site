@@ -217,6 +217,14 @@
     margin: 0 0.5rem;
   }
 
+  .gallery-box {
+    width: 66%;
+    height: 72vh;
+  }
+  .gallery-box-dpa {
+    height: 75vh;
+  }
+
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -491,6 +499,40 @@
 
   .jumping-triangle {
     font-size: 1.5rem;
+  }
+
+  .section-gallery {
+    padding: 12rem 0 9.6rem;
+    margin-bottom: 0rem;
+  }
+  .gallery-box-heading {
+    font-size: 2rem;
+  }
+
+  .gallery-box {
+    width: 86%;
+    height: 52vh;
+  }
+
+  .right-box {
+    margin: 0 0 7vh auto;
+  }
+  .left-box {
+    margin: 0 auto 7vh 0;
+  }
+
+  .gallery-box-dpa {
+    height: 55vh;
+  }
+
+  .top-image-box {
+    height: 25vh;
+  }
+  .box-dpa-1 {
+    height: 28vh;
+  }
+  .bottom-image-box {
+    height: 25vh;
   }
 
   .grid {
