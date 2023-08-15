@@ -1546,6 +1546,9 @@
 .product-video.no-filter {
   filter: none;
 }
+.black-white-filter {
+  filter: grayscale(50%);
+}
 .product-description {
   display: flex;
   flex-direction: column;

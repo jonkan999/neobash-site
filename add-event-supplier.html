@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3K0BFNG8B7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-3K0BFNG8B7");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- removes safari autozoom on focus -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="../js/mobile-nav.js"></script>
+    <script defer src="../js/open-article.js"></script>
+    <script defer src="../js/neobashLogoSVG.js"></script>
+    <script defer src="../js/change-language.js"></script>
+    <script
+      defer
+      src="/add-event-supplier/js/eventCategoryDropdown.js"
+    ></script>
+
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/add-supplier.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
+
+    <title>
+      Neobash Supplier onboarding - Here we let our supplier fill out their
+      offerings
+    </title>
+    <link rel="icon" href="../img/favicon.png" />
+    <meta
+      name="description"
+      content="Welcome to Neobash Supplier Onboarding. This platform allows our suppliers to provide details about their offerings. Join us as a supplier and showcase your products to our customers and clients."
+    />
+  </head>
+
+  <body class="sticky">
+    <header class="header">
+      <a
+        href="../index.html"
+        class="header-logo"
+        aria-label="Neobash brand logo"
+        id="neobashTopLogo"
+      >
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a
+              id="navCategories"
+              class="main-nav-link"
+              href="../category-page.html"
+              >Categories</a
+            >
+          </li>
+          <li>
+            <a
+              id="navHowItWorks"
+              class="main-nav-link"
+              href="../index.html#how-it-works"
+              >How it works</a
+            >
+          </li>
+          <li>
+            <a id="navAbout" class="main-nav-link" href="#">About</a>
+          </li>
+          <li>
+            <a
+              class="main-nav-link"
+              href="https://neobash.se/blog.html"
+              title="Blog about events, weddings and afterworks"
+              id="navBlog"
+              >Blog</a
+            >
+          </li>
+          <div class="main-nav-link language-dropdown-buttton">
+            <select
+              class="language-dropdown select-language"
+              id="selectLanguage"
+              onchange="changeLanguage()"
+            >
+              <option value="EN">EN</option>
+              <option value="SE">SE</option>
+            </select>
+          </div>
+          <li>
+            <a
+              id="navContact"
+              class="main-nav-link nav-cta"
+              href="../index.html#cta"
+              >contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <section class="add-supplier-product-section">
+      <div class="container">
+        <h2 class="heading-secondary heading--centered heading--upper">
+          Welcome to Neobash Supplier Onboarding
+        </h2>
+        <p class="event-categories-description">
+          This platform allows our suppliers to provide details about their
+          offerings. Join us as a supplier and showcase your products to our
+          customers and clients. Add some nice pics and fill out your details
+          below and we'll add you to our event platform asap.
+        </p>
+
+        <form id="supplier-form" enctype="multipart/form-data">
+          <div class="top-flex-box">
+            <div>
+              <label for="event-category">Event Category:</label>
+              <select
+                class="input-margin-bot"
+                id="event-category"
+                name="eventCategory"
+              >
+                <option value="venue">Venue</option>
+                <option value="catering">Catering</option>
+              </select>
+            </div>
+            <div>
+              <label for="total-floor-area">Product Name:</label>
+              <input type="text" id="product-name" name="productName" />
+            </div>
+          </div>
+          <label for="venue-pictures">Venue Pictures:</label>
+          <!--           <input type="file" accept="image/*" multiple /> -->
+          <div id="drop-area" class="drop-area">
+            <p>Drag and drop images here</p>
+          </div>
+          <div id="thumbnails" class="thumbnails"></div>
+
+          <h3
+            class="heading-additiona-information heading--centered heading--upper"
+          >
+            Additional Information:
+          </h3>
+
+          <div class="form-columns">
+            <div class="form-column">
+              <div class="height-25">
+                <label>Sound System Included:</label>
+                <label class="margin-left-2rem"
+                  ><input type="radio" name="soundSystem" value="yes" />
+                  Yes</label
+                >
+                <label class="margin-left-2rem"
+                  ><input type="radio" name="soundSystem" value="no" />
+                  No</label
+                >
+                <label class="margin-left-2rem no-bot-margin"
+                  ><input type="radio" name="soundSystem" value="fee" /> For a
+                  Fee</label
+                >
+              </div>
+              <label for="seated-guests">Seated Guests:</label>
+              <input type="number" id="seated-guests" name="seatedGuests" />
+
+              <label for="from-price">From Price for Daily Rate:</label>
+              <input type="text" id="from-price" name="fromPrice" />
+
+              <label for="checkout-time">Checkout Time:</label>
+              <input type="time" id="checkout-time" name="checkoutTime" />
+            </div>
+
+            <div class="form-column">
+              <div class="horizontal-box height-125">
+                <label class="margin-bot-2rem" for="own-alcohol"
+                  >Own Alcohol:</label
+                >
+                <input
+                  class="margin-bot-2rem"
+                  type="checkbox"
+                  id="own-alcohol"
+                  name="ownAlcohol"
+                />
+              </div>
+              <div class="horizontal-box height-125">
+                <label class="margin-bot-2rem" for="own-food">Own Food:</label>
+                <input
+                  class="margin-bot-2rem"
+                  type="checkbox"
+                  id="own-food"
+                  name="ownFood"
+                />
+              </div>
+
+              <label for="standing-guests">Standing Guests:</label>
+              <input type="number" id="standing-guests" name="standingGuests" />
+
+              <label for="total-floor-area">Total Floor Area m2:</label>
+              <input
+                type="number"
+                id="total-floor-area"
+                name="totalFloorArea"
+              />
+
+              <!-- Add other inputs for the second column here -->
+            </div>
+          </div>
+
+          <label for="short-description">Short Form Description:</label>
+          <textarea id="short-description" name="shortDescription"></textarea>
+
+          <label for="long-description">Long Form Description:</label>
+          <textarea id="long-description" name="longDescription"></textarea>
+
+          <button class="btn btn--form" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="section-footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a
+            href="./index.html"
+            class="footer-logo"
+            aria-label="Neobash brand logo"
+            id="neobashBotLogo"
+          >
+          </a>
+          <ul class="social-links">
+            <li class="footer-link">
+              <a href="#">
+                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li class="footer-link">
+              <a href="#">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li class="footer-link">
+              <a href="#">
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            copyright &copy; 2022 by Neobash AB. All rights reserved.
+          </p>
+        </div>
+
+        <div class="adress-col">
+          <p class="footer-heading">Contact us</p>
+
+          <address class="contacts">
+            <p class="address">Roslagsgatan 14, 113 55, Stockholm, Sweden</p>
+            <p class="footer-link">
+              <a href="tel:+46 70 165 03 23">+46 70 165 03 23</a> <br />
+              <a href="mailto:hind@neobash.se">hind@neobash.se</a>
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li class="footer-link"><a href="#">Create account</a></li>
+            <li class="footer-link"><a href="#">Sign in</a></li>
+            <li class="footer-link"><a href="#">iOS app</a></li>
+            <li class="footer-link"><a href="#">Android app</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li class="footer-link"><a href="#">About Neobash</a></li>
+            <li class="footer-link"><a href="#">For Business</a></li>
+            <li class="footer-link"><a href="#">Esteemed partners</a></li>
+            <li class="footer-link"><a href="#">Careers</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li class="footer-link"><a href="#">Blog archive</a></li>
+            <li class="footer-link"><a href="#">Help center</a></li>
+            <li class="footer-link"><a href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
