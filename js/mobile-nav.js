@@ -4,14 +4,25 @@
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
-btnNavEl.addEventListener("click", function () {
-	headerEl.classList.toggle("nav-open");
-	if (!headerEl.classList.contains("nav-open")) {
-		//This will run every time except the first
+function closeNav() {
+	if (headerEl.classList.contains("nav-open")) {
+		headerEl.classList.remove("nav-open");
+		headerEl.classList.add("nav-close");
 		setTimeout(function () {
-			//removes nav-close after slide out effect
-			headerEl.classList.toggle("nav-close");
+			headerEl.classList.remove("nav-close");
 		}, 500);
-		headerEl.classList.toggle("nav-close");
 	}
+}
+
+btnNavEl.addEventListener("click", function () {
+	if (headerEl.classList.contains("nav-open")) {
+		closeNav();
+	} else {
+		headerEl.classList.add("nav-open");
+	}
+});
+
+// Close nav when any nav link is clicked
+document.querySelectorAll(".main-nav-link").forEach(function (link) {
+	link.addEventListener("click", closeNav);
 });
